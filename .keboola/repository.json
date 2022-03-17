@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "templates": [
+    {
+      "id": "in-crm-hubspot",
+      "name": "IN-CRM-HUBSPOT",
+      "description": "Full workflow to ...",
+      "path": "in-crm-hubspot",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    }
+  ]
+}
