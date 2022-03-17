@@ -14,6 +14,20 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "out-crm-snowflake",
+      "name": "OUT-CRM-SNOWFLAKE",
+      "description": "Full workflow to ...",
+      "path": "out-crm-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
