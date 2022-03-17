@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-crm-wr-12706099.activity",
+    tableId: "out.c-crm-wr-"+ConfigId("out-crm-snowflake-writer-12706099")+".activity",
     dbName: "activity",
     incremental: false,
     primaryKey: [
@@ -69,8 +69,8 @@
     input: {
       tables: [
         {
-          source: "out.c-crm-wr-12706099.activity",
-          destination: "out.c-crm-wr-12706099.activity.csv",
+          source: "out.c-crm-wr-"+ConfigId("out-crm-snowflake-writer-12706099")+".activity",
+          destination: "out.c-crm-wr-"+ConfigId("out-crm-snowflake-writer-12706099")+".activity.csv",
           columns: [
             "activity_id",
             "employee_id",
