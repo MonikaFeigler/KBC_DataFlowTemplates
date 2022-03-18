@@ -17,10 +17,16 @@
     },
     {
       "id": "in-crm-salesforce",
-      "name": "IN-CRM-SALESFORCE",
+      "name": "IN_CRM_SALESFORCE",
       "description": "Full workflow to ...",
       "path": "in-crm-salesforce",
       "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        },
         {
           "version": "0.0.1",
           "description": "",
