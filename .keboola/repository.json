@@ -16,6 +16,20 @@
       ]
     },
     {
+      "id": "in-crm-salesforce",
+      "name": "IN-CRM-SALESFORCE",
+      "description": "Full workflow to ...",
+      "path": "in-crm-salesforce",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "out-crm-snowflake",
       "name": "OUT-CRM-SNOWFLAKE",
       "description": "Full workflow to ...",

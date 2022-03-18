@@ -1,0 +1,4 @@
+{
+  name: "Loas",
+  dependsOn: [],
+}
