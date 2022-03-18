@@ -36,6 +36,20 @@
       ]
     },
     {
+      "id": "in-ecommerce-shopify",
+      "name": "IN-ECOMMERCE_SHOPIFY",
+      "description": "Full workflow to ...",
+      "path": "in-ecommerce-shopify",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "out-crm-snowflake",
       "name": "OUT-CRM-SNOWFLAKE",
       "description": "Full workflow to ...",
