@@ -50,6 +50,20 @@
       ]
     },
     {
+      "id": "in-ecommerce-shoptet",
+      "name": "IN-ECOMMERCE_SHOPTET",
+      "description": "Full workflow to ...",
+      "path": "in-ecommerce-shoptet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "out-crm-snowflake",
       "name": "OUT-CRM-SNOWFLAKE",
       "description": "Full workflow to ...",
