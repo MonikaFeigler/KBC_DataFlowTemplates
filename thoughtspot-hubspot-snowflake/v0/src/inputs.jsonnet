@@ -3,14 +3,14 @@
     {
       id: "ex-hubspot-crm-api-token",
       name: "API token",
-      description: "",
+      description: "Insert your API Token.",
       type: "string",
       kind: "hidden",
     },
     {
       id: "wr-snowflake-blob-storage-db-password",
-      name: "Db Password",
-      description: "",
+      name: "Database Password",
+      description: "Insert your password into database.",
       type: "string",
       kind: "hidden",
     },
