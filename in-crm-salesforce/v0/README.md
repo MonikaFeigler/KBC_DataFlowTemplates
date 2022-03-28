@@ -30,3 +30,6 @@ Creation of final snapshots from the auxiliary tables.
 ### ORCH: [IN-CRM-SALESFORCE] Orchestration: BDM Creation
 
 This orchestrator runs Salesforce CRM extractor and 3 snowflake transformations.
+
+## Business Data Model
+
