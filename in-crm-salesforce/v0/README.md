@@ -6,7 +6,7 @@ This is an end to end flow which is getting data from salesforce and transform t
 1. fill password and security token in salesforce extractor
 2. run orchestration
 
-## Included components:
+## Included components' configurations:
 
 Salesforce EX -> TR1 -> TR2 -> TR3 -> ORCH
 
