@@ -14,6 +14,82 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "in-crm-salesforce",
+      "name": "IN_CRM_SALESFORCE",
+      "description": "Full workflow to ...",
+      "path": "in-crm-salesforce",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        },
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "in-ecommerce-shopify",
+      "name": "IN-ECOMMERCE_SHOPIFY",
+      "description": "Full workflow to ...",
+      "path": "in-ecommerce-shopify",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "in-ecommerce-shoptet",
+      "name": "IN-ECOMMERCE_SHOPTET",
+      "description": "Full workflow to ...",
+      "path": "in-ecommerce-shoptet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "out-crm-snowflake",
+      "name": "OUT-CRM-SNOWFLAKE",
+      "description": "Full workflow to ...",
+      "path": "out-crm-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "thoughtspot-hubspot-snowflake",
+      "name": "THOUGHTSPOT-HUBSPOT-SNOWFLAKE",
+      "description": "Full workflow to ...",
+      "path": "thoughtspot-hubspot-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
     }
   ]
 }

@@ -3,7 +3,7 @@
     {
       id: "ex-hubspot-crm-api-token",
       name: "API token",
-      description: "",
+      description: "Insert your API Token.",
       type: "string",
       kind: "hidden",
     },
