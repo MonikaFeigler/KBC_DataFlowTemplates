@@ -1,1 +1,0 @@
- |ScaffoldId: ShoptetEcommerce|
