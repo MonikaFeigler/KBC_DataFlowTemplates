@@ -51,10 +51,16 @@
     },
     {
       "id": "in-ecommerce-shoptet",
-      "name": "IN-ECOMMERCE_SHOPTET",
+      "name": "IN-ECOMMERCE-SHOPTET",
       "description": "Full workflow to ...",
       "path": "in-ecommerce-shoptet",
       "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        },
         {
           "version": "0.0.1",
           "description": "",
