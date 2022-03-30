@@ -9,7 +9,7 @@
     },
     {
       id: "ex-hubspot-crm-period-from",
-      name: "Period from",
+      name: "Period from date",
       description: "Select period from which you want to get the data.",
       type: "string",
       kind: "select",
@@ -36,7 +36,7 @@
     {
       id: "wr-snowflake-blob-storage-db-host",
       name: "Hostname",
-      description: "",
+      description: "Insert database hostname.",
       type: "string",
       kind: "input",
       default: "keboola.west-europe.azure.snowflakecomputing.com",
@@ -44,7 +44,7 @@
     {
       id: "wr-snowflake-blob-storage-db-port",
       name: "Port",
-      description: "",
+      description: "Insert database port number.",
       type: "string",
       kind: "input",
       default: "443",
@@ -52,7 +52,7 @@
     {
       id: "wr-snowflake-blob-storage-db-user",
       name: "Username",
-      description: "",
+      description: "Insert database username.",
       type: "string",
       kind: "input",
       default: "KEBOOLA_WORKSPACE_13563692",
@@ -75,7 +75,7 @@
     {
       id: "wr-snowflake-blob-storage-db-schema",
       name: "Schema",
-      description: "",
+      description: "Insert database schema.",
       type: "string",
       kind: "input",
       default: "WORKSPACE_13563692",
@@ -83,7 +83,7 @@
     {
       id: "wr-snowflake-blob-storage-db-warehouse",
       name: "Warehouse",
-      description: "",
+      description: "Insert database warehouse.",
       type: "string",
       kind: "input",
       default: "KEBOOLA_PROD",
