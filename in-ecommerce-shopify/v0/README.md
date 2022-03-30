@@ -14,7 +14,7 @@ Shopify EX -> TR1 -> TR2 -> TR3 -> ORCH
 
 ### EX: [IN-ECOMMERCE-SHOPIFY] Extractor
 
-Extractor collect data from Shopify.
+Extractor collect data from Shopify about orders, products, inventory, and customers.
 
 ### TR1: [IN-ECOMMERCE-SHOPIFY] Transformation1: Prepare Input Tables
 
