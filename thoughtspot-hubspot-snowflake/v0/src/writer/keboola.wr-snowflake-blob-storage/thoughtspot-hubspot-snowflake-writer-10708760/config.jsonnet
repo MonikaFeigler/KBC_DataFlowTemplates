@@ -7,7 +7,7 @@
       driver: "snowflake",
       host: "keboola.west-europe.azure.snowflakecomputing.com",
       user: "KEBOOLA_WORKSPACE_13563692",
-      database: "KEBOOLA_6518",
+      database: Input("wr-snowflake-blob-storage-database"),
       "#password": Input("wr-snowflake-blob-storage-db-password"),
     },
   },

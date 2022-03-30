@@ -40,5 +40,13 @@
       type: "string",
       kind: "hidden",
     },
+    {
+      id: "wr-snowflake-blob-storage-database",
+      name: "Database Name",
+      description: "Insert your database name.",
+      type: "string",
+      kind: "input",
+      default: 'KEBOOLA_6518'
+    },
   ],
 }
