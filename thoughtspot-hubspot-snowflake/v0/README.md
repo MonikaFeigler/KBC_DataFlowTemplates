@@ -1,4 +1,6 @@
-### THOUGHTSPOT-HUBSPOT-SNOWFLAKE
+# THOUGHTSPOT-HUBSPOT-SNOWFLAKE
+
+This is an end to end flow for getting data from Hubspot and visualizing them in spotapp.
 
 ## Steps to make:
 1. Fill API Token and Period from date in Hubspot extractor
@@ -15,6 +17,7 @@ This extractor is getting data from HubSpot. It's an incremental update.
 
 ### TR: [THOUGHTSPOT-HUBSPOT-SNOWFLAKE] Transformation: Data Preparation
 
+The transformation is renaming and joining tables according to data model in spotapp.
 
 ### WR: [THOUGHTSPOT-HUBSPOT-SNOWFLAKE] Writer
 
