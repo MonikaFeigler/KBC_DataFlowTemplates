@@ -4,7 +4,7 @@ This is an end to end flow which is getting data from Shopify and transform them
 
 ## Steps to make:
 1. Setting up shopify extractor: adding credentials
-2. Setting up Snowflake database: create snowflake database provided by Keboola
+2. Setting up Snowflake database: create Snowflake database provided by Keboola
 3. Run orchestration
 
 ## Included components' configurations:
@@ -13,6 +13,7 @@ Shopify EX -> TR1 -> TR2 -> TR3 -> ORCH
 
 
 ### EX: [IN-ECOMMERCE-SHOPIFY] Extractor
+
 Extractor collect data from Shopify.
 
 ### TR1: [IN-ECOMMERCE-SHOPIFY] Transformation1: Prepare Input Tables
