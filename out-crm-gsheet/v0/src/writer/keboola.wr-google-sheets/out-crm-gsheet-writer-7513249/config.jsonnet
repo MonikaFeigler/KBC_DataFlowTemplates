@@ -1,11 +1,4 @@
-{
-  authorization: {
-    oauth_api: {
-      id: ConfigId("out-crm-gsheet-writer-7513249"),
-      version: 3,
-    },
-  },
-  parameters: {
+{ parameters: {
     tables: [
       {
         id: 56496,
