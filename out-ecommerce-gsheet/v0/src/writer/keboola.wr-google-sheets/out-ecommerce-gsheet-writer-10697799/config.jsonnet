@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      id: "13279723",
-      version: 3,
-    },
+    oauth_api: {},
   },
   parameters: {
     tables: [
