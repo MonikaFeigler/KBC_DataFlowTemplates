@@ -1,3 +1,0 @@
-{
-  name: "[OUT-ECOMMERCE-SNOWFLAKE] Writer /6031003",
-}

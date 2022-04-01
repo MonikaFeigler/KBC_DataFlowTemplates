@@ -1,4 +1,0 @@
-{
-  name: "New Phase",
-  dependsOn: [],
-}
