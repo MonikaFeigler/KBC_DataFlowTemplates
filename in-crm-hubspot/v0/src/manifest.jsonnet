@@ -16,18 +16,27 @@
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("in-crm-hubspot-transformation1-input-tables-creation-7513249"),
       path: "transformation/keboola.snowflake-transformation/in-crm-hubspot-transformation1-input-tables-creation-7513249",
+      metadata: {
+        "KBC.configuration.folderName": "[IN-CRM-HUBSPOT]"
+      },
       rows: [],
     },
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("in-crm-hubspot-transformation2-main-7513249"),
       path: "transformation/keboola.snowflake-transformation/in-crm-hubspot-transformation2-main-7513249",
+      metadata: {
+        "KBC.configuration.folderName": "[IN-CRM-HUBSPOT]"
+      },
       rows: [],
     },
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("in-crm-hubspot-transformation3-snapshots-7513249"),
       path: "transformation/keboola.snowflake-transformation/in-crm-hubspot-transformation3-snapshots-7513249",
+      metadata: {
+        "KBC.configuration.folderName": "[IN-CRM-HUBSPOT]"
+      },
       rows: [],
     },
   ],
