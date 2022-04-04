@@ -21,11 +21,11 @@ The transformation is renaming and joining tables according to data model in spo
 
 ### WR: [THOUGHTSPOT-HUBSPOT-SNOWFLAKE] Writer
 
-Writer loads transform data into Snowflake database.
+Writer loads transformed data into Snowflake database.
 
 ### ORCH: [THOUGHTSPOT-HUBSPOT-SNOWFLAKE] Orchestration: BDM Creation
 
-This orchestration includes Extractor, Transformation and Writer.
+This orchestration includes Extractor, Transformation and WTriter.
 
 ## Business Data Model
 
