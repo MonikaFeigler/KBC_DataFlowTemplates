@@ -51,7 +51,7 @@
       default: "windows-1250"
     },
     {
-      id: "ex-shoptet-permalink-src-delimiter",
+      id: "ex-shoptet-permalink-delimiter",
       name: "Source file delimiter",
       description: "Insert source file delimiter.",
       type: "string",
