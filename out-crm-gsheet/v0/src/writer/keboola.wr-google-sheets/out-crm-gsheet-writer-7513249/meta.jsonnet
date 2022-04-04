@@ -1,3 +1,3 @@
 {
-  name: "[OUT-CRM-GSHEET] Writer /7513249",
+  name: "[OUT-CRM-GSHEET] Writer /"+ConfigId("out-crm-gsheet-writer-7513249"),
 }
