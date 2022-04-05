@@ -1,5 +1,5 @@
 {
-  name: "Transformation 01",
+  name: "Transformation 1",
   dependsOn: [
     "001-extraction",
   ],
