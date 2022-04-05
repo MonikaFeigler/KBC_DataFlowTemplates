@@ -14,6 +14,7 @@
     call_properties: "",
     company_properties: "about_us, name, phone, facebook_company_page, city, country, website, industry, annualrevenue, linkedin_company_page, hs_lastmodifieddate, hubspot_owner_id, notes_last_updated, description, createdate, numberofemployees, hs_lead_status, founded_year, twitterhandle, linkedinbio",
     email_properties: "",
+    download_contact_associations: true,
     meeting_properties: "",
     endpoints: [
       "companies",
