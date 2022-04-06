@@ -6,7 +6,7 @@
   },
   parameters: {
     profiles: [],
-    outputBucket: "in.c-keboola-ex-google-analytics",
+    outputBucket: "in.c-kds-team-ex-google-analytics",
     queries: [
       {
         enabled: true,
