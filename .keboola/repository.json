@@ -126,6 +126,20 @@
       ]
     },
     {
+      "id": "thoughtspot-gaa-snowflake",
+      "name": "THOUGHTSPOT-GAA-SNOWFLAKE",
+      "description": "Full workflow to ...",
+      "path": "thoughtspot-gaa-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "thoughtspot-hubspot-snowflake",
       "name": "THOUGHTSPOT-HUBSPOT-SNOWFLAKE",
       "description": "Full workflow to ...",
