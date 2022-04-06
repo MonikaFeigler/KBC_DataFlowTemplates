@@ -1,1 +1,3 @@
-Transformed data tables from google analytics and google Adwords are loaded into snowflake DB in this configuration.
+## Description:
+
+Transformed data tables from Google Analytics are loaded into Snowflake database in this configuration.
