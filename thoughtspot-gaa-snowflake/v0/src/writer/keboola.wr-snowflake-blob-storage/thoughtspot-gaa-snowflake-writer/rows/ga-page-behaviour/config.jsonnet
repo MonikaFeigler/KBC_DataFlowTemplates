@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-GAA-google-analytics.ga_page_behaviour",
+    tableId: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_page_behaviour",
     dbName: "GA_PAGE_BEHAVIOUR",
     incremental: false,
     primaryKey: [],
@@ -149,8 +149,8 @@
             "ga_exits",
             "ga_pageValue",
           ],
-          destination: "out.c-GAA-google-analytics.ga_page_behaviour.csv",
-          source: "out.c-GAA-google-analytics.ga_page_behaviour",
+          destination: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_page_behaviour.csv",
+          source: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_page_behaviour",
         },
       ],
     },

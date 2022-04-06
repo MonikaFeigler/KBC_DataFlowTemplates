@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-GAA-google-analytics.ga_ad_analytics",
+    tableId: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_ad_analytics",
     dbName: "GA_AD_ANALYTICS",
     incremental: false,
     primaryKey: [],
@@ -158,8 +158,8 @@
             "ga_users",
             "ga_pageviews",
           ],
-          destination: "out.c-GAA-google-analytics.ga_ad_analytics.csv",
-          source: "out.c-GAA-google-analytics.ga_ad_analytics",
+          destination: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_ad_analytics.csv",
+          source: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_ad_analytics",
         },
       ],
     },

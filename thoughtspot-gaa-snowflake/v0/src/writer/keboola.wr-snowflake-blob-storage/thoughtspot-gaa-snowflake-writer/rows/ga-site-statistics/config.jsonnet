@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-GAA-google-analytics.ga_site_statistics",
+    tableId: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_site_statistics",
     dbName: "GA_SITE_STATISTICS",
     incremental: false,
     primaryKey: [],
@@ -167,8 +167,8 @@
             "ga_avgServerConnectionTime",
             "ga_serverResponseTime",
           ],
-          destination: "out.c-GAA-google-analytics.ga_site_statistics.csv",
-          source: "out.c-GAA-google-analytics.ga_site_statistics",
+          destination: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_site_statistics.csv",
+          source: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_site_statistics",
         },
       ],
     },

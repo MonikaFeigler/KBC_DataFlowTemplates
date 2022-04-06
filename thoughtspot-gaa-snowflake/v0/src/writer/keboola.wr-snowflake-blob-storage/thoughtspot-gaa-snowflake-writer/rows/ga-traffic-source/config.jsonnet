@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-GAA-google-analytics.ga_traffic_source",
+    tableId: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_traffic_source",
     dbName: "GA_TRAFFIC_SOURCE",
     incremental: false,
     primaryKey: [],
@@ -149,8 +149,8 @@
             "ga_pageviews",
             "ga_organicSearches",
           ],
-          destination: "out.c-GAA-google-analytics.ga_traffic_source.csv",
-          source: "out.c-GAA-google-analytics.ga_traffic_source",
+          destination: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_traffic_source.csv",
+          source: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_traffic_source",
         },
       ],
     },

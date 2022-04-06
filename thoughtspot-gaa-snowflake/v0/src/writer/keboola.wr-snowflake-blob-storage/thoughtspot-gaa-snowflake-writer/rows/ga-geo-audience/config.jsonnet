@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-GAA-google-analytics.ga_geo_audience",
+    tableId: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_geo_audience",
     dbName: "GA_GEO_AUDIENCE",
     incremental: false,
     primaryKey: [],
@@ -140,8 +140,8 @@
             "ga_sessionDuration",
             "ga_pageviews",
           ],
-          destination: "out.c-GAA-google-analytics.ga_geo_audience.csv",
-          source: "out.c-GAA-google-analytics.ga_geo_audience",
+          destination: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_geo_audience.csv",
+          source: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".ga_geo_audience",
         },
       ],
     },

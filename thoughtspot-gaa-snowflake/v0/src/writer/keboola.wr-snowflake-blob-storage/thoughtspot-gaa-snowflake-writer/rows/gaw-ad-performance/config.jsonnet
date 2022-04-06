@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-GAA-adwords.gaw_ad_performance",
+    tableId: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".gaw_ad_performance",
     dbName: "GAW_AD_PERFORMANCE",
     incremental: false,
     primaryKey: [],
@@ -149,8 +149,8 @@
             "gaw_conversions",
             "gaw_interactions",
           ],
-          destination: "out.c-GAA-adwords.gaw_ad_performance.csv",
-          source: "out.c-GAA-adwords.gaw_ad_performance",
+          destination: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".gaw_ad_performance.csv",
+          source: "out.c-thoughtspot-wr-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".gaw_ad_performance",
         },
       ],
     },
