@@ -17,7 +17,7 @@ This extractor is getting data from Google Analytics . It's an incremental updat
 
 ### TR: [THOUGHTSPOT-GAA-SNOWFLAKE] Transformation
 
-This transformation is forming data from google analytics into requested shape and adding data from google Adwords with performance statistics.
+This transformation is forming data from google analytics into requested shape.
 
 ### WR: [THOUGHTSPOT-GAA-SNOWFLAKE] Writer
 
