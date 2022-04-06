@@ -1,3 +1,3 @@
 {
-  name: "[THOUGHTSPOT-GAA-SNOWFLAKE] Orchestration",
+  name: "[THOUGHTSPOT-GAA-SNOWFLAKE] Orchestration /" + ConfigId("thoughtspot-gaa-snowflake-extractor"),
 }
