@@ -3,7 +3,7 @@
     {
       id: "wr-snowflake-blob-storage-db-host",
       name: "Hostname",
-      description: "Insert databse hostname.",
+      description: "Insert database hostname.",
       type: "string",
       kind: "input",
       default: "keboola.west-europe.azure.snowflakecomputing.com",
