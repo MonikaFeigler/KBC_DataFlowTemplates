@@ -25,7 +25,7 @@ Writer loads transformed data into Snowflake database.
 
 ### ORCH: [THOUGHTSPOT-HUBSPOT-SNOWFLAKE] Orchestration: BDM Creation
 
-This orchestration includes Extractor, Transformation and WTriter.
+This orchestration includes Extractor, Transformation and Writer.
 
 ## Business Data Model
 
