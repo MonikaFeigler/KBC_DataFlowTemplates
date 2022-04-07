@@ -13,11 +13,11 @@ EX -> TR -> WR –> ORCH
 
 ### EX: [THOUGHTSPOT-GAA-SNOWFLAKE] Extractor
 
-This extractor is getting data from Google Analytics . It's an incremental update.
+This extractor is getting data from Google Analytics. It's an incremental update.
 
 ### TR: [THOUGHTSPOT-GAA-SNOWFLAKE] Transformation
 
-This transformation is forming data from google analytics into requested shape.
+This transformation is forming data from Google Analytics into requested shape.
 
 ### WR: [THOUGHTSPOT-GAA-SNOWFLAKE] Writer
 
