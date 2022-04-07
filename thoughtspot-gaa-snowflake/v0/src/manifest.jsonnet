@@ -19,6 +19,29 @@
       rows: [],
     },
     {
+      componentId: "keboola.variables",
+      id: ConfigId("variables-definition-for-keboola-snowflake-transformation"),
+      path: "variables",
+      relations: [
+        {
+          componentId: "keboola.snowflake-transformation",
+          configId: ConfigId("thoughtspot-gaa-snowflake-transformation"),
+          type: "variablesFor",
+        },
+      ],
+      rows: [
+        {
+          id: ConfigRowId("default-values"),
+          path: "values/default-values",
+          relations: [
+            {
+              type: "variablesValuesFor",
+            },
+          ],
+        },
+      ],
+    },
+    {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("thoughtspot-gaa-snowflake-writer"),
       path: "writer/keboola.wr-snowflake-blob-storage/thoughtspot-gaa-snowflake-writer",

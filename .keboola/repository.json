@@ -126,6 +126,34 @@
       ]
     },
     {
+      "id": "test",
+      "name": "test",
+      "description": "Full workflow to ...",
+      "path": "test",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "test2",
+      "name": "test2",
+      "description": "Full workflow to ...",
+      "path": "test2",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "thoughtspot-gaa-snowflake",
       "name": "THOUGHTSPOT-GAA-SNOWFLAKE",
       "description": "Full workflow to ...",

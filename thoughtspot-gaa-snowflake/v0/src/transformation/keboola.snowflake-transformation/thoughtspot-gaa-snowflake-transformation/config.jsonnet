@@ -4,7 +4,6 @@
     input: {
       tables: [
         {
-          changed_since: "-7 days",
           columns: [],
           destination: "raw_ad_analytics",
           source: "in.c-kds-team-ex-google-analytics-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".raw_ad_analytics",
@@ -13,7 +12,6 @@
           where_values: [],
         },
         {
-          changed_since: "-7 days",
           columns: [],
           destination: "raw_demographic_audience",
           source: "in.c-kds-team-ex-google-analytics-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".raw_demographic_audience",
@@ -22,7 +20,6 @@
           where_values: [],
         },
         {
-          changed_since: "-7 days",
           columns: [],
           destination: "raw_geo_audience",
           source: "in.c-kds-team-ex-google-analytics-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".raw_geo_audience",
@@ -31,7 +28,6 @@
           where_values: [],
         },
         {
-          changed_since: "-7 days",
           columns: [],
           destination: "raw_page_behaviour",
           source: "in.c-kds-team-ex-google-analytics-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".raw_page_behaviour",
@@ -40,7 +36,6 @@
           where_values: [],
         },
         {
-          changed_since: "-7 days",
           columns: [],
           destination: "raw_site_statistics",
           source: "in.c-kds-team-ex-google-analytics-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".raw_site_statistics",
@@ -49,7 +44,6 @@
           where_values: [],
         },
         {
-          changed_since: "-7 days",
           columns: [],
           destination: "raw_traffic_source",
           source: "in.c-kds-team-ex-google-analytics-" + ConfigId("thoughtspot-gaa-snowflake-extractor") + ".raw_traffic_source",
