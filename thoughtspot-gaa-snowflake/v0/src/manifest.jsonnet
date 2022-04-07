@@ -70,10 +70,6 @@
           id: ConfigRowId("ga-traffic-source"),
           path: "rows/ga-traffic-source",
         },
-        {
-          id: ConfigRowId("gaw-ad-performance"),
-          path: "rows/gaw-ad-performance",
-        },
       ],
     },
   ],
