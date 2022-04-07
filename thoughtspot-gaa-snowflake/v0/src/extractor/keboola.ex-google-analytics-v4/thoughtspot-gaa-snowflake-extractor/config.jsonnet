@@ -6,7 +6,7 @@
   },
   parameters: {
     profiles: [],
-    outputBucket: "",
+    outputBucket: "in.c-kds-team-ex-google-analytics-" + ConfigId("thoughtspot-gaa-snowflake-extractor"),
     queries: [
       {
         enabled: true,
