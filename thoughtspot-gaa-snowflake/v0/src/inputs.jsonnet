@@ -6,7 +6,6 @@
       description: "Insert database hostname.",
       type: "string",
       kind: "input",
-      default: "keboola.west-europe.azure.snowflakecomputing.com",
     },
     {
       id: "wr-snowflake-blob-storage-db-port",
@@ -22,7 +21,6 @@
       description: "Insert database username.",
       type: "string",
       kind: "input",
-      default: "KEBOOLA_WORKSPACE_13563692",
     },
     {
       id: "wr-snowflake-blob-storage-db-password",
@@ -37,7 +35,6 @@
       description: "Insert your database name.",
       type: "string",
       kind: "input",
-      default: 'KEBOOLA_6518'
     },
     {
       id: "wr-snowflake-blob-storage-db-schema",
@@ -45,7 +42,6 @@
       description: "Insert database schema.",
       type: "string",
       kind: "input",
-      default: "WORKSPACE_13563692",
     },
     {
       id: "wr-snowflake-blob-storage-db-warehouse",
@@ -53,7 +49,6 @@
       description: "Insert database warehouse.",
       type: "string",
       kind: "input",
-      default: "KEBOOLA_PROD",
     },
   ],
 }
