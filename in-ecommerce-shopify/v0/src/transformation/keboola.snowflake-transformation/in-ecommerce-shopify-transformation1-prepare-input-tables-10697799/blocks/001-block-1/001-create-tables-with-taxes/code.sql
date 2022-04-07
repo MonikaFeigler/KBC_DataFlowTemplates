@@ -12,7 +12,7 @@ CREATE OR REPLACE TABLE "fulfillment_line_item_tax_lines" (
 	"title" VARCHAR(16777216)	
 );
 
-create or replace TABLE "line_item_tax_lines" (
+CREATE OR REPLACE TABLE "line_item_tax_lines" (
   "channel_liable" VARCHAR(16777216),
   "extraction_time" VARCHAR(16777216),
   "line_item_id" VARCHAR(16777216),
@@ -26,7 +26,7 @@ create or replace TABLE "line_item_tax_lines" (
 	"title" VARCHAR(16777216)	
 );
 
-create or replace TABLE "order_tax_lines" (
+CREATE OR REPLACE TABLE "order_tax_lines" (
   "channel_liable" VARCHAR(16777216),
   "extraction_time" VARCHAR(16777216),
   "order_id" VARCHAR(16777216),
@@ -40,7 +40,7 @@ create or replace TABLE "order_tax_lines" (
 	"title" VARCHAR(16777216)	
 );
 
-create or replace TABLE "fulfillment_line_item_discount_allocations" (
+CREATE OR REPLACE TABLE "fulfillment_line_item_discount_allocations" (
   "amount" VARCHAR(16777216),
 	"amount_set__presentment_money__amount"	VARCHAR(16777216),
 	"amount_set__presentment_money__currency_code"	VARCHAR(16777216),
@@ -53,7 +53,7 @@ create or replace TABLE "fulfillment_line_item_discount_allocations" (
 	"title" VARCHAR(16777216)	
 );
 
-create or replace table "line_item_discount_allocations" (
+CREATE OR REPLACE TABLE "line_item_discount_allocations" (
   "amount"	VARCHAR(16777216),
 	"row_nr"	VARCHAR(16777216),
 	"line_item_id"	VARCHAR(16777216),
@@ -65,7 +65,7 @@ create or replace table "line_item_discount_allocations" (
 	"discount_application_index"	VARCHAR(16777216)
 );
 
-create table "customer_addresses" (
+CREATE TABLE "customer_addresses" (
 "phone" VARCHAR(16777216),
 "name" VARCHAR(16777216),
 "province" VARCHAR(16777216),
@@ -86,7 +86,7 @@ create table "customer_addresses" (
 "first_name" VARCHAR(16777216)
   );
 
-create table "fulfillment_line_item" (
+CREATE TABLE "fulfillment_line_item" (
   "admin_graphql_api_id" VARCHAR(16777216),
 	"duties" VARCHAR(16777216),
 	"extraction_time" VARCHAR(16777216),
@@ -138,7 +138,7 @@ create table "fulfillment_line_item" (
 	"destination_location__country_code" VARCHAR(16777216)
   );
 
-create table "order_discount_applications" (
+CREATE TABLE "order_discount_applications" (
 	"row_nr" VARCHAR(16777216),
 	"order_id" VARCHAR(16777216),
 	"value_type" VARCHAR(16777216),
@@ -151,7 +151,7 @@ create table "order_discount_applications" (
 	"allocation_method" VARCHAR(16777216)
 );
 
-create table "order_discount_codes" (
+CREATE TABLE "order_discount_codes" (
 	"amount" VARCHAR(16777216),
 	"row_nr" VARCHAR(16777216),
 	"type" VARCHAR(16777216),
@@ -160,7 +160,7 @@ create table "order_discount_codes" (
 	"extraction_time" VARCHAR(16777216)
 );
 
-create table "order_fulfillments" (
+CREATE TABLE "order_fulfillments" (
 	"name" VARCHAR(16777216),
 	"tracking_urls" VARCHAR(16777216),
 	"service" VARCHAR(16777216),
