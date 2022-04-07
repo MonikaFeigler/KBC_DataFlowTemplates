@@ -1,3 +1,3 @@
 ## Description:
 
-This transformation is forming data from google analytics into requested shape.
+This transformation is forming data from Google Analytics into requested shape.
