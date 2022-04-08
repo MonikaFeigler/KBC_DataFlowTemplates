@@ -36,6 +36,20 @@
       ]
     },
     {
+      "id": "in-ecommerce-facebook",
+      "name": "IN-ECOMMERCE-FACEBOOK",
+      "description": "Full workflow to ...",
+      "path": "in-ecommerce-facebook",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "in-ecommerce-shopify",
       "name": "IN-ECOMMERCE_SHOPIFY",
       "description": "Full workflow to ...",
