@@ -1,2 +1,7 @@
+## Credentials:
+
+Authorise your Google account.
+
 ## Description:
-This writer loads transformed Facebook data into Google sheet.
+
+This writer loads transformed marketing data into Google sheet.
