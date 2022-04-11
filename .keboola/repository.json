@@ -154,6 +154,20 @@
       ]
     },
     {
+      "id": "out-ecommerce-gsheet-marketing",
+      "name": "OUT-ECOMMERCE-GSHEET-MARKETING",
+      "description": "Full workflow to ...",
+      "path": "out-ecommerce-gsheet-marketing",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "out-ecommerce-snowflake",
       "name": "OUT-ECOMMERCE-SNOWFLAKE",
       "description": "Full workflow to ...",
