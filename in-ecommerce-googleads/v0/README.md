@@ -13,7 +13,7 @@ Google ads EX -> TR -> ORCH
 
 ### EX: [IN-ECOMMERCE-GOOGLEADS] Extractor
 
-This extractor is getting data about Google ads monthly insights and insights for the last 90 days.
+This extractor is getting data about Google ads insights.
 
 ### TR: [IN-ECOMMERCE-GOOGLEADS] Transformation
 
