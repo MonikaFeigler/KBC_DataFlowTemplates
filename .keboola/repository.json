@@ -78,6 +78,20 @@
       ]
     },
     {
+      "id": "in-ecommerce-sklik",
+      "name": "IN-ECOMMERCE-SKLIK",
+      "description": "Full workflow to ...",
+      "path": "in-ecommerce-sklik",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "out-crm-gsheet",
       "name": "OUT-CRM-GSHEET",
       "description": "Full workflow to ...",
