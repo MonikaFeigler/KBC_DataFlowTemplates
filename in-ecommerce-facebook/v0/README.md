@@ -15,7 +15,7 @@ Facebook ads EX -> TR -> ORCH
 
 This extractor is getting data about facebook ads monthly insights and insights for the last 90 days.
 
-### TR1: [IN-ECOMMERCE-FACEBOOK] Transformation
+### TR: [IN-ECOMMERCE-FACEBOOK] Transformation
 
 Within this transformation is prepared facebook ads data into BDM marketing format.
 
