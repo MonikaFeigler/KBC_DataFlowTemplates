@@ -50,6 +50,20 @@
       ]
     },
     {
+      "id": "in-ecommerce-googleads",
+      "name": "IN-ECOMMERCE-GOOGLEADS",
+      "description": "Full workflow to ...",
+      "path": "in-ecommerce-googleads",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "in-ecommerce-shopify",
       "name": "IN-ECOMMERCE_SHOPIFY",
       "description": "Full workflow to ...",
