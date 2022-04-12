@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "in.c-kds-team-ex-google-analytics-15471164.raw_page_behaviour",
+    tableId: "in.c-kds-team-ex-google-analytics-" + ConfigId("out-thoughtspot-gaa-snowflake-writer-15471164") + ".raw_page_behaviour",
     dbName: "raw_page_behaviour",
     incremental: false,
     primaryKey: [
@@ -149,8 +149,8 @@
     input: {
       tables: [
         {
-          source: "in.c-kds-team-ex-google-analytics-15471164.raw_page_behaviour",
-          destination: "in.c-kds-team-ex-google-analytics-15471164.raw_page_behaviour.csv",
+          source: "in.c-kds-team-ex-google-analytics-" + ConfigId("out-thoughtspot-gaa-snowflake-writer-15471164") + ".raw_page_behaviour",
+          destination: "in.c-kds-team-ex-google-analytics-" + ConfigId("out-thoughtspot-gaa-snowflake-writer-15471164") + ".raw_page_behaviour.csv",
           columns: [
             "id",
             "idProfile",
