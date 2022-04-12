@@ -1,13 +1,13 @@
 {
   parameters: {
     db: {
-      port: "443",
-      schema: "WORKSPACE_13563692",
-      warehouse: "KEBOOLA_PROD",
+      port: Input("wr-snowflake-blob-storage-db-port"),
+      schema: Input("wr-snowflake-blob-storage-db-schema"),
+      warehouse: Input("wr-snowflake-blob-storage-db-warehouse"),
       driver: "snowflake",
-      host: "keboola.west-europe.azure.snowflakecomputing.com",
-      user: "KEBOOLA_WORKSPACE_13563692",
-      database: "KEBOOLA_6518",
+      host: Input("wr-snowflake-blob-storage-db-host"),
+      user: Input("wr-snowflake-blob-storage-db-user"),
+      database: Input("wr-snowflake-blob-storage-database"),
       "#password": Input("wr-snowflake-blob-storage-db-password"),
     },
   },

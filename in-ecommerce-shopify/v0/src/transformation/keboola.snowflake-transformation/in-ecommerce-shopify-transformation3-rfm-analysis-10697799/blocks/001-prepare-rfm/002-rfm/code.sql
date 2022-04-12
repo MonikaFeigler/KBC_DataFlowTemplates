@@ -20,7 +20,7 @@ CREATE OR REPLACE TEMPORARY TABLE CALENDAR_DAILY AS
     (SELECT CLIENT.*
           , SNAPSHOT_DATE
      FROM CALENDAR
-              LEFT JOIN (SELECT DISTINCT C.ORDER_CUSTOMER_EMAIL AS CUSTOMER_ID
+              LEFT JOIN (SELECT DISTINCT C.CUSTOMER_ID AS CUSTOMER_ID
                          FROM "bdm_orders" C) CLIENT);
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------

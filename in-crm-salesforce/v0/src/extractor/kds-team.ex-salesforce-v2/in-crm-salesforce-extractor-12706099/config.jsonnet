@@ -1,9 +1,9 @@
 {
   parameters: {
     sandbox: false,
-    username: "adam.bako@keboola.com",
+    username: Input("ex-salesforce-v2-username"),
     "#password": Input("ex-salesforce-v2-password"),
-    api_version: "42.0",
+    api_version: Input("ex-salesforce-v2-api-version"),
     "#security_token": Input("ex-salesforce-v2-security-token"),
   },
 }

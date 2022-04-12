@@ -1,4 +1,4 @@
-CREATE TABLE "out_shopify" AS
+CREATE TABLE "out_shop" AS
 select 
 distinct
 CASE WHEN UPPER(split_part(split_part("order_status_url", 'https://',2),'.',1)) <> '' 

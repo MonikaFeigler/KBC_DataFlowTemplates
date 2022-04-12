@@ -1,3 +1,3 @@
 {
-  name: "OUT shopify",
+  name: "OUT shop",
 }

@@ -3,8 +3,8 @@
 This is an end to end flow which is getting data from salesforce and transform them so you can use them for visualisation in your BI tool or anywhere you want. 
 
 ## Steps to make:
-1. fill password and security token in salesforce extractor
-2. run orchestration
+1. Fill password and security token in Salesforce extractor
+2. Run orchestration
 
 ## Included components' configurations:
 
@@ -13,7 +13,7 @@ Salesforce EX -> TR1 -> TR2 -> TR3 -> ORCH
 
 ### EX: [IN-CRM-SALESFORCE] Extractor
 
-This extractor is getting data about account, contact, event, lead, opportunities, user from Salesforce.
+This extractor is getting data about account, contact, event, lead, opportunity, opportunity contact role, opportunity stage and user from Salesforce.
 
 ### TR1: [IN-CRM-SALESFORCE] Transformation1: Input Tables Creation
 

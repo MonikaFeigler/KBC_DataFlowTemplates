@@ -1,5 +1,5 @@
 {
-  name: "Transformation 03",
+  name: "Transformation 3",
   dependsOn: [
     "003-transformation-02",
   ],

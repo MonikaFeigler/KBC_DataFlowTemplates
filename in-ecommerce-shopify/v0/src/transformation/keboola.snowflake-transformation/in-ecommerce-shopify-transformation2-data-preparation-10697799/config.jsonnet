@@ -156,7 +156,7 @@
           columns: [],
         },
         {
-          source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".customer_adresses",
+          source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".customer_addresses",
           destination: "customer_addresses",
           where_column: "",
           where_values: [],

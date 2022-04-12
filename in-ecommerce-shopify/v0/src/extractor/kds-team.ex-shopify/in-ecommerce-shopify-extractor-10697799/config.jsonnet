@@ -1,6 +1,6 @@
 {
   parameters: {
-    shop: "",
+    shop: Input("ex-shopify-shop"),
     endpoints: {
       events: [],
       orders: true,
@@ -12,8 +12,8 @@
     },
     "#api_token": Input("ex-shopify-api-token"),
     loading_options: {
-      date_to: "now",
-      date_since: "1 week ago",
+      date_to: Input("ex-shopify-period-to-date"),
+      date_since: Input("ex-shopify-period-from-date"),
       incremental_output: 1,
     },
     debug: false,

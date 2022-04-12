@@ -1,6 +1,4 @@
 {
-  name: "Preparation of Input tables when not available from Extractor",
-  dependsOn: [
-    "001-extraction",
-  ],
+  name: "Transformation 1",
+  dependsOn: [],
 }
