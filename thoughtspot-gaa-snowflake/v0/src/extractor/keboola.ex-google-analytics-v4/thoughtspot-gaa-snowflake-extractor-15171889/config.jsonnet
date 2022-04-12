@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      version: 3,
-      id: ConfigId("thoughtspot-gaa-snowflake-extractor-15171889"),
-    },
+    oauth_api: {},
   },
   parameters: {
     outputBucket: "in.c-kds-team-ex-google-analytics-" + ConfigId("thoughtspot-gaa-snowflake-extractor-15171889"),
