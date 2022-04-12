@@ -210,6 +210,20 @@
       ]
     },
     {
+      "id": "out-thoughtspot-gaa-bigquery",
+      "name": "OUT-THOUGHTSPOT-GAA-BIGQUERY",
+      "description": "Full workflow to ...",
+      "path": "out-thoughtspot-gaa-bigquery",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "out-thoughtspot-gaa-snowflake",
       "name": "OUT-THOUGHTSPOT-GAA-SNOWFLAKE",
       "description": "Full workflow to ...",
