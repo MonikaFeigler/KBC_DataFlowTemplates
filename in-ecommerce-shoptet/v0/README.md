@@ -32,5 +32,3 @@ This orchestrator gets data from Shopify Extractor, transform them, run RFM anal
 
 
 
-
-
