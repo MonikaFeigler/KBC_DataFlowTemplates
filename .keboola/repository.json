@@ -106,6 +106,20 @@
       ]
     },
     {
+      "id": "in-thoughtspot-gaa",
+      "name": "IN-THOUGHTSPOT-GAA",
+      "description": "Full workflow to ...",
+      "path": "in-thoughtspot-gaa",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "out-crm-gsheet",
       "name": "OUT-CRM-GSHEET",
       "description": "Full workflow to ...",
