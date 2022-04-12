@@ -20,7 +20,6 @@
       description: "Fill your Sklik username.",
       type: "string",
       kind: "input",
-      default: "monicka.kratochvilova@seznam.cz",
     },
      {
       id: "ex-sklik-password",
