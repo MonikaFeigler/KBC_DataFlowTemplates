@@ -1,3 +1,3 @@
 ## Description:
 
-This orchestration contains writer which loads marketing data into Google sheet.
+This orchestration includes writer which loads transformed marketing data into Google sheet.
