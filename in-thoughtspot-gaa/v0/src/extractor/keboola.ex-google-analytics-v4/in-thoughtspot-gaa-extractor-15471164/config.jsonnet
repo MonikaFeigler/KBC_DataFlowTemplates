@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      id: ConfigId("in-thoughtspot-gaa-extractor-15471164"),
-      version: 3,
-    },
+    oauth_api: {},
   },
   parameters: {
     outputBucket: "in.c-kds-team-ex-google-analytics-" + ConfigId("in-thoughtspot-gaa-extractor-15471164"),
