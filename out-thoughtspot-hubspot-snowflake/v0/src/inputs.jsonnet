@@ -32,7 +32,7 @@
       kind: "hidden",
     },
     {
-      id: "wr-snowflake-blob-storage-database",
+      id: "wr-snowflake-blob-storage-db-database",
       name: "Database Name",
       description: "Insert your database name.",
       type: "string",
