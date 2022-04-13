@@ -34,11 +34,11 @@ Creation of final snapshots from the auxiliary tables.
 
 Orchestrator runs HubSpot CRM extractor and 3 snowflake transformations.
 
-### WR: [OUT-CRM-GSHEET] Writer
+### WR: [OUT-CRM-GSHEET] Writer OR WR: [OUT-CRM-SNOWFLAKE] Writer
 
 Writer load data into a Google sheet or snowflake database.
 
-### ORCH: [OUT-CRM-GSHEET] Orchestration: BDM Usage
+### ORCH: [OUT-CRM-GSHEET] Orchestration: BDM Usage OR [OUT-CRM-SNOWFLAKE] Orchestration: BDM Usage
 
 This orchestration use writer to load created CRM BDM to Google sheet or snowflake database.
 
