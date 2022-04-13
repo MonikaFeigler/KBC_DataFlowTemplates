@@ -126,6 +126,20 @@
       ]
     },
     {
+      "id": "in-thoughtspot-hubspot",
+      "name": "IN-THOUGHTSPOT-HUBSPOT",
+      "description": "Full workflow to ...",
+      "path": "in-thoughtspot-hubspot",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "out-crm-gsheet",
       "name": "OUT-CRM-GSHEET",
       "description": "Full workflow to ...",
