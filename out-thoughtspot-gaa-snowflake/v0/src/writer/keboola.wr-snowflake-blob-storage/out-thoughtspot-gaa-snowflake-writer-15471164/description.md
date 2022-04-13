@@ -1,2 +1,4 @@
 ## Description:
-Data load to Snowflake DB.
+
+Writer loads transformed data to a Snowflake database.
+
