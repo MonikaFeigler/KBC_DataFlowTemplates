@@ -13,6 +13,12 @@
       rows: [],
     },
     {
+      componentId: "keboola.orchestrator",
+      id: ConfigId("keboola-crm-hubspot-orchestration-7513249"),
+      path: "other/keboola.orchestrator/keboola-crm-hubspot-orchestration-7513249",
+      rows: [],
+    },
+    {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("in-crm-hubspot-transformation1-input-tables-creation-7513249"),
       path: "transformation/keboola.snowflake-transformation/in-crm-hubspot-transformation1-input-tables-creation-7513249",
