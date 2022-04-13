@@ -15,5 +15,26 @@
       kind: "input",
       default: "1 month ago",
     },
+    {
+      id: "select-writer",
+      name: "Select writer",
+      description: "Select where do you want to load data from this template. You can choose none, one or more options.",
+      type: "string[]",
+      kind: "multiselect",
+      options: [
+        {
+          id: 'none',
+          name: 'None',
+        },
+        {
+          id: 'google-sheet',
+          name: 'Google Sheet',
+        },
+        {
+          id: 'snowflake-db',
+          name: 'Snowflake Database',
+        },
+      ],
+    },
   ],
 }
