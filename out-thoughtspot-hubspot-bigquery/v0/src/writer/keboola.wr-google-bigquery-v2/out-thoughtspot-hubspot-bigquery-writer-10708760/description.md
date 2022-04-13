@@ -1,1 +1,4 @@
-Created from [OUT-THOUGHTSPOT-GAA-BIGQUERY] Writer /15471164  version #11
+## Description:
+
+Writer loads transformed data to a BigQuery dataset.
+
