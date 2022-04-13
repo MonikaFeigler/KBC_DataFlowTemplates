@@ -1,6 +1,6 @@
-# IN-CRM-HUBSPOT
+# KEBOOLA-CRM-HUBSPOT
 
-This is an end to end flow which is getting data from Hubspot and transform them so you can use them for visualisation in your BI tool or anywhere you want. 
+This is an end to end flow which is getting data from Hubspot and transform them so you can use them for visualisation in your BI tool or anywhere you want (currently into a Google sheet and snowflake).
 
 ## Steps to make:
 1. Authorise extractor with API TOKEN
@@ -9,7 +9,7 @@ This is an end to end flow which is getting data from Hubspot and transform them
 
 ## Included components' configurations:
 
-Hubspot EX -> TR1 -> TR2 -> TR3 -> ORCH
+Hubspot EX -> TR1 -> TR2 -> TR3 -> WR -> ORCH
 
 
 ### EX: [IN-CRM-HUBSPOT] Extractor
@@ -34,5 +34,16 @@ Creation of final snapshots from the auxiliary tables.
 
 Orchestrator runs HubSpot CRM extractor and 3 snowflake transformations.
 
+### WR: [OUT-CRM-GSHEET] Writer
+
+Writer load data into a Google sheet or snowflake database.
+
+### ORCH: [OUT-CRM-GSHEET] Orchestration: BDM Usage
+
+This orchestration use writer to load created CRM BDM to Google sheet or snowflake database.
+
+
 ## Business Data Model
+
+
 
