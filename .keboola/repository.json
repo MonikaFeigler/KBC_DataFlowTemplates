@@ -264,6 +264,20 @@
       ]
     },
     {
+      "id": "out-thoughtspot-hubspot-bigquery",
+      "name": "OUT-THOUGHTSPOT-HUBSPOT-BIGQUERY",
+      "description": "Full workflow to ...",
+      "path": "out-thoughtspot-hubspot-bigquery",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "test",
       "name": "test",
       "description": "Full workflow to ...",
