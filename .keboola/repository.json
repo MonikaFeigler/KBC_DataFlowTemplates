@@ -278,6 +278,20 @@
       ]
     },
     {
+      "id": "out-thoughtspot-hubspot-snowflake",
+      "name": "OUT-THOUGHTSPOT-HUBSPOT-SNOWFLAKE",
+      "description": "Full workflow to ...",
+      "path": "out-thoughtspot-hubspot-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "test",
       "name": "test",
       "description": "Full workflow to ...",
