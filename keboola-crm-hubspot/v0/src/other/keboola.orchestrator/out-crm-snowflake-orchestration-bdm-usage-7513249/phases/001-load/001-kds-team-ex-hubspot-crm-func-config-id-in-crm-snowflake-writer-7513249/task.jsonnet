@@ -1,8 +1,8 @@
 {
-  name: "keboola.wr-snowflake-blob-storage-" + ConfigId("out-crm-snowflake-writer-12706099"),
+  name: "keboola.wr-snowflake-blob-storage-" + ConfigId("in-crm-hubspot-extractor-7513249"),
   task: {
     mode: "run",
-    configPath: "writer/keboola.wr-snowflake-blob-storage/out-crm-snowflake-writer-12706099",
+    configPath: "writer/keboola.wr-snowflake-blob-storage/out-crm-snowflake-writer-7513249",
   },
   continueOnFailure: false,
   enabled: true,
