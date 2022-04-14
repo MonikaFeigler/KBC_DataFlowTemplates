@@ -48,7 +48,7 @@
      {
       componentId: "keboola.orchestrator",
       id: ConfigId("keboola-crm-salesforce-orchestration-12706099"),
-      path: "other/keboola.orchestrator/keboola-crm-hubspot-orchestration-12706099",
+      path: "other/keboola.orchestrator/keboola-crm-salesforce-orchestration-12706099",
       rows: [],
     },
     {
