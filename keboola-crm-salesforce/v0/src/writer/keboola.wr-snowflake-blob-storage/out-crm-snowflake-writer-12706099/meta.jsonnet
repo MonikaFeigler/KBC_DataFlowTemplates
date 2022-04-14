@@ -1,3 +1,3 @@
 {
-  name: "[OUT-CRM-SNOWFLAKE] Writer /"+ ConfigId("out-crm-snowflake-writer-12706099"),
+  name: "[OUT-CRM-SNOWFLAKE] Writer /"+ ConfigId("in-crm-salesforce-extractor-12706099"),
 }
