@@ -30,12 +30,30 @@
       kind: "hidden",
     },
     {
+      id: "select-writer",
+      name: "Select writer",
+      description: "Select where do you want to load data from this template. You can choose none, one or more options.",
+      type: "string",
+      kind: "select",
+      options: [
+        {
+          id: 'google-sheet',
+          name: 'Google Sheet',
+        },
+        {
+          id: 'snowflake-db',
+          name: 'Snowflake Database',
+        },
+      ],
+    },
+    {
       id: "wr-snowflake-blob-storage-db-host",
       name: "Hostname",
       description: "Insert database hostname",
       type: "string",
       kind: "input",
       default: "keboola.west-europe.azure.snowflakecomputing.com",
+      showif: "[select-writer] == 'snowflake-db'",
     },
     {
       id: "wr-snowflake-blob-storage-db-port",
@@ -44,6 +62,7 @@
       type: "string",
       kind: "input",
       default: "443",
+      showif: "[select-writer] == 'snowflake-db'",
     },
     {
       id: "wr-snowflake-blob-storage-db-user",
@@ -52,6 +71,7 @@
       type: "string",
       kind: "input",
       default: "KEBOOLA_WORKSPACE_12781571",
+      showif: "[select-writer] == 'snowflake-db'",
     },
     {
       id: "wr-snowflake-blob-storage-db-password",
@@ -59,6 +79,7 @@
       description: "Insert your password to the database.",
       type: "string",
       kind: "hidden",
+      showif: "[select-writer] == 'snowflake-db'",
     },
     {
       id: "wr-snowflake-blob-storage-db-database",
@@ -67,6 +88,7 @@
       type: "string",
       kind: "input",
       default: "KEBOOLA_6518",
+      showif: "[select-writer] == 'snowflake-db'",
     },
     {
       id: "wr-snowflake-blob-storage-db-schema",
@@ -75,6 +97,7 @@
       type: "string",
       kind: "input",
       default: "WORKSPACE_12781571",
+      showif: "[select-writer] == 'snowflake-db'",
     },
     {
       id: "wr-snowflake-blob-storage-db-warehouse",
@@ -83,6 +106,7 @@
       type: "string",
       kind: "input",
       default: "KEBOOLA_PROD",
+      showif: "[select-writer] == 'snowflake-db'",
     },
   ],
 }
