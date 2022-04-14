@@ -45,6 +45,12 @@
       path: "other/keboola.orchestrator/in-crm-salesforce-orchestration-bdm-creation-12706099",
       rows: [],
     },
+     {
+      componentId: "keboola.orchestrator",
+      id: ConfigId("keboola-crm-salesforce-orchestration-12706099"),
+      path: "other/keboola.orchestrator/keboola-crm-hubspot-orchestration-12706099",
+      rows: [],
+    },
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("in-crm-salesforce-transformation1-input-tables-creation-12706099"),
