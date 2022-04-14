@@ -30,10 +30,6 @@
           id: 'snowflake-db',
           name: 'Snowflake Database',
         },
-        {
-          id: 'none',
-          name: 'None',
-        },
       ],
     },
     {
