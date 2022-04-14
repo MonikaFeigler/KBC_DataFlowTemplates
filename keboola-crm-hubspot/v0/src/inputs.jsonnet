@@ -20,7 +20,7 @@
       name: "Select writer",
       description: "Select where do you want to load data from this template. You can choose none, one or more options.",
       type: "string[]",
-      default: ["none"],
+      default: ["google-sheet"],
       kind: "multiselect",
       options: [
         {
