@@ -69,24 +69,28 @@
       path: "transformation/keboola.snowflake-transformation/in-crm-salesforce-transformation3-snapshots-12706099",
       rows: [],
     },
+    if std.member(Input("select-writer"), "google-sheet") then
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("out-crm-gsheet-orchestration-bdm-usage-12706099"),
       path: "other/keboola.orchestrator/out-crm-gsheet-orchestration-bdm-usage-12706099",
       rows: [],
-    },
-    {
-      componentId: "keboola.wr-google-sheets",
-      id: ConfigId("out-crm-gsheet-writer-12706099"),
-      path: "writer/keboola.wr-google-sheets/out-crm-gsheet-writer-12706099",
-      rows: [],
-    },
+    }
+    else if std.member(Input("select-writer"), "snowflake-db") then
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("out-crm-snowflake-orchestration-bdm-usage-12706099"),
       path: "other/keboola.orchestrator/out-crm-snowflake-orchestration-bdm-usage-12706099",
       rows: [],
     },
+    if std.member(Input("select-writer"), "google-sheet") then
+    {
+      componentId: "keboola.wr-google-sheets",
+      id: ConfigId("out-crm-gsheet-writer-12706099"),
+      path: "writer/keboola.wr-google-sheets/out-crm-gsheet-writer-12706099",
+      rows: [],
+    }
+    else if std.member(Input("select-writer"), "snowflake-db") then
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("out-crm-snowflake-writer-12706099"),
