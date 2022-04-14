@@ -19,9 +19,8 @@
       id: "select-writer",
       name: "Select writer",
       description: "Select where do you want to load data from this template. You can choose none, one or more options.",
-      type: "string[]",
-      default: ["google-sheet"],
-      kind: "multiselect",
+      type: "string",
+      kind: "select",
       options: [
         {
           id: 'google-sheet',
@@ -30,6 +29,10 @@
         {
           id: 'snowflake-db',
           name: 'Snowflake Database',
+        },
+        {
+          id: 'none',
+          name: 'None',
         },
       ],
     },
