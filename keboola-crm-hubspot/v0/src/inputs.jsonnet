@@ -37,7 +37,7 @@
         },
       ],
     },
-    if std.member(Input("select-writer"), "snowflake-db") then
+    if std.member("select-writer", "snowflake-db") then
     {
       id: "wr-snowflake-blob-storage-db-host",
       name: "Hostname",
@@ -47,7 +47,7 @@
       default: "keboola.west-europe.azure.snowflakecomputing.com",
     }
     else {},
-    if std.member(Input("select-writer"), "snowflake-db") then
+    if std.member("select-writer", "snowflake-db") then
     {
       id: "wr-snowflake-blob-storage-db-port",
       name: "Port",
@@ -57,7 +57,7 @@
       default: "443",
     }
     else {},
-    if std.member(Input("select-writer"), "snowflake-db") then
+    if std.member("select-writer", "snowflake-db") then
     {
       id: "wr-snowflake-blob-storage-db-user",
       name: "Username",
@@ -67,16 +67,13 @@
       default: "KEBOOLA_WORKSPACE_12781571",
     }
     else {},
-    if std.member(Input("select-writer"), "snowflake-db") then
     {
       id: "wr-snowflake-blob-storage-db-password",
       name: "Database Password",
       description: "Insert your password to the database.",
       type: "string",
       kind: "hidden",
-    }
-    else {},
-    if std.member(Input("select-writer"), "snowflake-db") then
+    },
     {
       id: "wr-snowflake-blob-storage-db-database",
       name: "Database Name",
@@ -84,9 +81,7 @@
       type: "string",
       kind: "input",
       default: "KEBOOLA_6518",
-    }
-    else {},
-    if std.member(Input("select-writer"), "snowflake-db") then
+    },
     {
       id: "wr-snowflake-blob-storage-db-schema",
       name: "Schema",
@@ -94,9 +89,7 @@
       type: "string",
       kind: "input",
       default: "WORKSPACE_12781571",
-    }
-    else {},
-    if std.member(Input("select-writer"), "snowflake-db") then
+    },
     {
       id: "wr-snowflake-blob-storage-db-warehouse",
       name: "Warehouse",
@@ -104,7 +97,6 @@
       type: "string",
       kind: "input",
       default: "KEBOOLA_PROD",
-    }
-    else {},
+    },
   ],
 }
