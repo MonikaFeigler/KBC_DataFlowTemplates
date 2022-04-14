@@ -37,7 +37,6 @@
         },
       ],
     },
-    if std.member("select-writer", "snowflake-db") then
     {
       id: "wr-snowflake-blob-storage-db-host",
       name: "Hostname",
@@ -45,9 +44,7 @@
       type: "string",
       kind: "input",
       default: "keboola.west-europe.azure.snowflakecomputing.com",
-    }
-    else {},
-    if std.member("select-writer", "snowflake-db") then
+    },
     {
       id: "wr-snowflake-blob-storage-db-port",
       name: "Port",
@@ -55,9 +52,7 @@
       type: "string",
       kind: "input",
       default: "443",
-    }
-    else {},
-    if std.member("select-writer", "snowflake-db") then
+    },
     {
       id: "wr-snowflake-blob-storage-db-user",
       name: "Username",
@@ -65,8 +60,7 @@
       type: "string",
       kind: "input",
       default: "KEBOOLA_WORKSPACE_12781571",
-    }
-    else {},
+    },
     {
       id: "wr-snowflake-blob-storage-db-password",
       name: "Database Password",
