@@ -24,10 +24,6 @@
       kind: "multiselect",
       options: [
         {
-          id: 'none',
-          name: 'None',
-        },
-        {
           id: 'google-sheet',
           name: 'Google Sheet',
         },
