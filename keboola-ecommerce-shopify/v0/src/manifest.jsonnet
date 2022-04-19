@@ -15,7 +15,7 @@
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("keboola-ecommerce-shopify-orchestration-10697799"),
-      path: "other/keboola.orchestrator/keboola-crm-hubspot-orchestration-10697799",
+      path: "other/keboola.orchestrator/keboola-ecommerce-shopify-orchestration-10697799",
       rows: [],
     },
     {
