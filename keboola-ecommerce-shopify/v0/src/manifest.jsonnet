@@ -9,7 +9,7 @@
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("in-ecommerce-shopify-orchestrator-bdm-creation-10697799"),
-      path: "other/keboola.orchestrator/in-ecommerce-shopify-orchestrator-bdm-creation-10697799",
+      path: "other/keboola.orchestrator/in-ecommerce-shopify-orchestration-bdm-creation-10697799",
       rows: [],
     },
     {
