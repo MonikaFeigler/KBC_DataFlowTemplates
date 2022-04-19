@@ -1,3 +1,3 @@
 {
-  name: "[KEBOOLA-CRM-HUBSPOT] Orchestration /" + ConfigId("in-crm-hubspot-extractor-7513249"),
+  name: "[KEBOOLA-ECOMMERCE-SHOPTET] Orchestration /" + ConfigId("in-ecommerce-shoptet-extractor-6031003"),
 }
