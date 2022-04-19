@@ -1,2 +1,2 @@
 ## Description:
-Whole pipeline to e-commerce Shoptet.
+Whole pipeline to e-commerce Shopify.
