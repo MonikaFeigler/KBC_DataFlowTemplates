@@ -378,6 +378,20 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "keboola-thoughtspot-gaa",
+      "name": "KEBOOLA-THOUGHTSPOT-GAA",
+      "description": "Full workflow to ...",
+      "path": "keboola-thoughtspot-gaa",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
