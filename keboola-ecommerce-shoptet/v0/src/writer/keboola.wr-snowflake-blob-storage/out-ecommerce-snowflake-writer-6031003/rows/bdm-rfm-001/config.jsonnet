@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-ecommerce-wr-6031003.bdm_rfm",
+    tableId: "out.c-ecommerce-wr-"+ConfigId("in-ecommerce-shoptet-extractor-6031003")+".bdm_rfm",
     dbName: "bdm_rfm",
     incremental: false,
     primaryKey: [],
@@ -131,8 +131,8 @@
     input: {
       tables: [
         {
-          source: "out.c-ecommerce-wr-6031003.bdm_rfm",
-          destination: "out.c-ecommerce-wr-6031003.bdm_rfm.csv",
+          source: "out.c-ecommerce-wr-"+ConfigId("in-ecommerce-shoptet-extractor-6031003")+".bdm_rfm",
+          destination: "out.c-ecommerce-wr-"+ConfigId("in-ecommerce-shoptet-extractor-6031003")+".bdm_rfm.csv",
           columns: [
             "CUSTOMER_ID",
             "SNAPSHOT_DATE",
