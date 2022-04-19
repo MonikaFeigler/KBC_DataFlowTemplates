@@ -13,6 +13,12 @@
       rows: [],
     },
     {
+      componentId: "keboola.orchestrator",
+      id: ConfigId("keboola-ecommerce-shoptet-orchestration-6031003"),
+      path: "other/keboola.orchestrator/keboola-ecommerce-shoptet-orchestration-6031003",
+      rows: [],
+    },
+    {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("in-ecommerce-shoptet-transformation1-data-preparation-6031003"),
       path: "transformation/keboola.snowflake-transformation/in-ecommerce-shoptet-transformation1-data-preparation-6031003",
