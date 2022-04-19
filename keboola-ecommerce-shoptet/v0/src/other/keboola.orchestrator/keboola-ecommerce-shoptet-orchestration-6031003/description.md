@@ -1,2 +1,2 @@
 ## Description:
-Whole pipeline to CRM Hubspot.
+Whole pipeline to e-commerce Shoptet.
