@@ -364,6 +364,20 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "keboola-ecommerce-shopify",
+      "name": "KEBOOLA-ECOMMERCE-SHOPIFY",
+      "description": "Full workflow to ...",
+      "path": "keboola-ecommerce-shopify",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
