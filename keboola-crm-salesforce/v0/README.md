@@ -1,6 +1,6 @@
-# IN-CRM-SALESFORCE
+# KEBOOLA-CRM-SALESFORCE
 
-This is an end to end flow which is getting data from salesforce and transform them so you can use them for visualisation in your BI tool or anywhere you want. 
+This is an end to end flow which is getting data from salesforce and transform them so you can use them for visualisation in your BI tool or anywhere you want.
 
 ## Steps to make:
 1. Fill password and security token in Salesforce extractor
@@ -29,7 +29,16 @@ Creation of final snapshots from the auxiliary tables.
 
 ### ORCH: [IN-CRM-SALESFORCE] Orchestration: BDM Creation
 
-This orchestrator runs Salesforce CRM extractor and 3 snowflake transformations.
+This orchestrator runs Salesforce CRM extractor and 3 Snowflake transformations.
+
+### WR: [OUT-CRM-GSHEET] Writer OR WR: [OUT-CRM-SNOWFLAKE] Writer
+
+Writer load data into a Google sheet or Snowflake database.
+
+### ORCH: [OUT-CRM-GSHEET] Orchestration: BDM Usage OR [OUT-CRM-SNOWFLAKE] Orchestration: BDM Usage
+
+This orchestration use writer to load created CRM BDM to Google sheet or Snowflake database.
+
 
 ## Business Data Model
 
