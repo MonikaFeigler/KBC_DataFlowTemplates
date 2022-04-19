@@ -1,3 +1,3 @@
 {
-  name: "[OUT-ECOMMERCE-SNOWFLAKE] Writer /10697799",
+  name: "[OUT-ECOMMERCE-SNOWFLAKE] Writer /" + ConfigId("in-ecommerce-shoptet-extractor-6031003"),
 }

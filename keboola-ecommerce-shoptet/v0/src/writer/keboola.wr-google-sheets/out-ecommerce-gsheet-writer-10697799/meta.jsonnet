@@ -1,3 +1,3 @@
 {
-  name: "[OUT-ECOMMERCE-GSHEET] Writer  /"+ConfigId("out-ecommerce-gsheet-writer-10697799")
+  name: "[OUT-ECOMMERCE-GSHEET] Writer  /" + ConfigId("in-ecommerce-shoptet-extractor-6031003")
 }
