@@ -1,3 +1,3 @@
 {
-  name: "[KEBOOLA-ECOMMERCE-SHOPTET] Orchestration /" + ConfigId("in-ecommerce-shoptet-extractor-6031003"),
+  name: "[KEBOOLA-ECOMMERCE-SHOPIFY] Orchestration /" + ConfigId("in-ecommerce-shopify-extractor-10697799"),
 }
