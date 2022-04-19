@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-thoughtspot-wr-15471164.ga_traffic_source",
-          destination: "out.c-thoughtspot-wr-15471164.ga_traffic_source.csv",
+          source: "out.c-thoughtspot-wr-"+ConfigId("in-thoughtspot-gaa-extractor-15471164")+".ga_traffic_source",
+          destination: "out.c-thoughtspot-wr-"+ConfigId("in-thoughtspot-gaa-extractor-15471164")+".ga_traffic_source.csv",
           changed_since: "",
           columns: [
             "id_TBE",
@@ -32,7 +32,7 @@
     tables: [
       {
         dbName: "ga_traffic_source",
-        tableId: "out.c-thoughtspot-wr-15471164.ga_traffic_source",
+        tableId: "out.c-thoughtspot-wr-"+ConfigId("in-thoughtspot-gaa-extractor-15471164")+".ga_traffic_source",
         incremental: false,
         items: [
           {

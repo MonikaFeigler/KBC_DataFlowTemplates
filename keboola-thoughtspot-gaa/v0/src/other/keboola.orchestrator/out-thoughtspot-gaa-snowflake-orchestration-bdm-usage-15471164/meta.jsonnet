@@ -1,3 +1,3 @@
 {
-  name: "[OUT-THOUGHTSPOT-GAA-SNOWFLAKE] Orchestration: BDM Usage /" + ConfigId("out-thoughtspot-gaa-snowflake-writer-15471164"),
+  name: "[OUT-THOUGHTSPOT-GAA-SNOWFLAKE] Orchestration: BDM Usage /" + ConfigId("in-thoughtspot-gaa-extractor-15471164"),
 }

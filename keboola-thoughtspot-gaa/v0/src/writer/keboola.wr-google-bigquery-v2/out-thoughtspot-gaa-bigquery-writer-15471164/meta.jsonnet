@@ -1,3 +1,3 @@
 {
-  name: "[OUT-THOUGHTSPOT-GAA-BIGQUERY] Writer /" + ConfigId("out-thoughtspot-gaa-bigquery-writer-15471164"),
+  name: "[OUT-THOUGHTSPOT-GAA-BIGQUERY] Writer /" + ConfigId("in-thoughtspot-gaa-extractor-15471164"),
 }
