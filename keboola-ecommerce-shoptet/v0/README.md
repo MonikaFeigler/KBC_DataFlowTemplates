@@ -34,7 +34,7 @@ Writer load data into a Google sheet or Snowflake database.
 
 ### ORCH: [OUT-ECOMMERCE-GSHEET] Orchestration: BDM Usage OR [OUT-ECOMMERCE-SNOWFLAKE] Orchestration: BDM Usage
 
-This orchestration use writer to load created CRM BDM to Google sheet or Snowflake database.
+This orchestration use writer to load created e-commerce BDM to Google sheet or Snowflake database.
 
 
 ## Business Data Model

@@ -1,4 +1,4 @@
-# IN-ECOMMERCE-SHOPIFY
+# KEBOOLA-ECOMMERCE-SHOPIFY
 
 This is an end to end flow which is getting data from Shopify and transform them so you can use them for visualisation in your BI tool or anywhere you want. 
 
@@ -30,7 +30,16 @@ Basic RFM analysis is done in this transformation.
 
 ### ORCH: [IN-ECOMMERCE-SHOPIFY] Orchestration: BDM Creation
 
-This orchestrator gets data from Shopify Extractor, transform them, run RFM analysis and write data into Snowflake database. 
+This orchestrator gets data from Shopify Extractor, transform them, run RFM analysis and write data into Snowflake database.
+
+### WR: [OUT-ECOMMERCE-GSHEET] Writer OR WR: [OUT-ECOMMERCE-SNOWFLAKE] Writer
+
+Writer load data into a Google sheet or Snowflake database.
+
+### ORCH: [OUT-ECOMMERCE-GSHEET] Orchestration: BDM Usage OR [OUT-ECOMMERCE-SNOWFLAKE] Orchestration: BDM Usage
+
+This orchestration use writer to load created e-commerce BDM to Google sheet or Snowflake database.
+
 
 ## Business Data Model
 
