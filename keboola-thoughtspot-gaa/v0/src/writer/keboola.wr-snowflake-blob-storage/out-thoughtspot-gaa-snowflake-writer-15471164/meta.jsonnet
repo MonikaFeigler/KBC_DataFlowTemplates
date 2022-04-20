@@ -1,3 +1,3 @@
 {
-  name: "[OUT-THOUGHTSPOT-GAA-SNOWFLAKE] Writer /" + ConfigId("out-thoughtspot-gaa-snowflake-writer-15471164"),
+  name: "[OUT-THOUGHTSPOT-GAA-SNOWFLAKE] Writer /" + ConfigId("in-thoughtspot-gaa-extractor-15471164"),
 }
