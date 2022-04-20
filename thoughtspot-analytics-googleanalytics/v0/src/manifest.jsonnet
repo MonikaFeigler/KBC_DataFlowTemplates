@@ -14,8 +14,8 @@
     },
     {
       componentId: "keboola.orchestrator",
-      id: ConfigId("keboola-thoughtspot-gaa-orchestration-15471164"),
-      path: "other/keboola.orchestrator/keboola-thoughtspot-gaa-orchestration-15471164",
+      id: ConfigId("thoughtspot-analytics-googleanalytics-orchestration-15471164"),
+      path: "other/keboola.orchestrator/thoughtspot-analytics-googleanalytics-orchestration-15471164",
       rows: [],
     },
     {

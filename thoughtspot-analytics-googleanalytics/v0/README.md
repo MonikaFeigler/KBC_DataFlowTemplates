@@ -1,4 +1,4 @@
-# KEBOOLA-THOUGHTSPOT-GAA
+# THOUGHTSPOT-ANALYTICS-GOOGLEANALYTICS
 
 This is an end to end flow for getting data from Google Analytics, transforming and loading them. After that can be use BI tool for visualisationů
 
