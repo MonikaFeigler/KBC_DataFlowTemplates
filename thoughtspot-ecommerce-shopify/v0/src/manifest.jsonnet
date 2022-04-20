@@ -14,8 +14,8 @@
     },
     {
       componentId: "keboola.orchestrator",
-      id: ConfigId("keboola-ecommerce-shopify-orchestration-10697799"),
-      path: "other/keboola.orchestrator/keboola-ecommerce-shopify-orchestration-10697799",
+      id: ConfigId("thoughtspot-ecommerce-shopify-orchestration-10697799"),
+      path: "other/keboola.orchestrator/thoughtspot-ecommerce-shopify-orchestration-10697799",
       rows: [],
     },
     {

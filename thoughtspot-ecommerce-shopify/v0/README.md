@@ -1,4 +1,4 @@
-# KEBOOLA-ECOMMERCE-SHOPIFY
+# THOUGHTSPOT-ECOMMERCE-SHOPIFY
 
 This is an end to end flow which is getting data from Shopify and transform them so you can use them for visualisation in your BI tool or anywhere you want. 
 
