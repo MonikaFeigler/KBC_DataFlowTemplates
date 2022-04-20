@@ -14,8 +14,8 @@
     },
     {
       componentId: "keboola.orchestrator",
-      id: ConfigId("keboola-thoughtspot-hubspot-orchestration-10708760"),
-      path: "other/keboola.orchestrator/keboola-thoughtspot-hubspot-orchestration-10708760",
+      id: ConfigId("thoughtspot-crm-hubspot-orchestration-10708760"),
+      path: "other/keboola.orchestrator/thoughtspot-crm-hubspot-orchestration-10708760",
       rows: [],
     },
     {

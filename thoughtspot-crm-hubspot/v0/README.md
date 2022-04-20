@@ -1,4 +1,4 @@
-# IN-THOUGHTSPOT-HUBSPOT
+# THOUGHTSPOT-CRM-HUBSPOT
 
 This is an end to end flow for getting data from Hubspot and transforming them.
 

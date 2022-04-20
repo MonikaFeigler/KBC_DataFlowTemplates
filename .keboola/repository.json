@@ -394,10 +394,10 @@
       ]
     },
     {
-      "id": "keboola-thoughtspot-hubspot",
-      "name": "KEBOOLA-THOUGHTSPOT-HUBSPOT",
+      "id": "thoughtspot-crm-hubspot",
+      "name": "THOUGHTSPOT-CRM-HUBSPOT",
       "description": "Full workflow to ...",
-      "path": "keboola-thoughtspot-hubspot",
+      "path": "thoughtspot-crm-hubspot",
       "versions": [
         {
           "version": "0.0.1",
