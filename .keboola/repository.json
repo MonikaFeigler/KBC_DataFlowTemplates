@@ -380,10 +380,10 @@
       ]
     },
     {
-      "id": "keboola-thoughtspot-gaa",
-      "name": "KEBOOLA-THOUGHTSPOT-GAA",
+      "id": "thoughtspot-analytics-googleanalytics",
+      "name": "THOUGHTSPOT-ANALYTICS-GOOGLEANALYTICS",
       "description": "Full workflow to ...",
-      "path": "keboola-thoughtspot-gaa",
+      "path": "thoughtspot-analytics-googleanalytics",
       "versions": [
         {
           "version": "0.0.1",
