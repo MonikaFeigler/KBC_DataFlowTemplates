@@ -406,6 +406,20 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "thoughtspot-ecommerce-shopify",
+      "name": "THOUGHTSPOT-ECOMMERCE-SHOPIFY",
+      "description": "Full workflow to ...",
+      "path": "thoughtspot-ecommerce-shopify",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
