@@ -1,4 +1,4 @@
-if std.member(Input("select-writer"), "google-sheet") then
+if std.member(Input("select-writer"), "big-query") then
 {
   name: "keboola.orchestrator-" + ConfigId("in-thoughtspot-gaa-extractor-15471164"),
   task: {
