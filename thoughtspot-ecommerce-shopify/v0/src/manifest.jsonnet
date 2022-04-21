@@ -119,8 +119,8 @@
     else if std.member(Input("select-writer"), "snowflake-db") then
     {
       componentId: "keboola.wr-snowflake-blob-storage",
-      id: ConfigId("out-thoughtspot-hubspot-snowflake-writer-10708760"),
-      path: "writer/keboola.wr-snowflake-blob-storage/out-thoughtspot-hubspot-snowflake-writer-10708760",
+      id: ConfigId("out-ecommerce-snowflake-writer-10697799"),
+      path: "writer/keboola.wr-snowflake-blob-storage/out-ecommerce-snowflake-writer-10697799",
       rows: [
         {
           id: ConfigRowId("dim-date"),
