@@ -26,7 +26,7 @@
       path: "other/keboola.orchestrator/out-ecommerce-bigquery-orchestration-bdm-usage-10697799",
       rows: [],
     }
-    else if std.member(Input("select-writer"), "big-query") then
+    else if std.member(Input("select-writer"), "snowflake-db") then
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("out-ecommerce-snowflake-orchestration-bdm-usage-10697799"),
