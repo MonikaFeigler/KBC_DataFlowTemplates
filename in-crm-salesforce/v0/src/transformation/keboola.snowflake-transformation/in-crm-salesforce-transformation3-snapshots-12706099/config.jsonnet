@@ -16,7 +16,7 @@
     output: {
       tables: [
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".opportunity_snapshot",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".opportunity_snapshot",
           source: "out_opportunity_snapshot",
           primary_key: [
             "opportunity_id",
