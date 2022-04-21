@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-crm-wr-"+ConfigId("in-crm-hubspot-extractor-7513249")+".contact",
+    tableId: "out.c-crm-bdm-"+ConfigId("in-crm-hubspot-extractor-7513249")+".contact",
     dbName: "contact",
     incremental: false,
     primaryKey: [
@@ -69,8 +69,8 @@
     input: {
       tables: [
         {
-          source: "out.c-crm-wr-"+ConfigId("in-crm-hubspot-extractor-7513249")+".contact",
-          destination: "out.c-crm-wr-"+ConfigId("in-crm-hubspot-extractor-7513249")+".contact.csv",
+          source: "out.c-crm-bdm-"+ConfigId("in-crm-hubspot-extractor-7513249")+".contact",
+          destination: "out.c-crm-bdm-"+ConfigId("in-crm-hubspot-extractor-7513249")+".contact.csv",
           columns: [
             "contact_id",
             "contact",
