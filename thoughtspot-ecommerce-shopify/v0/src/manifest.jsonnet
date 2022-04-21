@@ -123,68 +123,48 @@
       path: "writer/keboola.wr-snowflake-blob-storage/out-ecommerce-snowflake-writer-10697799",
       rows: [
         {
-          id: ConfigRowId("dim-date"),
-          path: "rows/dim-date",
+          id: ConfigRowId("bdm-analyze-clv-by-order-count-001"),
+          path: "rows/bdm-analyze-clv-by-order-count-001",
         },
         {
-          id: ConfigRowId("hubspot-call"),
-          path: "rows/hubspot-call",
+          id: ConfigRowId("bdm-analyze-clv-by-time-from-previous-order-001"),
+          path: "rows/bdm-analyze-clv-by-time-from-previous-order-001",
         },
         {
-          id: ConfigRowId("hubspot-companies"),
-          path: "rows/hubspot-companies",
+          id: ConfigRowId("bdm-billing-type-001"),
+          path: "rows/bdm-billing-type-001",
         },
         {
-          id: ConfigRowId("hubspot-company-contact"),
-          path: "rows/hubspot-company-contact",
+          id: ConfigRowId("bdm-customers-001"),
+          path: "rows/bdm-customers-001",
         },
         {
-          id: ConfigRowId("hubspot-contact-form-submission"),
-          path: "rows/hubspot-contact-form-submission",
+          id: ConfigRowId("bdm-order-lines-001"),
+          path: "rows/bdm-order-lines-001",
         },
         {
-          id: ConfigRowId("hubspot-contacts"),
-          path: "rows/hubspot-contacts",
+          id: ConfigRowId("bdm-orders-001"),
+          path: "rows/bdm-orders-001",
         },
         {
-          id: ConfigRowId("hubspot-deal-company"),
-          path: "rows/hubspot-deal-company",
+          id: ConfigRowId("bdm-product-margin-over-time-001"),
+          path: "rows/bdm-product-margin-over-time-001",
         },
         {
-          id: ConfigRowId("hubspot-deal-contact"),
-          path: "rows/hubspot-deal-contact",
+          id: ConfigRowId("bdm-products-001"),
+          path: "rows/bdm-products-001",
         },
         {
-          id: ConfigRowId("hubspot-deals"),
-          path: "rows/hubspot-deals",
+          id: ConfigRowId("bdm-rfm-001"),
+          path: "rows/bdm-rfm-001",
         },
         {
-          id: ConfigRowId("hubspot-email"),
-          path: "rows/hubspot-email",
+          id: ConfigRowId("bdm-shipping-type-001"),
+          path: "rows/bdm-shipping-type-001",
         },
         {
-          id: ConfigRowId("hubspot-forms"),
-          path: "rows/hubspot-forms",
-        },
-        {
-          id: ConfigRowId("hubspot-marketing-campaign-sent-date"),
-          path: "rows/hubspot-marketing-campaign-sent-date",
-        },
-        {
-          id: ConfigRowId("hubspot-marketing-email"),
-          path: "rows/hubspot-marketing-email",
-        },
-        {
-          id: ConfigRowId("hubspot-marketing-email-events"),
-          path: "rows/hubspot-marketing-email-events",
-        },
-        {
-          id: ConfigRowId("hubspot-meeting"),
-          path: "rows/hubspot-meeting",
-        },
-        {
-          id: ConfigRowId("hubspot-owner"),
-          path: "rows/hubspot-owner",
+          id: ConfigRowId("out-shop-001"),
+          path: "rows/out-shop-001",
         },
       ],
     },
