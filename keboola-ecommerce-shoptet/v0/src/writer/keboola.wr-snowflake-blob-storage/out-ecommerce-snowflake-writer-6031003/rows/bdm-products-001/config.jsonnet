@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-ecommerce-wr-"+ConfigId("in-ecommerce-shoptet-extractor-6031003")+".bdm_products",
+    tableId: "out.c-ecommerce-bdm-"+ConfigId("in-ecommerce-shoptet-extractor-6031003")+".bdm_products",
     dbName: "bdm_products",
     incremental: false,
     primaryKey: [
@@ -165,8 +165,8 @@
     input: {
       tables: [
         {
-          source: "out.c-ecommerce-wr-"+ConfigId("in-ecommerce-shoptet-extractor-6031003")+".bdm_products",
-          destination: "out.c-ecommerce-wr-"+ConfigId("in-ecommerce-shoptet-extractor-6031003")+".bdm_products.csv",
+          source: "out.c-ecommerce-bdm-"+ConfigId("in-ecommerce-shoptet-extractor-6031003")+".bdm_products",
+          destination: "out.c-ecommerce-bdm-"+ConfigId("in-ecommerce-shoptet-extractor-6031003")+".bdm_products.csv",
           columns: [
             "PRODUCT_ID",
             "PRODUCT_CODE",
