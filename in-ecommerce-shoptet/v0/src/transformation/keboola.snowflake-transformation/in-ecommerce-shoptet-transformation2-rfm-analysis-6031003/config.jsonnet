@@ -16,7 +16,7 @@
     output: {
       tables: [
         {
-          destination: "out.c-ecommerce-wr-" + ConfigId("in-ecommerce-shoptet-extractor-6031003") + ".bdm_rfm",
+          destination: "out.c-ecommerce-bdm-" + ConfigId("in-ecommerce-shoptet-extractor-6031003") + ".bdm_rfm",
           source: "RFM_FINAL",
         },
       ],
