@@ -4,7 +4,7 @@
     output: {
       tables: [
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".company",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".company",
           primary_key: [
             "company_id",
           ],
@@ -15,7 +15,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".contact",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".contact",
           source: "out_contact",
           primary_key: [
             "contact_id",
@@ -26,7 +26,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".employee",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".employee",
           source: "out_employee",
           primary_key: [
             "employee_id",
@@ -37,7 +37,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".opportunity",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".opportunity",
           source: "out_opportunity",
           primary_key: [
             "opportunity_id",
@@ -48,7 +48,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".opportunity_snapshot",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".opportunity_snapshot",
           source: "out_opportunity_snapshot",
           primary_key: [
             "opportunity_id",
@@ -60,7 +60,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".activity",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".activity",
           source: "out_activity",
           primary_key: [
             "activity_id",
@@ -71,7 +71,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".opportunity_contact",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".opportunity_contact",
           source: "out_opportunity_contact",
           primary_key: [
             "opportunity_contact_id",
