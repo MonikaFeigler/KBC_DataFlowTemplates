@@ -7,7 +7,7 @@ This is an end to end flow for getting data from Hubspot and transforming them.
 2. Run orchestration
 
 ## Included components' configurations:
-EX -> TR –> ORCH
+EX -> TR –> WR -> ORCH
 
 ### EX: [IN-THOUGHTSPOT-HUBSPOT] Extractor
 
@@ -20,6 +20,14 @@ This transformation is forming data from Hubspot into requested shape.
 ### ORCH: [IN-THOUGHTSPOT-HUBSPOT] Orchestration: BDM Creation
 
 This orchestration includes Extractor and one transformation which prepare data for BDM model.
+
+### WR: [OUT-THOUGHTSPOT-HUBSPOT-BIGQUERY] Writer OR WR: [OUT-THOUGHTSPOT-HUBSPOT-SNOWFLAKE] Writer
+
+Writer load data into a Google BigQuery or Snowflake database.
+
+### ORCH: [OUT-THOUGHTSPOT-HUBSPOT-BIGQUERY] Orchestration: BDM Usage OR [OUT-THOUGHTSPOT-HUBSPOT-SNOWFLAKE] Orchestration: BDM Usage
+
+This orchestration use writer to load created BDM to Google BigQuery or Snowflake database.
 
 ## Business Data Model
 
