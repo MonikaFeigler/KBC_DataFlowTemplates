@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-ecommerce-wr-" + ConfigId("in-ecommerce-shopify-extractor-15948134") + ".bdm_orders",
-          destination: "out.c-ecommerce-wr-" + ConfigId("in-ecommerce-shopify-extractor-15948134") + ".bdm_orders.csv",
+          source: "out.c-ecommerce-wr-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".bdm_orders",
+          destination: "out.c-ecommerce-wr-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".bdm_orders.csv",
           changed_since: "",
           columns: [
             "ORDER_ID",
@@ -43,7 +43,7 @@
     tables: [
       {
         dbName: "bdm_orders",
-        tableId: "out.c-ecommerce-wr-" + ConfigId("in-ecommerce-shopify-extractor-15948134") + ".bdm_orders",
+        tableId: "out.c-ecommerce-wr-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".bdm_orders",
         incremental: false,
         items: [
           {
