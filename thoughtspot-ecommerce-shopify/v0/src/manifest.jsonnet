@@ -12,16 +12,25 @@
       path: "other/keboola.orchestrator/in-ecommerce-shopify-orchestration-bdm-creation-10697799",
       rows: [],
     },
+    if std.member(Input("select-writer"), "google-sheet") then
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("out-ecommerce-gsheet-orchestration-bdm-usage-10697799"),
       path: "other/keboola.orchestrator/out-ecommerce-gsheet-orchestration-bdm-usage-10697799",
       rows: [],
-    },
+    }
+    else if std.member(Input("select-writer"), "big-query") then
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("out-ecommerce-bigquery-orchestration-bdm-usage-10697799"),
       path: "other/keboola.orchestrator/out-ecommerce-bigquery-orchestration-bdm-usage-10697799",
+      rows: [],
+    }
+    else if std.member(Input("select-writer"), "big-query") then
+    {
+      componentId: "keboola.orchestrator",
+      id: ConfigId("out-ecommerce-snowflake-orchestration-bdm-usage-10697799"),
+      path: "other/keboola.orchestrator/out-ecommerce-snowflake-orchestration-bdm-usage-10697799",
       rows: [],
     },
     {
@@ -48,6 +57,7 @@
       path: "transformation/keboola.snowflake-transformation/in-ecommerce-shopify-transformation3-rfm-analysis-10697799",
       rows: [],
     },
+    if std.member(Input("select-writer"), "big-query") then
     {
       componentId: "keboola.wr-google-bigquery-v2",
       id: ConfigId("out-ecommerce-bigquery-writer-10697799"),
@@ -98,12 +108,85 @@
           path: "rows/out-shop",
         },
       ],
-    },
+    }
+    else if std.member(Input("select-writer"), "google-sheet") then
     {
       componentId: "keboola.wr-google-sheets",
       id: ConfigId("out-ecommerce-gsheet-writer-10697799"),
       path: "writer/keboola.wr-google-sheets/out-ecommerce-gsheet-writer-10697799",
       rows: [],
+    }
+    else if std.member(Input("select-writer"), "snowflake-db") then
+    {
+      componentId: "keboola.wr-snowflake-blob-storage",
+      id: ConfigId("out-thoughtspot-hubspot-snowflake-writer-10708760"),
+      path: "writer/keboola.wr-snowflake-blob-storage/out-thoughtspot-hubspot-snowflake-writer-10708760",
+      rows: [
+        {
+          id: ConfigRowId("dim-date"),
+          path: "rows/dim-date",
+        },
+        {
+          id: ConfigRowId("hubspot-call"),
+          path: "rows/hubspot-call",
+        },
+        {
+          id: ConfigRowId("hubspot-companies"),
+          path: "rows/hubspot-companies",
+        },
+        {
+          id: ConfigRowId("hubspot-company-contact"),
+          path: "rows/hubspot-company-contact",
+        },
+        {
+          id: ConfigRowId("hubspot-contact-form-submission"),
+          path: "rows/hubspot-contact-form-submission",
+        },
+        {
+          id: ConfigRowId("hubspot-contacts"),
+          path: "rows/hubspot-contacts",
+        },
+        {
+          id: ConfigRowId("hubspot-deal-company"),
+          path: "rows/hubspot-deal-company",
+        },
+        {
+          id: ConfigRowId("hubspot-deal-contact"),
+          path: "rows/hubspot-deal-contact",
+        },
+        {
+          id: ConfigRowId("hubspot-deals"),
+          path: "rows/hubspot-deals",
+        },
+        {
+          id: ConfigRowId("hubspot-email"),
+          path: "rows/hubspot-email",
+        },
+        {
+          id: ConfigRowId("hubspot-forms"),
+          path: "rows/hubspot-forms",
+        },
+        {
+          id: ConfigRowId("hubspot-marketing-campaign-sent-date"),
+          path: "rows/hubspot-marketing-campaign-sent-date",
+        },
+        {
+          id: ConfigRowId("hubspot-marketing-email"),
+          path: "rows/hubspot-marketing-email",
+        },
+        {
+          id: ConfigRowId("hubspot-marketing-email-events"),
+          path: "rows/hubspot-marketing-email-events",
+        },
+        {
+          id: ConfigRowId("hubspot-meeting"),
+          path: "rows/hubspot-meeting",
+        },
+        {
+          id: ConfigRowId("hubspot-owner"),
+          path: "rows/hubspot-owner",
+        },
+      ],
     },
   ],
 }
