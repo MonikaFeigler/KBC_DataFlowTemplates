@@ -72,7 +72,7 @@
     output: {
       tables: [
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".company",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".company",
           source: "out_company",
           primary_key: [
             "company_id",
@@ -83,7 +83,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".contact",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".contact",
           source: "out_contact",
           primary_key: [
             "contact_id",
@@ -94,7 +94,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".employee",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".employee",
           source: "out_employee",
           primary_key: [
             "employee_id",
@@ -105,7 +105,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".opportunity",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".opportunity",
           source: "out_opportunity",
           primary_key: [
             "opportunity_id",
@@ -128,7 +128,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".activity",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".activity",
           source: "out_activity",
           primary_key: [
             "activity_id",
@@ -139,7 +139,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-crm-wr-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".opportunity_contact",
+          destination: "out.c-crm-bdm-" + ConfigId("in-crm-salesforce-extractor-12706099") + ".opportunity_contact",
           source: "out_opportunity_contact",
           primary_key: [
             "opportunity_contact_id",
