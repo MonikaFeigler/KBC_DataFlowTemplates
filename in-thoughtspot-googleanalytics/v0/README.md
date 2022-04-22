@@ -1,4 +1,4 @@
-# IN-THOUGHTSPOT-GAA
+# IN-THOUGHTSPOT-GOOGLEANALYTICS
 
 This is an end to end flow for getting data from Google Analytics and transforming them.
 
@@ -9,15 +9,15 @@ This is an end to end flow for getting data from Google Analytics and transformi
 ## Included components' configurations:
 EX -> TR –> ORCH
 
-### EX: [IN-THOUGHTSPOT-GAA] Extractor
+### EX: [IN-THOUGHTSPOT-GOOGLEANALYTICS] Extractor
 
 This extractor is getting data from Google Analytics. It's an incremental update.
 
-### TR: [IN-THOUGHTSPOT-GAA] Transformation
+### TR: [IN-THOUGHTSPOT-GOOGLEANALYTICS] Transformation
 
 This transformation is forming data from Google Analytics into requested shape.
 
-### ORCH: [IN-THOUGHTSPOT-GAA] Orchestration: BDM Creation
+### ORCH: [IN-THOUGHTSPOT-GOOGLEANALYTICS] Orchestration: BDM Creation
 
 This orchestration includes Extractor and one transformation which prepare data for BDM model.
 
