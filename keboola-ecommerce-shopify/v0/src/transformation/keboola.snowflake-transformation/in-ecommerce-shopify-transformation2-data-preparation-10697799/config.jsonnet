@@ -4,32 +4,8 @@
     input: {
       tables: [
         {
-          source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".fulfillment_line_item_discount_allocations",
-          destination: "fulfillment_line_item_discount_allocations",
-          where_column: "",
-          where_values: [],
-          where_operator: "eq",
-          columns: [],
-        },
-        {
-          source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".fulfillment_line_item_tax_lines",
-          destination: "fulfillment_line_item_tax_lines",
-          where_column: "",
-          where_values: [],
-          where_operator: "eq",
-          columns: [],
-        },
-        {
           source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".line_item_tax_lines",
           destination: "line_item_tax_lines",
-          where_column: "",
-          where_values: [],
-          where_operator: "eq",
-          columns: [],
-        },
-        {
-          source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".order_discount_codes",
-          destination: "order_discount_codes",
           where_column: "",
           where_values: [],
           where_operator: "eq",
@@ -116,14 +92,6 @@
           columns: [],
         },
         {
-          source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".fulfillment_line_item",
-          destination: "fulfillment_line_item",
-          where_column: "",
-          where_values: [],
-          where_operator: "eq",
-          columns: [],
-        },
-        {
           source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".locations",
           destination: "locations",
           where_column: "",
@@ -142,22 +110,6 @@
         {
           source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".inventory_levels",
           destination: "inventory_levels",
-          where_column: "",
-          where_values: [],
-          where_operator: "eq",
-          columns: [],
-        },
-        {
-          source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".line_item_discount_allocations",
-          destination: "line_item_discount_allocations",
-          where_column: "",
-          where_values: [],
-          where_operator: "eq",
-          columns: [],
-        },
-        {
-          source: "in.c-kds-team-ex-shopify-" + ConfigId("in-ecommerce-shopify-extractor-10697799") + ".customer_addresses",
-          destination: "customer_addresses",
           where_column: "",
           where_values: [],
           where_operator: "eq",
