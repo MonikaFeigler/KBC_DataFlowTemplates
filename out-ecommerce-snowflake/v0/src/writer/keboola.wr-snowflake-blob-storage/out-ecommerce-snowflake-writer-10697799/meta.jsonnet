@@ -1,3 +1,3 @@
 {
-  name: "[OUT-ECOMMERCE-SNOWFLAKE] Writer /10697799",
+  name: "[OUT-ECOMMERCE-SNOWFLAKE] Writer /"+ ConfigId("out-ecommerce-snowflake-writer-10697799"),
 }
