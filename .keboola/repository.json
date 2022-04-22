@@ -100,10 +100,10 @@
       ]
     },
     {
-      "id": "in-thoughtspot-gaa",
-      "name": "IN-THOUGHTSPOT-GAA",
+      "id": "in-thoughtspot-googleanalytics",
+      "name": "IN-THOUGHTSPOT-GOOGLEANALYTICS",
       "description": "Full workflow to ...",
-      "path": "in-thoughtspot-gaa",
+      "path": "in-thoughtspot-googleanalytics",
       "versions": [
         {
           "version": "0.0.1",
