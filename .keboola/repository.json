@@ -268,7 +268,7 @@
       ]
     },
     {
-      "id": "out-thoughtspot-googlenalaytics-bigquery",
+      "id": "out-thoughtspot-googleanalytics-bigquery",
       "name": "OUT-THOUGHTSPOT-GOOGLEANALYTICS-BIGQUERY",
       "description": "Full workflow to ...",
       "path": "out-thoughtspot-googleanalytics-bigquery",
