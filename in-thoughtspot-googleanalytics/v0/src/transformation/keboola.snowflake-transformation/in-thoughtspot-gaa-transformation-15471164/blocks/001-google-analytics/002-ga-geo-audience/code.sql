@@ -1,23 +1,24 @@
-CREATE TABLE "ga_geo_audience" AS (
+CREATE TABLE "ga_geo_audience" AS 
+(
   SELECT 
   -- dimensions
-    "id" as "id_TBE",
-    "date" as "ga_date"
+    "id" AS "id_TBE",
+    "date" AS "ga_date"
     ,"country" "ga_country"
-    ,"region" as "ga_region"
-    ,"latitude"  as "ga_latitude"
-    ,"longitude" as "ga_longitude"
-    ,"channelGrouping" as "ga_channelGrouping"
-    ,"userType" as "ga_userType"
-    ,"source" as "ga_source"
-    ,"medium" as "ga_medium" 
+    ,"region" AS "ga_region"
+    ,"latitude"  AS "ga_latitude"
+    ,"longitude" AS "ga_longitude"
+    ,"channelGrouping" AS "ga_channelGrouping"
+    ,"userType" AS "ga_userType"
+    ,"source" AS "ga_source"
+    ,"medium" AS "ga_medium" 
     -- metrics
-    ,"sessions" as "ga_sessions"
-    ,"users" as "ga_users"
-    ,"bounces" as "ga_bounces"
-    ,"sessionDuration" as "ga_sessionDuration"
-    ,"pageviews" as "ga_pageviews"
-  from
+    ,"sessions" AS "ga_sessions"
+    ,"users" AS "ga_users"
+    ,"bounces" AS "ga_bounces"
+    ,"sessionDuration" AS "ga_sessionDuration"
+    ,"pageviews" AS "ga_pageviews"
+  FROM
     "raw_geo_audience"
-  where date("date") = current_date - interval '{{ DaysToPast }} days'
-  );
+  WHERE date("date") = current_date - interval '{{ DaysToPast }} days'
+);

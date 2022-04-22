@@ -1,25 +1,25 @@
-CREATE TABLE "ga_page_behaviour" AS (
+CREATE TABLE "ga_page_behaviour" AS 
+(
   SELECT 
-  -- dimensions
-    "id" as "id_TBE",
-    "date" as "ga_date"
-    ,"hostname" as "ga_hostname"
-    ,"pagePath" as "ga_pagePath"
-    ,"landingPagePath" as "ga_landingPagePath"
-    ,"secondPagePath" as "ga_secondPagePath"
-    ,"exitPagePath" as "ga_exitPagePath"
-    ,"pageTitle" as "ga_pageTitle"
-    ,"source" as "ga_source"
-    ,"country" as "ga_country"
+    -- dimensions
+    "id" AS "id_TBE",
+    "date" AS "ga_date"
+    ,"hostname" AS "ga_hostname"
+    ,"pagePath" AS "ga_pagePath"
+    ,"landingPagePath" AS "ga_landingPagePath"
+    ,"secondPagePath" AS "ga_secondPagePath"
+    ,"exitPagePath" AS "ga_exitPagePath"
+    ,"pageTitle" AS "ga_pageTitle"
+    ,"source" AS "ga_source"
+    ,"country" AS "ga_country"
     -- metric
-    ,"sessions" as "ga_sessions"
-    ,"entrances" as "ga_entrances"
-    ,"pageviews" as "ga_pageviews"
-    ,"timeOnPage" as "ga_timeOnPage"
-    ,"exits" as "ga_exits"
-    ,"pageValue" as "ga_pageValue"
-  from
+    ,"sessions" AS "ga_sessions"
+    ,"entrances" AS "ga_entrances"
+    ,"pageviews" AS "ga_pageviews"
+    ,"timeOnPage" AS "ga_timeOnPage"
+    ,"exits" AS "ga_exits"
+    ,"pageValue" AS "ga_pageValue"
+  FROM
     "raw_page_behaviour"
-  where date("date") = current_date - interval '{{ DaysToPast }} days'
-  )
-  ;
+  WHERE date("date") = current_date - interval '{{ DaysToPast }} days'
+);
