@@ -1,23 +1,23 @@
-CREATE TABLE "ga_demographic_audience" AS (
+CREATE TABLE "ga_demographic_audience" AS 
+(
   SELECT 
-  --dimensions
-    "id" as "id_TBE",
-    "date" as "ga_date"
-    ,"userAgeBracket" as "ga_userAgeBracket"
-    ,"userGender" as "ga_userGender"
-    ,"interestAffinityCategory" as "ga_interestAffinityCategory"
-    ,"channelGrouping" as "ga_channelGrouping"
-    ,"userType" as "ga_userType"
-    ,"source" as "ga_source"
-    ,"medium" as "ga_medium" 
+    --dimensions
+    "id" AS "id_TBE",
+    "date" AS "ga_date"
+    ,"userAgeBracket" AS "ga_userAgeBracket"
+    ,"userGender" AS "ga_userGender"
+    ,"interestAffinityCategory" AS "ga_interestAffinityCategory"
+    ,"channelGrouping" AS "ga_channelGrouping"
+    ,"userType" AS "ga_userType"
+    ,"source" AS "ga_source"
+    ,"medium" AS "ga_medium" 
     -- metrics
-    ,"sessions" as "ga_sessions"
-    ,"users" as "ga_users"
-    ,"bounces" as "ga_bounces"
-    ,"sessionDuration" as "ga_sessionDuration"
-    ,"pageviews" as "ga_pageviews"
-  from
+    ,"sessions" AS "ga_sessions"
+    ,"users" AS "ga_users"
+    ,"bounces" AS "ga_bounces"
+    ,"sessionDuration" AS "ga_sessionDuration"
+    ,"pageviews" AS "ga_pageviews"
+  FROM
     "raw_demographic_audience"
-  where date("date") = current_date - interval '{{ DaysToPast }} days'
-  )
-  ;
+  WHERE date("date") = current_date - interval '{{ DaysToPast }} days'
+);
