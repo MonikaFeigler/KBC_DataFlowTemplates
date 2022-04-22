@@ -268,10 +268,10 @@
       ]
     },
     {
-      "id": "out-thoughtspot-gaa-bigquery",
-      "name": "OUT-THOUGHTSPOT-GAA-BIGQUERY",
+      "id": "out-thoughtspot-googlenalaytics-bigquery",
+      "name": "OUT-THOUGHTSPOT-GOOGLEANALYTICS-BIGQUERY",
       "description": "Full workflow to ...",
-      "path": "out-thoughtspot-gaa-bigquery",
+      "path": "out-thoughtspot-googleanalytics-bigquery",
       "versions": [
         {
           "version": "0.0.1",
