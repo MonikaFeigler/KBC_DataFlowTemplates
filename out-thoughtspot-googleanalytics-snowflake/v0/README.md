@@ -1,4 +1,4 @@
-# OUT-THOUGHTSPOT-GAA-SNOWFLAKE
+# OUT-THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE
 
 This template is useful for writing transformed Google analytics data to a Snowflake database.
 
@@ -10,11 +10,11 @@ This template is useful for writing transformed Google analytics data to a Snowf
 ## Included components' configurations:
 WR –> ORCH
 
-### WR: [OUT-THOUGHTSPOT-GAA-SNOWFLAKE] Writer
+### WR: [OUT-THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE] Writer
 
 Writer loads transformed data to a Snowflake database.
 
-### ORCH: [OUT-THOUGHTSPOT-GAA-SNOWFLAKE] Orchestration: BDM Usage
+### ORCH: [OUT-THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE] Orchestration: BDM Usage
 
 This orchestration uses writer to load created BDM model to a Snowflake database.
 
