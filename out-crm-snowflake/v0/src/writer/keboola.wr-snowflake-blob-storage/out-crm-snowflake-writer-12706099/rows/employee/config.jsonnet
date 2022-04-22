@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-crm-wr-"+ConfigId("out-crm-snowflake-writer-12706099")+".employee",
+    tableId: "out.c-crm-bdm-"+ConfigId("out-crm-snowflake-writer-12706099")+".employee",
     dbName: "employee",
     incremental: false,
     primaryKey: [
@@ -45,8 +45,8 @@
     input: {
       tables: [
         {
-          source: "out.c-crm-wr-"+ConfigId("out-crm-snowflake-writer-12706099")+".employee",
-          destination: "out.c-crm-wr-"+ConfigId("out-crm-snowflake-writer-12706099")+".employee.csv",
+          source: "out.c-crm-bdm-"+ConfigId("out-crm-snowflake-writer-12706099")+".employee",
+          destination: "out.c-crm-bdm-"+ConfigId("out-crm-snowflake-writer-12706099")+".employee.csv",
           columns: [
             "employee_id",
             "employee",

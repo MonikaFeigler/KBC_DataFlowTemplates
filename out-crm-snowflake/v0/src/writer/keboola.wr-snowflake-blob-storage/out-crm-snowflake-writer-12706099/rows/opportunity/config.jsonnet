@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-crm-wr-"+ConfigId("out-crm-snowflake-writer-12706099")+".opportunity",
+    tableId: "out.c-crm-bdm-"+ConfigId("out-crm-snowflake-writer-12706099")+".opportunity",
     dbName: "opportunity",
     incremental: false,
     primaryKey: [
@@ -141,8 +141,8 @@
     input: {
       tables: [
         {
-          source: "out.c-crm-wr-"+ConfigId("out-crm-snowflake-writer-12706099")+".opportunity",
-          destination: "out.c-crm-wr-"+ConfigId("out-crm-snowflake-writer-12706099")+".opportunity.csv",
+          source: "out.c-crm-bdm-"+ConfigId("out-crm-snowflake-writer-12706099")+".opportunity",
+          destination: "out.c-crm-bdm-"+ConfigId("out-crm-snowflake-writer-12706099")+".opportunity.csv",
           columns: [
             "opportunity_id",
             "company_id",
