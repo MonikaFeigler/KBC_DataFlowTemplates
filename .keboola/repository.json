@@ -400,10 +400,10 @@
       ]
     },
     {
-      "id": "thoughtspot-gaa-snowflake",
-      "name": "THOUGHTSPOT-GAA-SNOWFLAKE",
+      "id": "thoughtspot-googleanalytics-snowflake",
+      "name": "THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE",
       "description": "Full workflow to ...",
-      "path": "thoughtspot-gaa-snowflake",
+      "path": "thoughtspot-googleanalytics-snowflake",
       "versions": [
         {
           "version": "0.0.1",

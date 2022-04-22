@@ -1,4 +1,4 @@
-# THOUGHTSPOT-GAA-SNOWFLAKE
+# THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE
 
 This is an end to end flow for getting data from Google Analytics and visualizing them in spotapp.
 
@@ -9,19 +9,19 @@ This is an end to end flow for getting data from Google Analytics and visualizin
 ## Included components' configurations:
 EX -> TR -> WR –> ORCH
 
-### EX: [THOUGHTSPOT-GAA-SNOWFLAKE] Extractor
+### EX: [THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE] Extractor
 
 This extractor is getting data from Google Analytics. It's an incremental update.
 
-### TR: [THOUGHTSPOT-GAA-SNOWFLAKE] Transformation
+### TR: [THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE] Transformation
 
 This transformation is forming data from Google Analytics into requested shape.
 
-### WR: [THOUGHTSPOT-GAA-SNOWFLAKE] Writer
+### WR: [THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE] Writer
 
 Writer loads transformed data into Snowflake database.
 
-### ORCH: [THOUGHTSPOT-GAA-SNOWFLAKE] Orchestration
+### ORCH: [THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE] Orchestration
 
 This orchestration includes Extractor, Transformation and Writer.
 
