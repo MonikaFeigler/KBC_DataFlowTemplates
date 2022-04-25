@@ -1,3 +1,3 @@
 {
-  name: "[OUT-THOUGHTSPOT-GOOGLEANALYTICS-BIGQUERY] Writer /" + ConfigId("out-thoughtspot-gaa-bigquery-writer-15471164"),
+  name: "[OUT-THOUGHTSPOT-GOOGLEANALYTICS-BIGQUERY-SEARCHCONSOLE] Writer /" + ConfigId("out-thoughtspot-googleanalytics-bigquery-searchconsole-writer-16240909"),
 }
