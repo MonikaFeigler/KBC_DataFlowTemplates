@@ -1,5 +1,5 @@
 -- Create the UDF.
-CREATE OR REPLACE FUNCTION encode_url("s" string)
+/*CREATE OR REPLACE FUNCTION encode_url("s" string)
   RETURNS string
   LANGUAGE JAVASCRIPT
 AS ' return encodeURI(s);' ;
@@ -31,7 +31,7 @@ CREATE OR REPLACE TABLE "ga_site_statistics_temp" AS (
   from
     "raw_site_statistics"
   )
-  ;
+  ;*/
 
 -- group gsc results by url and date 
 create or replace view "gsc_grouped" as (
@@ -43,7 +43,7 @@ from "raw_search_console"
 group by "page", "date"
 );
 
-CREATE OR REPLACE TABLE "ga_site_statistics" AS (
+/*CREATE OR REPLACE TABLE "ga_site_statistics" AS (
   SELECT 
   -- dimensions
     "stat"."id_TBE"
