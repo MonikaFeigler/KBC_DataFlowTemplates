@@ -426,6 +426,20 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "in-analytics-googlesearchconsole",
+      "name": "IN-ANALYTICS-GOOGLESEARCHCONSOLE",
+      "description": "Full workflow to ...",
+      "path": "in-analytics-googlesearchconsole",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
     }
   ]
 }

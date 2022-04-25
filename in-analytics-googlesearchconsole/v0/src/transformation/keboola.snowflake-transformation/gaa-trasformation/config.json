@@ -1,0 +1,162 @@
+{
+  "parameters": {},
+  "storage": {
+    "input": {
+      "tables": [
+        {
+          "changed_since": "-7 days",
+          "columns": [],
+          "destination": "raw_ad_analytics",
+          "source": "in.c-keboola-ex-google-analytics.raw_ad_analytics",
+          "where_column": "",
+          "where_operator": "eq",
+          "where_values": []
+        },
+        {
+          "changed_since": "-7 days",
+          "columns": [],
+          "destination": "raw_demographic_audience",
+          "source": "in.c-keboola-ex-google-analytics.raw_demographic_audience",
+          "where_column": "",
+          "where_operator": "eq",
+          "where_values": []
+        },
+        {
+          "changed_since": "-7 days",
+          "columns": [],
+          "destination": "raw_geo_audience",
+          "source": "in.c-keboola-ex-google-analytics.raw_geo_audience",
+          "where_column": "",
+          "where_operator": "eq",
+          "where_values": []
+        },
+        {
+          "changed_since": "-7 days",
+          "columns": [],
+          "destination": "raw_page_behaviour",
+          "source": "in.c-keboola-ex-google-analytics.raw_page_behaviour",
+          "where_column": "",
+          "where_operator": "eq",
+          "where_values": []
+        },
+        {
+          "changed_since": "-7 days",
+          "columns": [],
+          "destination": "raw_site_statistics",
+          "source": "in.c-keboola-ex-google-analytics.raw_site_statistics",
+          "where_column": "",
+          "where_operator": "eq",
+          "where_values": []
+        },
+        {
+          "changed_since": "-7 days",
+          "columns": [],
+          "destination": "raw_traffic_source",
+          "source": "in.c-keboola-ex-google-analytics.raw_traffic_source",
+          "where_column": "",
+          "where_operator": "eq",
+          "where_values": []
+        },
+        {
+          "source": "{{:default-bucket:extractor/kds-team.ex-google-search-console/gaa-gsc-lantzmetall-this-year}}.raw_search_console",
+          "destination": "raw_search_console",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "changed_since": "-7 days"
+        },
+        {
+          "source": "in.c-keboola-ex-google-analytics.raw_custom_dimension",
+          "destination": "raw_custom_dimension",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "changed_since": "-7 days"
+        }
+      ]
+    },
+    "output": {
+      "tables": [
+        {
+          "delete_where_column": "",
+          "delete_where_operator": "eq",
+          "delete_where_values": [],
+          "destination": "out.c-GAA-google-analytics.ga_traffic_source",
+          "incremental": true,
+          "primary_key": [
+            "id_TBE"
+          ],
+          "source": "ga_traffic_source"
+        },
+        {
+          "delete_where_column": "",
+          "delete_where_operator": "eq",
+          "delete_where_values": [],
+          "destination": "out.c-GAA-google-analytics.ga_geo_audience",
+          "incremental": true,
+          "primary_key": [
+            "id_TBE"
+          ],
+          "source": "ga_geo_audience"
+        },
+        {
+          "delete_where_column": "",
+          "delete_where_operator": "eq",
+          "delete_where_values": [],
+          "destination": "out.c-GAA-google-analytics.ga_demographic_audience",
+          "incremental": true,
+          "primary_key": [
+            "id_TBE"
+          ],
+          "source": "ga_demographic_audience"
+        },
+        {
+          "delete_where_column": "",
+          "delete_where_operator": "eq",
+          "delete_where_values": [],
+          "destination": "out.c-GAA-google-analytics.ga_page_behaviour",
+          "incremental": true,
+          "primary_key": [
+            "id_TBE"
+          ],
+          "source": "ga_page_behaviour"
+        },
+        {
+          "delete_where_column": "",
+          "delete_where_operator": "eq",
+          "delete_where_values": [],
+          "destination": "out.c-GAA-google-analytics.ga_site_statistics",
+          "incremental": true,
+          "primary_key": [
+            "id_TBE"
+          ],
+          "source": "ga_site_statistics"
+        },
+        {
+          "delete_where_column": "",
+          "delete_where_operator": "eq",
+          "delete_where_values": [],
+          "destination": "out.c-GAA-google-analytics.ga_ad_analytics",
+          "incremental": true,
+          "primary_key": [
+            "id_TBE"
+          ],
+          "source": "ga_ad_analytics"
+        },
+        {
+          "destination": "out.c-GAA-google-analytics.ga_custom_dimension",
+          "source": "ga_custom_dimension",
+          "primary_key": [
+            "id_TBE"
+          ],
+          "incremental": true,
+          "delete_where_column": "",
+          "delete_where_operator": "eq",
+          "delete_where_values": []
+        }
+      ]
+    }
+  }
+}
