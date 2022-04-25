@@ -2,6 +2,20 @@
   "version": 2,
   "templates": [
     {
+      "id": "in-analytics-googlesearchconsole",
+      "name": "IN-ANALYTICS-GOOGLESEARCHCONSOLE",
+      "description": "Full workflow to ...",
+      "path": "in-analytics-googlesearchconsole",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "in-crm-hubspot",
       "name": "IN-CRM-HUBSPOT",
       "description": "Full workflow to ...",
@@ -104,6 +118,20 @@
       "name": "IN-THOUGHTSPOT-GOOGLEANALYTICS",
       "description": "Full workflow to ...",
       "path": "in-thoughtspot-googleanalytics",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "in-thoughtspot-googleanalytics-searchconsole",
+      "name": "IN-THOUGHTSPOT-GOOGLEANALYTICS-SEARCHCONSOLE",
+      "description": "Full workflow to ...",
+      "path": "in-thoughtspot-googleanalytics-searchconsole",
       "versions": [
         {
           "version": "0.0.1",
@@ -418,20 +446,6 @@
       "name": "THOUGHTSPOT-HUBSPOT-SNOWFLAKE",
       "description": "Full workflow to ...",
       "path": "thoughtspot-hubspot-snowflake",
-      "versions": [
-        {
-          "version": "0.0.1",
-          "description": "",
-          "stable": false,
-          "path": "v0"
-        }
-      ]
-    },
-    {
-      "id": "in-analytics-googlesearchconsole",
-      "name": "IN-ANALYTICS-GOOGLESEARCHCONSOLE",
-      "description": "Full workflow to ...",
-      "path": "in-analytics-googlesearchconsole",
       "versions": [
         {
           "version": "0.0.1",
