@@ -1,4 +1,4 @@
 {
-  name: "ga_site_statistics",
+  name: "gsc_ranking",
   isDisabled: false,
 }
