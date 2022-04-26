@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-crm-bdm-"+ConfigId("in-crm-salesforce-extractor-12706099")+".company",
+    tableId: "out.c-crm-wr-"+ConfigId("in-crm-salesforce-extractor-12706099")+".company",
     dbName: "company",
     incremental: false,
     primaryKey: [
@@ -45,8 +45,8 @@
     input: {
       tables: [
         {
-          source: "out.c-crm-bdm-"+ConfigId("in-crm-salesforce-extractor-12706099")+".company",
-          destination: "out.c-crm-bdm-"+ConfigId("in-crm-salesforce-extractor-12706099")+".company.csv",
+          source: "out.c-crm-wr-"+ConfigId("in-crm-salesforce-extractor-12706099")+".company",
+          destination: "out.c-crm-wr-"+ConfigId("in-crm-salesforce-extractor-12706099")+".company.csv",
           columns: [
             "company_id",
             "company",
