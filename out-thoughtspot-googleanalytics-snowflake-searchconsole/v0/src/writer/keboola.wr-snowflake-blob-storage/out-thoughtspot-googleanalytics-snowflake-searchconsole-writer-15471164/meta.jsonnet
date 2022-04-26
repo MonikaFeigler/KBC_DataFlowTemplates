@@ -1,3 +1,3 @@
 {
-  name: "[OUT-THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE] Writer /" + ConfigId("out-thoughtspot-gaa-snowflake-writer-15471164"),
+  name: "[OUT-THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE-SEARCHCONSOLE] Writer /" + ConfigId("out-thoughtspot-googleanalytics-snowflake-searchconsole-writer-15471164"),
 }

@@ -1,3 +1,3 @@
 {
-  name: "[OUT-THOUGHTSPOT-GOOGLEANALYTICS-BIGQUERY-SEARCHCONSOLE] Orchestration: BDM Usage /" + ConfigId("out-thoughtspot-googleanalytics-bigquery-searchconsole-writer-16240909"),
+  name: "[OUT-THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE-SEARCHCONSOLE] Orchestration: BDM Usage /" + ConfigId("out-thoughtspot-googleanalytics-snowflake-searchconsole-writer-15471164"),
 }
