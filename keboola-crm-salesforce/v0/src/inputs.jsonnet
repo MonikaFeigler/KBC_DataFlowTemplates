@@ -46,7 +46,7 @@
     },
     {
       description: "Writer",
-      required: "optional",
+      required: "ExactlyOne",
       steps: [
           {
           icon: "component:keboola.wr-snowflake-blob-storage",
@@ -62,7 +62,6 @@
               type: "string",
               kind: "input",
               rules: "required",
-              default: "keboola.west-europe.azure.snowflakecomputing.com",
             },
             {
               id: "wr-snowflake-blob-storage-db-port",
