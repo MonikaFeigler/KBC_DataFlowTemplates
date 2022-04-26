@@ -468,6 +468,20 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "out-thoughtspot-googleanalytics-snowflake-searchconsole",
+      "name": "OUT-THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE-SEARCHCONSOLE",
+      "description": "Full workflow to ...",
+      "path": "out-thoughtspot-googleanalytics-snowflake-searchconsole",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
