@@ -5,11 +5,11 @@
       required: "all",
       steps: [
         {
-          icon: "common:settings", // component:kds.ex-hubspot
+          icon: "component:kds-team.ex-hubspot-crm",
           name: "Hubspot",
-          description: "", // CRM systém
-          dialogDescription: "", //volitelná delší description
-          dialogName: "", 
+          description: "Hubspot - Data Source",
+          dialogName: "Hubspot Data Source", 
+          dialogDescription: "This extractor is getting data from HubSpot. It's an incremental update and the extractor is taking data about: companies, activities, lists, owners, contacts, deals and pipelines.",
           inputs: [
             {
               id: "ex-hubspot-crm-api-token",
@@ -35,9 +35,11 @@
       required: "optional",
       steps: [
           {
-          icon: "common:settings",
-          name: "Snowflake Database",
+          icon: "component:keboola.wr-snowflake-blob-storage",
+          name: "Snowflake Destination",
           description: "Load to data into snowflake",
+          dialogName: "Snowflake Destination", 
+          dialogDescription: "Data load to Snowflake DB.",
           inputs: [
             {
               id: "wr-snowflake-blob-storage-db-host",
@@ -47,7 +49,6 @@
               kind: "input",
               rules: "required",
               default: "keboola.west-europe.azure.snowflakecomputing.com",
-              showif: "[select-writer] == 'snowflake-db'",
             },
             {
               id: "wr-snowflake-blob-storage-db-port",
@@ -56,7 +57,7 @@
               type: "string",
               kind: "input",
               default: "443",
-              showif: "[select-writer] == 'snowflake-db'",
+              showif: "[wr-snowflake-blob-storage-db-host] != ''",
             },
             {
               id: "wr-snowflake-blob-storage-db-user",
@@ -65,7 +66,7 @@
               type: "string",
               kind: "input",
               default: "KEBOOLA_WORKSPACE_12781571",
-              showif: "[select-writer] == 'snowflake-db'",
+              showif: "[wr-snowflake-blob-storage-db-host] != ''",
             },
             {
               id: "wr-snowflake-blob-storage-db-password",
@@ -73,7 +74,7 @@
               description: "Insert your password to the database.",
               type: "string",
               kind: "hidden",
-              showif: "[select-writer] == 'snowflake-db'",
+              showif: "[wr-snowflake-blob-storage-db-host] != ''",
             },
             {
               id: "wr-snowflake-blob-storage-db-database",
@@ -82,7 +83,7 @@
               type: "string",
               kind: "input",
               default: "KEBOOLA_6518",
-              showif: "[select-writer] == 'snowflake-db'",
+              showif: "[wr-snowflake-blob-storage-db-host] != ''",
             },
             {
               id: "wr-snowflake-blob-storage-db-schema",
@@ -91,7 +92,7 @@
               type: "string",
               kind: "input",
               default: "WORKSPACE_12781571",
-              showif: "[select-writer] == 'snowflake-db'",
+              showif: "[wr-snowflake-blob-storage-db-host] != ''",
             },
             {
               id: "wr-snowflake-blob-storage-db-warehouse",
@@ -100,15 +101,26 @@
               type: "string",
               kind: "input",
               default: "KEBOOLA_PROD",
-              showif: "[select-writer] == 'snowflake-db'",
+              showif: "[wr-snowflake-blob-storage-db-host] != ''",
             },
           ]
         },
         {
-          icon: "common:settings",
-          name: "Google sheet",
+          icon: "component:keboola.wr-google-sheet",
+          name: "Google sheet Destination",
           description: "Load to data into google sheet",
-          inputs: [] // je zadaný není zadany vstup, dát sem checkbox
+          dialogName: "Google Sheet Destination", 
+          dialogDescription: "Data load to Google Sheet.",
+          inputs: [
+            {
+              id: "google-sheet-checkbox",
+              name: "Google sheet destination",
+              description: "Do you want to load data into google sheet?",
+              type: "bool",
+              kind: "confirm",
+              rules: "required",
+            },
+          ],  
         },
       ]
     },
