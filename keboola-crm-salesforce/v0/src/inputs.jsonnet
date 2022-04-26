@@ -46,7 +46,7 @@
     },
     {
       description: "Writer",
-      required: "ExactlyOne",
+      required: "exactlyOne",
       steps: [
           {
           icon: "component:keboola.wr-snowflake-blob-storage",
