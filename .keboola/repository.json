@@ -26,7 +26,7 @@
       "id": "keboola-crm-salesforce",
       "icon": "common:settings",
       "name": "KEBOOLA-CRM-SALESFORCE",
-      "description": "Full workflow to ...",
+      "description": "This is an end to end flow which is getting data from salesforce and transform them so you can use them for visualisation in your BI tool or anywhere you want.",
       "path": "keboola-crm-salesforce",
       "versions": [
         {
