@@ -2,7 +2,7 @@
   stepsGroups: [
     {
       description: "Extractor",
-      required: "optional",
+      required: "all",
       steps: [
         {
           icon: "component:keboola.ex-google-analytics-v4",
@@ -16,7 +16,7 @@
     },
     {
       description: "Configure your credentials for Snowflake writer.",
-      required: "all",
+      required: "optional",
       steps: [
         {
           icon: "component:keboola.wr-snowflake-blob-storage",
@@ -90,8 +90,8 @@
       ],
     },
     {
-      description: "Configure your credentials for Snowflake writer.",
-      required: "all",
+      description: "Configure your credentials for Google Big Query writer.",
+      required: "optional",
       steps: [
         {
           icon: "component:keboola.wr-google-bigquery-v2",
