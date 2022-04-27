@@ -30,28 +30,28 @@
       path: "transformation/keboola.snowflake-transformation/in-ecommerce-shoptet-transformation2-rfm-analysis-6031003",
       rows: [],
     },
-    if Input("google-sheet-checkbox") == true then
+    if std.member(Input("select-writer"), "google-sheet") then
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("out-ecommerce-gsheet-orchestration-bdm-usage-6031003"),
       path: "other/keboola.orchestrator/out-ecommerce-gsheet-orchestration-bdm-usage-6031003",
       rows: [],
     }
-    else if std.length(Input("wr-snowflake-blob-storage-db-host")) > 0 then
+    else if std.member(Input("select-writer"), "snowflake-db") then
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("out-ecommerce-snowflake-orchestration-bdm-usage-6031003"),
       path: "other/keboola.orchestrator/out-ecommerce-snowflake-orchestration-bdm-usage-6031003",
       rows: [],
     },
-    if Input("google-sheet-checkbox") == true then
+    if std.member(Input("select-writer"), "google-sheet") then
     {
       componentId: "keboola.wr-google-sheets",
       id: ConfigId("out-ecommerce-gsheet-writer-6031003"),
       path: "writer/keboola.wr-google-sheets/out-ecommerce-gsheet-writer-6031003",
       rows: [],
     }
-    else if std.length(Input("wr-snowflake-blob-storage-db-host")) > 0 then
+    else if std.member(Input("select-writer"), "snowflake-db") then
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("out-ecommerce-snowflake-writer-6031003"),

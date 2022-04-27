@@ -1,4 +1,4 @@
-if Input("google-sheet-checkbox") == true then
+if std.member(Input("select-writer"), "google-sheet") then
 {
   name: "keboola.orchestrator-" + ConfigId("in-ecommerce-shopify-extractor-10697799"),
   task: {
@@ -8,7 +8,7 @@ if Input("google-sheet-checkbox") == true then
   continueOnFailure: false,
   enabled: true,
 }
-else if std.length(Input("wr-snowflake-blob-storage-db-host")) > 0 then
+else if std.member(Input("select-writer"), "snowflake-db") then
 {
   name: "keboola.orchestrator-" + ConfigId("in-ecommerce-shopify-extractor-10697799"),
   task: {
