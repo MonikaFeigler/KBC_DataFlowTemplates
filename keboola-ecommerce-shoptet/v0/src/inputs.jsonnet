@@ -75,7 +75,6 @@
               description: "Select period from which you want to get the data.",
               type: "string",
               kind: "select",
-              default: '2 months ago',
               options: [
                 {
                   id: '1 week ago',
@@ -101,7 +100,6 @@
               description: "Select period to date you want to get the data.",
               type: "string",
               kind: "select",
-              default: "now",
               options: [
                 {
                   id: 'now',
