@@ -86,12 +86,8 @@
               default: "KEBOOLA_PROD",
               showif: "[wr-snowflake-blob-storage-db-host] != ''",
             },
-      ],
-    },
-    {
-      description: "Configure your credentials for Google Big Query writer.",
-      required: "optional",
-      steps: [
+          ]
+        },
         {
           icon: "component:keboola.wr-google-bigquery-v2",
           name: "Google Big Query",
@@ -134,4 +130,6 @@
           ],
         }
       ]
-    }]}]}
+    }
+  ]
+}
