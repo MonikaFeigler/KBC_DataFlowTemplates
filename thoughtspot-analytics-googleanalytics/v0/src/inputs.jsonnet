@@ -15,7 +15,7 @@
       ],
     },
     {
-      description: "Configure your credentials for Snowflake writer.",
+      description: "Configure your credentials for writer.",
       required: "optional",
       steps: [
         {
@@ -23,7 +23,7 @@
           name: "Snowflake",
           description: "Snowflake - Destination",
           dialogName: "Snowflake Destination", 
-          dialogDescription: "",
+          dialogDescription: "Data load to Snowflake database.",
           inputs: [
             {
               id: "wr-snowflake-blob-storage-db-host",
@@ -93,7 +93,7 @@
           name: "Google Big Query",
           description: "Big Query - Destination",
           dialogName: "Big Query Destination", 
-          dialogDescription: "",
+          dialogDescription: "Data load to Google Big Query",
           inputs: [
             {
               id: "wr-google-bigquery-v2-service-account-private-key",
