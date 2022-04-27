@@ -31,7 +31,7 @@
               description: "Select period from date.",
               type: "string",
               kind: "select",
-              default: '2 months ago',
+              
               options: [
                 {
                   id: '1 week ago',
@@ -50,10 +50,11 @@
                   name: '2 months ago',
                 },
               ],
+              default: '2 months ago',
             },
             {
               id: "ex-shopify-period-to-date",
-              name: "Period to date [excluding]",
+              name: "Period to date [exclud.]",
               description: "Select period to date.",
               type: "string",
               kind: "select",
