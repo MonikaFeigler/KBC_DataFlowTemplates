@@ -94,6 +94,7 @@
               description: "Insert database hostname.",
               type: "string",
               kind: "input",
+              rules: "required",
             },
             {
               id: "wr-snowflake-blob-storage-db-port",
