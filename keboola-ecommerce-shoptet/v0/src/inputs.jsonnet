@@ -49,14 +49,14 @@
             {
               id: "ex-shoptet-permalink-stock-url",
               name: "Stock URL",
-              description: "e.g. https://www.myshop.cz/export/stockStatistics.csv?hash=XXXXX",
+              description: "e.g. https://www.myshop.cz/export/stockStatistics.csv?hash=X",
               type: "string",
               kind: "input",
             },
             {
               id: "ex-shoptet-permalink-src-charset",
               name: "File charset",
-              description: "Determines the source file charset. All files will be converted to UTF-8.",
+              description: "Source file charset. All files will be converted to UTF-8.",
               type: "string",
               kind: "input",
               default: "windows-1250"
