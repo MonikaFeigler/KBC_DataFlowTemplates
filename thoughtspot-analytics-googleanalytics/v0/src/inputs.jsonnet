@@ -8,7 +8,7 @@
           icon: "component:keboola.ex-google-analytics-v4",
           name: "Google Analytics",
           description: "Google Analytics Data Source",
-          dialogName: "Google Analytics Data Source", 
+          dialogName: "Analytics Data Source", 
           dialogDescription: "This extractor is getting data from Google Analytics. It's an incremental update.",
           inputs: [],  
         },
@@ -94,10 +94,10 @@
       required: "all",
       steps: [
         {
-          icon: "component:keboola.wr-snowflake-blob-storage",
-          name: "Snowflake",
-          description: "Snowflake - Destination",
-          dialogName: "Snowflake Destination", 
+          icon: "component:keboola.wr-google-bigquery-v2",
+          name: "Google Big Query",
+          description: "Big Query - Destination",
+          dialogName: "Big Query Destination", 
           dialogDescription: "",
           inputs: [
             {
