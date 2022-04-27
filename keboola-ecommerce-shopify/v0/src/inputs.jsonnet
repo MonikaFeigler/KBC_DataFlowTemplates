@@ -21,13 +21,13 @@
             {
               id: "ex-shopify-shop",
               name: "Shop name",
-              description: "Insert your shop id. found in url, e.g. [shop_id].myshopify.com.",
+              description: "Insert your shop id.",
               type: "string",
               kind: "input",
             },
             {
               id: "ex-shopify-period-from-date",
-              name: "Period from date [including]",
+              name: "Period from date [includ.]",
               description: "Select period from date.",
               type: "string",
               kind: "select",
