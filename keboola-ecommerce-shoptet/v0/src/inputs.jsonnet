@@ -75,22 +75,23 @@
               description: "Select period from which you want to get the data.",
               type: "string",
               kind: "select",
+              default: "2 months ago",
               options: [
                 {
-                  id: '1 week ago',
-                  name: '1 week ago',
+                  value: '1 week ago',
+                  label: '1 week ago',
                 },
                 {
-                  id: '2 weeks ago',
-                  name: '2 weeks ago',
+                  value: '2 weeks ago',
+                  label: '2 weeks ago',
                 },
                 {
-                  id: '1 month ago',
-                  name: '1 month ago',
+                  value: '1 month ago',
+                  label: '1 month ago',
                 },
                 {
-                  id: '2 months ago',
-                  name: '2 months ago',
+                  value: '2 months ago',
+                  label: '2 months ago',
                 },
               ],
             },
@@ -100,18 +101,19 @@
               description: "Select period to date you want to get the data.",
               type: "string",
               kind: "select",
+              default: "now",
               options: [
                 {
-                  id: 'now',
-                  name: 'now',
+                  value: 'now',
+                  label: 'now',
                 },
                 {
-                  id: '1 day ago',
-                  name: '1 day ago',
+                  value: '1 day ago',
+                  label: '1 day ago',
                 },
                 {
-                  id: '1 week ago',
-                  name: '1 week ago',
+                  value: '1 week ago',
+                  label: '1 week ago',
                 },
               ],
             }
