@@ -101,7 +101,7 @@
               description: "Select period to date you want to get the data.",
               type: "string",
               kind: "select",
-              default: 'now',
+              default: "now",
               options: [
                 {
                   id: 'now',
