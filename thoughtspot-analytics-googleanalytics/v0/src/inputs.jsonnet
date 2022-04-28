@@ -1,7 +1,7 @@
 {
   stepsGroups: [
     {
-      description: "Extractor",
+      description: "Configure your credentials for Google Analytics extractor.",
       required: "all",
       steps: [
         {

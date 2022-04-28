@@ -1,7 +1,7 @@
 {
   stepsGroups: [
     {
-      description: "Extractor",
+      description: "Configure your credentials for Hubspot extractor.",
       required: "all",
       steps: [
         {
