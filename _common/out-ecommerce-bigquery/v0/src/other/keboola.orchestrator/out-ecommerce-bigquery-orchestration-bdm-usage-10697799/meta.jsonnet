@@ -1,3 +1,3 @@
 {
-  name: "[OUT-ECOMMERCE-BIGQUERY] Orchestration: BDM Usage /" + ConfigId("in-ecommerce-shopify-extractor-10697799"),
+  name: "[OUT-ECOMMERCE-BIGQUERY] Orchestration: BDM Usage /" + ConfigId("out-ecommerce-bigquery-writer-10697799"),
 }
