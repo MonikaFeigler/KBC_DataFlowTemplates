@@ -47,13 +47,13 @@
       ],
     },
     {   
-      description: "Snowflake Transformation",
+      description: "Snowflake Transformations",
       required: "all",
       steps: [
         {
           icon: "component:keboola.snowflake-transformation",
           name: "Snowflake SQL",
-          description: "Transformation",
+          description: "Transformations",
           inputs: [],
         },
       ]
