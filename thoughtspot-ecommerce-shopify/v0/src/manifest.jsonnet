@@ -34,7 +34,7 @@
     {
       componentId: "keboola.wr-google-bigquery-v2",
       id: ConfigId("out-ecommerce-bigquery-writer-10697799"),
-      path: "writer/keboola.wr-google-bigquery-v2/out-ecommerce-bigquery-writer-10697799",
+      path: "<common>/out-ecommerce-bigquery/v0/src/writer/keboola.wr-google-bigquery-v2/out-ecommerce-bigquery-writer-10697799",
       rows: [
         {
           id: ConfigRowId("bdm-analyze-clv-by-order-count"),

@@ -124,7 +124,7 @@
           ],
         },
         {
-          icon: "component:keboola.wr-google-sheet",
+          icon: "component:keboola.wr-google-bigquery-v2",
           name: "Google Big Query",
           description: "Big Query - Destination",
           dialogName: "Big Query Destination", 
