@@ -14,6 +14,7 @@
     type: "string",
     kind: "input",
     rules: "required",
+    default: "login name",
   },
   {
     id: "ex-salesforce-v2-password",

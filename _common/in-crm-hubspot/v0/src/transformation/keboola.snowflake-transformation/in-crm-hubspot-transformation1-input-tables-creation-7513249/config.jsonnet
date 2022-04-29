@@ -83,7 +83,7 @@
           delete_where_column: "",
           delete_where_operator: "eq",
           delete_where_values: [],
-          destination: "in.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".companies",
+          destination: "in.c-crm-tr-" + InstanceIdShort() + ".companies",
           incremental: true,
           primary_key: [
             "companyId",
@@ -94,7 +94,7 @@
           delete_where_column: "",
           delete_where_operator: "eq",
           delete_where_values: [],
-          destination: "in.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".contacts",
+          destination: "in.c-crm-tr-" + InstanceIdShort() + ".contacts",
           incremental: true,
           primary_key: [
             "canonical_vid",
@@ -105,7 +105,7 @@
           delete_where_column: "",
           delete_where_operator: "eq",
           delete_where_values: [],
-          destination: "in.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".owners",
+          destination: "in.c-crm-tr-" + InstanceIdShort() + ".owners",
           incremental: true,
           primary_key: [
             "ownerId",
@@ -116,7 +116,7 @@
           delete_where_column: "",
           delete_where_operator: "eq",
           delete_where_values: [],
-          destination: "in.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".deals",
+          destination: "in.c-crm-tr-" + InstanceIdShort() + ".deals",
           incremental: true,
           primary_key: [
             "dealId",
@@ -124,7 +124,7 @@
           source: "out_deals",
         },
         {
-          destination: "in.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".deals_companies",
+          destination: "in.c-crm-tr-" + InstanceIdShort() + ".deals_companies",
           primary_key: [
             "dealId",
             "associated_companyId",
@@ -135,7 +135,7 @@
           delete_where_column: "",
           delete_where_operator: "eq",
           delete_where_values: [],
-          destination: "in.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".pipelines",
+          destination: "in.c-crm-tr-" + InstanceIdShort() + ".pipelines",
           incremental: true,
           primary_key: [
             "pipelineId",
@@ -146,7 +146,7 @@
           delete_where_column: "",
           delete_where_operator: "eq",
           delete_where_values: [],
-          destination: "in.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".stages",
+          destination: "in.c-crm-tr-" + InstanceIdShort() + ".stages",
           incremental: true,
           primary_key: [
             "stageId",
@@ -154,7 +154,7 @@
           source: "out_stages",
         },
         {
-          destination: "in.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".deals_contacts_list",
+          destination: "in.c-crm-tr-" + InstanceIdShort() + ".deals_contacts_list",
           primary_key: [
             "dealId",
             "contact_vid",
@@ -165,7 +165,7 @@
           delete_where_column: "",
           delete_where_operator: "eq",
           delete_where_values: [],
-          destination: "in.c-crm-tr-" + ConfigId("in-crm-hubspot-extractor-7513249") + ".activities",
+          destination: "in.c-crm-tr-" + InstanceIdShort() + ".activities",
           incremental: true,
           primary_key: [
             "engagement_id",
