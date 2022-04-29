@@ -10,9 +10,11 @@
   {
     id: "ex-shopify-shop",
     name: "Shop name",
-    description: "Insert your shop id found in url, e.g. [shop_id].myshopify.com.",
+    description: "Insert shop id found in url, e.g. [shop_id].myshopify.com",
     type: "string",
     kind: "input",
+    rules: "required",
+    deafult: "shop name"
   },
   {
     id: "ex-shopify-period-from-date",
@@ -23,20 +25,20 @@
     default: '2 months ago',
     options: [
       {
-        id: '1 week ago',
-        name: '1 week ago',
+        value: '1 week ago',
+        label: '1 week ago',
       },
       {
-        id: '2 weeks ago',
-        name: '2 weeks ago',
+        value: '2 weeks ago',
+        label: '2 weeks ago',
       },
       {
-        id: '1 month ago',
-        name: '1 month ago',
+        value: '1 month ago',
+        label: '1 month ago',
       },
       {
-        id: '2 months ago',
-        name: '2 months ago',
+        value: '2 months ago',
+        label: '2 months ago',
       },
     ],
   },
