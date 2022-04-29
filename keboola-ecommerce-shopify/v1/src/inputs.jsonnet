@@ -1,3 +1,6 @@
+local googlesheet = import "/<common>/out-ecommerce-gsheet/v0/src/inputs.jsonnet";
+local snowflake = import "/<common>/out-ecommerce-snowflake/v0/src/inputs.jsonnet";
+local shopify = import "/<common>/in-ecommerce-shopify/v0/src/inputs.jsonnet";
 {
   stepsGroups: [
     {
@@ -10,70 +13,7 @@
           description: "Shopify - Data Source",
           dialogName: "Shopify Data Source", 
           dialogDescription: "Extractor collects data from Shopify about orders, products, inventory and customers. Use Admin API access token of your Shopify custom app. and shop id found in url, e.g. [shop_id].myshopify.com",
-          inputs: [
-            {
-              id: "ex-shopify-api-token",
-              name: "Admin API token",
-              description: "Shopify API access token",
-              type: "string",
-              kind: "hidden",
-            },
-            {
-              id: "ex-shopify-shop",
-              name: "Shop name",
-              description: "Insert your shop id.",
-              type: "string",
-              kind: "input",
-            },
-            {
-              id: "ex-shopify-period-from-date",
-              name: "Period from date [incl.]",
-              description: "Select period from date.",
-              type: "string",
-              kind: "select",
-              default: '2 months ago',
-              options: [
-                {
-                  value: '1 week ago',
-                  label: '1 week ago',
-                },
-                {
-                  value: '2 weeks ago',
-                  label: '2 weeks ago',
-                },
-                {
-                  value: '1 month ago',
-                  label: '1 month ago',
-                },
-                {
-                  value: '2 months ago',
-                  label: '2 months ago',
-                },
-              ],
-            },
-            {
-              id: "ex-shopify-period-to-date",
-              name: "Period to date [exclud.]",
-              description: "Select period to date.",
-              type: "string",
-              kind: "select",
-              default: 'now',
-              options: [
-                {
-                  value: 'now',
-                  label: 'now',
-                },
-                {
-                  value: '1 day ago',
-                  label: '1 day ago',
-                },
-                {
-                  value: '1 week ago',
-                  label: '1 week ago',
-                },
-              ],
-            },
-          ],
+          inputs: shopify,
         }
       ]
     },
