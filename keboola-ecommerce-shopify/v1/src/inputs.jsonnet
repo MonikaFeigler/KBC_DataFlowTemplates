@@ -13,7 +13,7 @@ local shopify = import "/<common>/in-ecommerce-shopify/v0/src/inputs.jsonnet";
           description: "Shopify - Data Source",
           dialogName: "Shopify Data Source", 
           dialogDescription: "Extractor collects data from Shopify about orders, products, inventory and customers. Use Admin API access token of your Shopify custom app. and shop id found in url, e.g. [shop_id].myshopify.com",
-          inputs: shopify,
+          inputs: shopify
         }
       ]
     },
@@ -61,6 +61,4 @@ local shopify = import "/<common>/in-ecommerce-shopify/v0/src/inputs.jsonnet";
           ],  
         },
       ]
-    },
-  ],
-}
+    }
