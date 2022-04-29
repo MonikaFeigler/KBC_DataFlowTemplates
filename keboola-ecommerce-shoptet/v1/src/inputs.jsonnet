@@ -134,7 +134,7 @@
       ]
     },
     {
-      description: "Configure your credentials for Snowflake writer.",
+      description: "Configure your credentials for writer.",
       required: "optional",
       steps: [
         {
