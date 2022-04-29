@@ -1,3 +1,3 @@
 {
-isIgnored: InputIsAvailbale("wr-snowflake-blob-storage-db-host") == false,
+  isIgnored: Input("google-sheet-checkbox") == false,
 }
