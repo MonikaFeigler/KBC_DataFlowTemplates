@@ -90,7 +90,7 @@
       ]
     },
     {
-      description: "Writer",
+      description: "Configure your credentials for writer.",
       required: "optional",
       steps: [
           {
