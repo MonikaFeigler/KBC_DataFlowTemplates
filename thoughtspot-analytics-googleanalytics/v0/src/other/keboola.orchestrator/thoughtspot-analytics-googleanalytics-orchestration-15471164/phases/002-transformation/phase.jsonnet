@@ -1,6 +1,6 @@
 {
   name: "Transformation",
   dependsOn: [
-    "001-extractor",
+    "001-extraction",
   ],
 }

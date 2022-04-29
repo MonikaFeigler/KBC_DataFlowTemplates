@@ -4,6 +4,6 @@
   enabled: true,
   task: {
     mode: "run",
-    configPath: "extractor/keboola.ex-google-analytics-v4/in-thoughtspot-gaa-extractor-15471164",
+    configPath: "<common>/in-thoughtspot-googleanalytics/v0/src/extractor/keboola.ex-google-analytics-v4/in-thoughtspot-gaa-extractor-15471164",
   },
 }
