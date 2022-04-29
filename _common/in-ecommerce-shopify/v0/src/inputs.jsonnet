@@ -18,7 +18,7 @@
   },
   {
     id: "ex-shopify-period-from-date",
-    name: "Period from date [including]",
+    name: "Period from date [incl.]",
     description: "Select period from which you want to get the data.",
     type: "string",
     kind: "select",
@@ -44,7 +44,7 @@
   },
   {
     id: "ex-shopify-period-to-date",
-    name: "Period to date [excluding]",
+    name: "Period to date [excl.]",
     description: "Select period to date you want to get the data.",
     type: "string",
     kind: "select",
