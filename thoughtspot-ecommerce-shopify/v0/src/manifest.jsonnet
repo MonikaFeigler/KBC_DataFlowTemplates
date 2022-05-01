@@ -41,7 +41,7 @@
       componentId: "keboola.wr-google-bigquery-v2",
       id: ConfigId("out-ecommerce-bigquery-writer-10697799"),
       path: "<common>/out-ecommerce-bigquery/v0/src/writer/keboola.wr-google-bigquery-v2/out-ecommerce-bigquery-writer-10697799",
-      rows: [
+      rows: std.filter(function(v) v != null,[
         {
           id: ConfigRowId("bdm-analyze-clv-by-order-count"),
           path: "rows/bdm-analyze-clv-by-order-count",
@@ -86,14 +86,24 @@
           id: ConfigRowId("out-shop"),
           path: "rows/out-shop",
         },
-      ],
+        if InputIsAvailable("ex-sklik-token")|| InputIsAvailable("ex-google-ads-customer-id")||InputIsAvailable("ex-facebook-ads-api-version") then
+        {
+          id: ConfigRowId("bdm-marketing-campaign-costs"),
+          path: "rows/bdm-marketing-campaign-costs",
+        },
+        if InputIsAvailable("ex-sklik-token")|| InputIsAvailable("ex-google-ads-customer-id")||InputIsAvailable("ex-facebook-ads-api-version") then
+        {
+          id: ConfigRowId("bdm-marketing-campaign-costs-monthly"),
+          path: "rows/bdm-marketing-campaign-costs-monthly",
+        }
+      ]),
     },
     if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("out-ecommerce-snowflake-writer-10697799"),
       path: "<common>/out-ecommerce-snowflake/v0/src/writer/keboola.wr-snowflake-blob-storage/out-ecommerce-snowflake-writer-10697799",
-      rows: [
+      rows: std.filter(function(v) v != null,[
         {
           id: ConfigRowId("bdm-analyze-clv-by-order-count-001"),
           path: "rows/bdm-analyze-clv-by-order-count-001",
@@ -138,7 +148,17 @@
           id: ConfigRowId("out-shop-001"),
           path: "rows/out-shop-001",
         },
-      ],
+        if InputIsAvailable("ex-sklik-token")|| InputIsAvailable("ex-google-ads-customer-id")||InputIsAvailable("ex-facebook-ads-api-version") then
+        {
+          id: ConfigRowId("bdm-marketing-campaign-costs"),
+          path: "rows/bdm-marketing-campaign-costs",
+        },
+        if InputIsAvailable("ex-sklik-token")|| InputIsAvailable("ex-google-ads-customer-id")||InputIsAvailable("ex-facebook-ads-api-version") then
+        {
+          id: ConfigRowId("bdm-marketing-campaign-costs-monthly"),
+          path: "rows/bdm-marketing-campaign-costs-monthly",
+        }
+      ]),
     },
     if InputIsAvailable("ex-facebook-ads-api-version") then
     {
@@ -187,23 +207,6 @@
       path: "<common>/in-ecommerce-sklik/v0/src/transformation/keboola.snowflake-transformation/in-ecommerce-sklik-transformation-6031007",
       rows: [],
     },
-    if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
-      if InputIsAvailable("ex-sklik-token")|| InputIsAvailable("ex-google-ads-customer-id")||InputIsAvailable("ex-facebook-ads-api-version") then
-        {
-          componentId: "keboola.wr-snowflake-blob-storage",
-          id: ConfigId("out-ecommerce-snowflake-marketing-writer-6031001"),
-          path: "<common>/out-ecommerce-snowflake-marketing/v0/src/writer/keboola.wr-snowflake-blob-storage/out-ecommerce-snowflake-marketing-writer-6031001",
-          rows: [
-            {
-              id: ConfigRowId("bdm-marketing-campaign-costs"),
-              path: "rows/bdm-marketing-campaign-costs",
-            },
-            {
-              id: ConfigRowId("bdm-marketing-campaign-costs-monthly"),
-              path: "rows/bdm-marketing-campaign-costs-monthly",
-            },
-          ],
-        },
     ],
   )
 }
