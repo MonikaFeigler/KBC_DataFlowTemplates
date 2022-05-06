@@ -1,6 +1,4 @@
-.env.local
-thoughtspot-gaa-snowflake/.DS_Store
+.idea
 .DS_Store
-KBC_DataFlowTemplates.code-workspace
-XXX-KBC_DataFlowTemplates.code-workspace
+keboola-dft-main.code-workspace
 XXX-keboola-dft-main.code-workspace
