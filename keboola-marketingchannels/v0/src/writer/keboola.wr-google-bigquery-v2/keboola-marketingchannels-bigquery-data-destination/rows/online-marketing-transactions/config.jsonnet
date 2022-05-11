@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-marketing-bdm.online_marketing_transactions",
-          destination: "out.c-marketing-bdm.online_marketing_transactions.csv",
+          source: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_transactions",
+          destination: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_transactions.csv",
           changed_since: "adaptive",
           columns: [
             "online_marketing_transactions_id",
@@ -26,7 +26,7 @@
     tables: [
       {
         dbName: "online_marketing_transactions",
-        tableId: "out.c-marketing-bdm.online_marketing_transactions",
+        tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_transactions",
         incremental: true,
         items: [
           {

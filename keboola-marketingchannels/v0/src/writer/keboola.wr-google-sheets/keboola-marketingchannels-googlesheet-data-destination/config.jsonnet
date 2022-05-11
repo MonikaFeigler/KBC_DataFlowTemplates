@@ -12,7 +12,7 @@
         action: "update",
         sheetTitle: "keywords_adgroup",
         enabled: true,
-        tableId: "out.c-marketing-bdm.keywords_adgroup",
+        tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup",
         title: "online_marketing",
         sheetId: 0,
         fileId: "16dWAs5Xfo6X9y6d4z2HOu79LQwF6q-M_fuVAPkFYyRk",
@@ -22,7 +22,7 @@
         action: "update",
         sheetTitle: "online_marketing_traffic",
         enabled: true,
-        tableId: "out.c-marketing-bdm.online_marketing_traffic",
+        tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_traffic",
         title: "online_marketing",
         fileId: "16dWAs5Xfo6X9y6d4z2HOu79LQwF6q-M_fuVAPkFYyRk",
         sheetId: 1468111673,
@@ -32,7 +32,7 @@
         action: "update",
         sheetTitle: "online_marketing_transactions",
         enabled: true,
-        tableId: "out.c-marketing-bdm.online_marketing_transactions",
+        tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_transactions",
         title: "online_marketing",
         fileId: "16dWAs5Xfo6X9y6d4z2HOu79LQwF6q-M_fuVAPkFYyRk",
         sheetId: 1616225391,
@@ -44,7 +44,7 @@
       tables: [
         {
           source: "out.c-marketing-bdm.keywords_adgroup",
-          destination: "out.c-marketing-bdm.keywords_adgroup.csv",
+          destination: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup.csv",
           where_column: "",
           where_values: [],
           where_operator: "eq",
@@ -52,7 +52,7 @@
         },
         {
           source: "out.c-marketing-bdm.online_marketing_traffic",
-          destination: "out.c-marketing-bdm.online_marketing_traffic.csv",
+          destination: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_traffic.csv",
           where_column: "",
           where_values: [],
           where_operator: "eq",
@@ -60,7 +60,7 @@
         },
         {
           source: "out.c-marketing-bdm.online_marketing_transactions",
-          destination: "out.c-marketing-bdm.online_marketing_transactions.csv",
+          destination: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_transactions.csv",
           where_column: "",
           where_values: [],
           where_operator: "eq",

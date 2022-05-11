@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-marketing-bdm.keywords_adgroup",
+    tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup",
     dbName: "keywords_adgroup",
     incremental: true,
     primaryKey: [
@@ -45,8 +45,8 @@
     input: {
       tables: [
         {
-          source: "out.c-marketing-bdm.keywords_adgroup",
-          destination: "out.c-marketing-bdm.keywords_adgroup.csv",
+          source: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup",
+          destination: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup.csv",
           columns: [
             "keyword_id",
             "online_marketing_traffic_id",

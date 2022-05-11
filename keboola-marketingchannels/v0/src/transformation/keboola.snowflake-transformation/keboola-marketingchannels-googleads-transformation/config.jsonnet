@@ -40,21 +40,21 @@
     output: {
       tables: [
         {
-          destination: "out.c-marketing-tr.adwords",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".adwords",
           source: "out_adwords",
           primary_key: [
             "adwords_id",
           ],
         },
         {
-          destination: "out.c-marketing-tr.online_marketing",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".online_marketing",
           primary_key: [
             "online_marketing_traffic_id",
           ],
           source: "out_marketing",
         },
         {
-          destination: "out.c-marketing-tr.accounts",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".accounts",
           primary_key: [
             "ads_system",
             "account_id",

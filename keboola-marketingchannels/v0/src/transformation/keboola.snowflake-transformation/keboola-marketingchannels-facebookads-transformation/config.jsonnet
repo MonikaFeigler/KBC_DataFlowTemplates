@@ -56,14 +56,14 @@
     output: {
       tables: [
         {
-          destination: "out.c-marketing-tr.facebook_ads",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".facebook_ads",
           source: "out_facebook",
           primary_key: [
             "facebook_ads_id",
           ],
         },
         {
-          destination: "out.c-marketing-tr.accounts",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".accounts",
           source: "accounts",
           primary_key: [
             "ads_system",
@@ -76,7 +76,7 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-marketing-tr.online_marketing",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".online_marketing",
           source: "out_marketing",
           primary_key: [
             "online_marketing_traffic_id",

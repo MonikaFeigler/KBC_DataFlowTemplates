@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-marketing-bdm.keywords_adgroup",
-          destination: "out.c-marketing-bdm.keywords_adgroup.csv",
+          source: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup",
+          destination: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup.csv",
           changed_since: "adaptive",
           columns: [
             "keyword_id",
@@ -20,7 +20,7 @@
     tables: [
       {
         dbName: "keywords_adgroup",
-        tableId: "out.c-marketing-bdm.keywords_adgroup",
+        tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup",
         incremental: true,
         items: [
           {

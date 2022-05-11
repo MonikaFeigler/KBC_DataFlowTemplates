@@ -32,21 +32,21 @@
     output: {
       tables: [
         {
-          destination: "out.c-marketing-tr.linkedin",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".linkedin",
           source: "out_linkedin",
           primary_key: [
             "linkedin_id",
           ],
         },
         {
-          destination: "out.c-marketing-tr.online_marketing",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".online_marketing",
           source: "out_marketing",
           primary_key: [
             "online_marketing_traffic_id",
           ],
         },
         {
-          destination: "out.c-marketing-tr.accounts",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".accounts",
           primary_key: [
             "ads_system",
             "account_id",

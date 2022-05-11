@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-marketing-bdm.online_marketing_traffic",
+    tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_traffic",
     dbName: "online_marketing_traffic",
     incremental: true,
     primaryKey: [
@@ -133,8 +133,8 @@
     input: {
       tables: [
         {
-          source: "out.c-marketing-bdm.online_marketing_traffic",
-          destination: "out.c-marketing-bdm.online_marketing_traffic.csv",
+          source: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_traffic",
+          destination: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_traffic.csv",
           columns: [
             "online_marketing_traffic_id",
             "account_name",
