@@ -1,5 +1,9 @@
 {
   "version": 2,
+  "author": {
+    "name": "IIIDM international consulting s.r.o.",
+    "url": "https://iiidmic.com"
+  },
   "templates": [
     {
       "id": "api-demo",
