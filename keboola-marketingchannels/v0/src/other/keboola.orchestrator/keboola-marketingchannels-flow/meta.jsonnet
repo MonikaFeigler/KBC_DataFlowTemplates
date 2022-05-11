@@ -1,3 +1,3 @@
 {
-  name: "[KEBOOLA-MARKETINGCHANNELS] Flow",
+  name: "[KEBOOLA-MARKETINGCHANNELS] Flow /" + InstanceIdShort(),
 }

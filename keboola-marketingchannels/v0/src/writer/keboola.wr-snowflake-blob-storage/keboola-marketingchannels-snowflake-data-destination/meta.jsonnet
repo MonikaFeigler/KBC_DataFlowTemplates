@@ -1,3 +1,3 @@
 {
-  name: "[KEBOOLA-MARKETINGCHANNELS-SNOWFLAKE] Data Destination",
+  name: "[KEBOOLA-MARKETINGCHANNELS-SNOWFLAKE] Data Destination /" + InstanceIdShort(),
 }

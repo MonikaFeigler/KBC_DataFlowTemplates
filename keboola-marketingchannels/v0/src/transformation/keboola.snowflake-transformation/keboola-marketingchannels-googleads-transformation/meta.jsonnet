@@ -1,3 +1,3 @@
 {
-  name: "[KEBOOLA-MARKETINGCHANNELS-GOOGLEADS] Transformation",
+  name: "[KEBOOLA-MARKETINGCHANNELS-GOOGLEADS] Transformation /" + InstanceIdShort(),
 }

@@ -1,3 +1,3 @@
 {
-  name: "[KEBOOLA-MARKETINGCHANNELS-FACEBOOK] Data Source",
+  name: "[KEBOOLA-MARKETINGCHANNELS-FACEBOOK] Data Source /" + InstanceIdShort(),
 }
