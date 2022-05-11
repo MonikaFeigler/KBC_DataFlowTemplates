@@ -1,3 +1,3 @@
 {
-  name: "[ANALYTICS-GOOGLEANALYTICS] Orchestration /" + InstanceIdShort(),
+  name: "[KEBOOLA-ANALYTICS-GOOGLEANALYTICS] Orchestration /" + InstanceIdShort(),
 }
