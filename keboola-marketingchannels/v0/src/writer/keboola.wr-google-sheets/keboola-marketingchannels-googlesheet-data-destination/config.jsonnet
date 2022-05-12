@@ -37,6 +37,16 @@
         fileId: "16dWAs5Xfo6X9y6d4z2HOu79LQwF6q-M_fuVAPkFYyRk",
         sheetId: 1616225391,
       },
+      {
+        id: 64957,
+        action: "update",
+        sheetTitle: "online_marketing",
+        enabled: true,
+        tableId: "out.c-marketing-tr-" + InstanceIdShort() + ".online_marketing",
+        title: "online_marketing",
+        fileId: "16dWAs5Xfo6X9y6d4z2HOu79LQwF6q-M_fuVAPkFYyRk",
+        sheetId: 1616225392,
+      },
     ],
   },
   storage: {
@@ -61,6 +71,14 @@
         {
           source: "out.c-marketing-bdm.online_marketing_transactions",
           destination: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_transactions.csv",
+          where_column: "",
+          where_values: [],
+          where_operator: "eq",
+          columns: [],
+        },
+        {
+          source: "out.c-marketing-tr.online_marketing",
+          destination: "out.c-marketing-tr-" + InstanceIdShort() + ".online_marketing.csv",
           where_column: "",
           where_values: [],
           where_operator: "eq",

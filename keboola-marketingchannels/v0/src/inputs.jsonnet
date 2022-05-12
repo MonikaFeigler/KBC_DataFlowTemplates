@@ -215,7 +215,16 @@
           description: "Load to data into google sheet",
           dialogName: "Google Sheet Destination", 
           dialogDescription: "Data load to Google Sheet.",
-          inputs: []
+          inputs: [
+            {
+              id: "google-sheet-checkbox",
+              name: "Google sheet destination",
+              description: "Do you want to load data into google sheet?",
+              type: "bool",
+              kind: "confirm",
+              default: true,
+            },
+          ]
         },
         {
           icon: "component:keboola.wr-google-bigquery-v2",
