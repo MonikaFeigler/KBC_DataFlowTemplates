@@ -1,6 +1,4 @@
 {
   name: "Transformation: Google Analytics",
-  dependsOn: [
-    "009-transformation-bing-ads",
-  ],
+  dependsOn: ["<previous>"],
 }

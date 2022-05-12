@@ -1,4 +1,4 @@
 {
   name: "Extraction: Facebook Ads",
-  dependsOn: [],
+  dependsOn: ["<previous>"],
 }
