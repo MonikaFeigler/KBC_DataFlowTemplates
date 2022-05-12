@@ -39,7 +39,7 @@
         },
       ],
     },
-    if Input("google-analytics-checkbox") == true then
+    if InputIsAvailable("ga-from") then
     {
       componentId: "keboola.ex-google-analytics-v4",
       id: ConfigId("keboola-marketingchannels-googleanalytics-data-source"),
@@ -55,7 +55,7 @@
         },
       ],
     },
-    if Input("linkedin-checkbox") == true then
+    if InputIsAvailable("ex-linkedin-start-day") then
     {
       componentId: "leochan.ex-linkedin",
       id: ConfigId("keboola-marketingchannels-linkedin-data-source"),
@@ -86,7 +86,7 @@
       rows: [],
       metadata: { "KBC.configuration.folderName": "[KEBOOLA-MARKETINGCHANNELS]"}
     },
-    if Input("google-analytics-checkbox") == true then
+    if InputIsAvailable("ga-from") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("keboola-marketingchannels-googleanalytics-transformation"),
@@ -94,7 +94,7 @@
       rows: [],
       metadata: { "KBC.configuration.folderName": "[KEBOOLA-MARKETINGCHANNELS]"}
     },
-    if Input("linkedin-checkbox") == true then
+    if InputIsAvailable("ex-linkedin-start-day") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("keboola-marketingchannels-linkedin-transformation"),
@@ -108,17 +108,17 @@
       id: ConfigId("keboola-marketingchannels-bigquery-data-destination"),
       path: "writer/keboola.wr-google-bigquery-v2/keboola-marketingchannels-bigquery-data-destination",
       rows: std.filter(function(v) v != null,[
-        if Input("google-analytics-checkbox") == true then
+        if InputIsAvailable("ga-from") then
         {
           id: ConfigRowId("keywords-adgroup"),
           path: "rows/keywords-adgroup",
         },
-        if Input("google-analytics-checkbox") == true then
+        if InputIsAvailable("ga-from") then
         {
           id: ConfigRowId("online-marketing-traffic"),
           path: "rows/online-marketing-traffic",
         },
-        if Input("google-analytics-checkbox") == true then
+        if InputIsAvailable("ga-from") then
         {
           id: ConfigRowId("online-marketing-transactions"),
           path: "rows/online-marketing-transactions",
@@ -143,17 +143,17 @@
       id: ConfigId("keboola-marketingchannels-snowflake-data-destination"),
       path: "writer/keboola.wr-snowflake-blob-storage/keboola-marketingchannels-snowflake-data-destination",
       rows: std.filter(function(v) v != null,[
-        if Input("google-analytics-checkbox") == true then
+        if InputIsAvailable("ga-from") then
         {
           id: ConfigRowId("keywords-adgroup-001"),
           path: "rows/keywords-adgroup-001",
         },
-        if Input("google-analytics-checkbox") == true then
+        if InputIsAvailable("ga-from") then
         {
           id: ConfigRowId("online-marketing-traffic-001"),
           path: "rows/online-marketing-traffic-001",
         },
-        if Input("google-analytics-checkbox") == true then
+        if InputIsAvailable("ga-from") then
         {
           id: ConfigRowId("online-marketing-transactions-001"),
           path: "rows/online-marketing-transactions-001",

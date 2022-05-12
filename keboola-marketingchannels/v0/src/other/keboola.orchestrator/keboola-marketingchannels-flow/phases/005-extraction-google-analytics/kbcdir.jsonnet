@@ -1,3 +1,3 @@
 {
-  isIgnored: Input("google-analytics-checkbox") == false,
+  isIgnored: InputIsAvailable("ga-from") == false,
 }
