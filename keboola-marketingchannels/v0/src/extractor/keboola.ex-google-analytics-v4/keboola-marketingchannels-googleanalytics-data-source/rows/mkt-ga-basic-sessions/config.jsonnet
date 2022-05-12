@@ -5,8 +5,8 @@
     query: {
       dateRanges: [
         {
-          startDate: "1.1.2022",
-          endDate: "-1 day",
+          endDate: Input("ga-to"),
+          startDate: Input("ga-from"),
         },
       ],
       metrics: [
