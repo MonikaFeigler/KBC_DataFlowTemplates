@@ -55,6 +55,7 @@
         },
       ],
     },
+    if Input("linkedin-checkbox") == true then
     {
       componentId: "leochan.ex-linkedin",
       id: ConfigId("keboola-marketingchannels-linkedin-data-source"),
@@ -93,6 +94,7 @@
       rows: [],
       metadata: { "KBC.configuration.folderName": "[KEBOOLA-MARKETINGCHANNELS]"}
     },
+    if Input("linkedin-checkbox") == true then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("keboola-marketingchannels-linkedin-transformation"),
@@ -121,7 +123,7 @@
           id: ConfigRowId("online-marketing-transactions"),
           path: "rows/online-marketing-transactions",
         },
-        if InputIsAvailable("ex-bingads-dev-key")||InputIsAvailable("ex-facebook-ads-api-version")||InputIsAvailable("ex-google-ads-customer-id") then
+        if InputIsAvailable("ex-bingads-dev-key")|| Input("linkedin-checkbox") == true||InputIsAvailable("ex-facebook-ads-api-version")||InputIsAvailable("ex-google-ads-customer-id") then
         {
           id: ConfigRowId("online-marketing"),
           path: "rows/online-marketing",
@@ -156,7 +158,7 @@
           id: ConfigRowId("online-marketing-transactions-001"),
           path: "rows/online-marketing-transactions-001",
         },
-        if InputIsAvailable("ex-bingads-dev-key")||InputIsAvailable("ex-facebook-ads-api-version")|| InputIsAvailable("ex-google-ads-customer-id") then
+        if InputIsAvailable("ex-bingads-dev-key")||Input("linkedin-checkbox") == true||InputIsAvailable("ex-facebook-ads-api-version")|| InputIsAvailable("ex-google-ads-customer-id") then
         {
           id: ConfigRowId("online-marketing"),
           path: "rows/online-marketing",

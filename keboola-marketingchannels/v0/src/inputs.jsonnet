@@ -77,7 +77,16 @@
           description: "LinkedIn Ads - Data Source",
           dialogName: "LinkedIn Ads Data Source", 
           dialogDescription: "This extractor is incremental. It was first run from Jan 1 22, then it is scheduled to run on weekly basis.",
-          inputs: []
+          inputs: [
+            {
+              id: "linkedin-checkbox",
+              name: "LinkedIn Data Source",
+              description: "Do you want to upload data from LinkedIn?",
+              type: "bool",
+              kind: "confirm",
+              default: true,
+            },
+          ]
         },
         {
           icon: "component:keboola.ex-google-ads",
