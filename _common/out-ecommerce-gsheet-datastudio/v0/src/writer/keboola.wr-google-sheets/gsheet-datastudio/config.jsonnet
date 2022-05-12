@@ -10,7 +10,7 @@
         sheetTitle: "bdmOrderLinesEnrich",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrderLinesEnrich",
-        title: "Ecommerce",
+        title: "Ecommerce-"+ InstanceIdShort(),
         sheetId: 0,
         fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s"
       },
@@ -20,7 +20,7 @@
         sheetTitle: "bdmProductsEnrich",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmProductsEnrich",
-        title: "Ecommerce",
+        title: "Ecommerce-"+ InstanceIdShort(),
         fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
         sheetId: 72132448
       },
@@ -30,7 +30,7 @@
         sheetTitle: "bdmOrderLinesMargin",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrderLinesMargin",
-        title: "Ecommerce",
+        title: "Ecommerce-"+ InstanceIdShort(),
         fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
         sheetId: 1610120104
       },
@@ -40,7 +40,7 @@
         sheetTitle: "bdmOrdersEnrich",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrdersEnrich",
-        title: "Ecommerce",
+        title: "Ecommerce-"+ InstanceIdShort(),
         fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
         sheetId: 1319559754
       },
@@ -50,7 +50,7 @@
         sheetTitle: "bdmShop",
         enabled: true,
         tableId: "out.c-ecommerce-wr-" + InstanceIdShort() + ".out_shop",
-        title: "Ecommerce",
+        title: "Ecommerce-"+ InstanceIdShort(),
         fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
         sheetId: 81153094
       },
@@ -60,7 +60,7 @@
         sheetTitle: "bdmRfm",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmRfmEnrich",
-        title: "Ecommerce",
+        title: "Ecommerce-"+ InstanceIdShort(),
         fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
         sheetId: 100102089
       },
@@ -70,7 +70,7 @@
         sheetTitle: "bdmCustomerEnrich",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmCustomerEnrich",
-        title: "Ecommerce",
+        title: "Ecommerce-"+ InstanceIdShort(),
         fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
         sheetId: 388560759
       }
