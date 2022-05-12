@@ -58,12 +58,12 @@
           name: "Facebook Ads Data Source",
           description: "Facebook Ads - Data Source",
           dialogName: "Facebook Ads Data Source", 
-          dialogDescription: "",
+          dialogDescription: "This extractor is getting data about facebook campaigns, ads, adsets and ads insights for the last day.",
           inputs: [
             {
               id: "ex-facebook-ads-api-version",
               name: "Api version",
-              description: "",
+              description: "Set Facebook Api version",
               type: "string",
               kind: "input",
               default: "v12.0",
@@ -76,7 +76,7 @@
           name: "LinkedIn Ads",
           description: "LinkedIn Ads - Data Source",
           dialogName: "LinkedIn Ads Data Source", 
-          dialogDescription: "",
+          dialogDescription: "This extractor is incremental. It was first run from Jan 1 22, then it is scheduled to run on weekly basis.",
           inputs: []
         },
         {
@@ -84,15 +84,15 @@
           name: "Google Ads",
           description: "Google Ads - Data Source",
           dialogName: "Google Ads Data Source", 
-          dialogDescription: "",
+          dialogDescription: "This extractor is getting data from Google Ads about campaigns for the last day.",
           inputs: [
             {
               id: "ex-google-ads-customer-id",
-              name: "CustomerId",
-              description: "",
-              type: "string[]",
+              name: "Ads Customer Id",
+              description: "Insert ads customer ID",
+              type: "string",
               kind: "input",
-              default: "2607907112",
+              default: "XXX-XXX-XXXX",
               rules: "required",
             },
           ]
@@ -107,8 +107,8 @@
           icon: "component:keboola.ex-google-analytics-v4",
           name: "Google Analytics",
           description: "Google Analytics - Data Source",
-          dialogName: "Google Analytics Data Source", 
-          dialogDescription: "",
+          dialogName: "Analytics Data Source", 
+          dialogDescription: "This extractor is getting data from Google Analytics from last week. It's an incremental update.",
           inputs: []
         }
       ]
@@ -210,7 +210,7 @@
         },
         {
           icon: "component:keboola.wr-google-bigquery-v2",
-           name: "Google Big Query",
+          name: "Google Big Query",
           description: "Big Query - Destination",
           dialogName: "Big Query Destination", 
           dialogDescription: "Data load to Google Big Query",
