@@ -108,8 +108,17 @@
           name: "Google Analytics",
           description: "Google Analytics - Data Source",
           dialogName: "Analytics Data Source", 
-          dialogDescription: "This extractor is getting data from Google Analytics from last week. It's an incremental update.",
-          inputs: []
+          dialogDescription: "This extractor is getting data from Google Analytics from last week. It's an incremental update. This data will enrich the marketing model with marketing traffic and transactions. ",
+          inputs: [
+            {
+              id: "google-analytics-checkbox",
+              name: "Google Analytics",
+              description: "Do you want to upload data from Google analytics.",
+              type: "bool",
+              kind: "confirm",
+              default: true,
+            },
+          ]
         }
       ]
     },
@@ -237,7 +246,7 @@
               description: "Add your service account client id.",
               type: "string",
               kind: "input",
-              default: "templates@keboola-shopify.iam.gserviceaccount.com",
+              default: "Client ID",
             },
             {
               id: "wr-google-bigquery-v2-service-account-private-key-id",
