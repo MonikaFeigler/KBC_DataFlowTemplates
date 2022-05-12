@@ -1,4 +1,3 @@
-local googlesheet = import "/<common>/out-ecommerce-gsheet/v0/src/inputs.jsonnet";
 local snowflake = import "/<common>/out-ecommerce-snowflake/v0/src/inputs.jsonnet";
 local shopify = import "/<common>/in-ecommerce-shopify/v0/src/inputs.jsonnet";
 local bigquery = import "/<common>/out-ecommerce-bigquery/v0/src/inputs.jsonnet";
@@ -6,6 +5,7 @@ local googlesheet = import "/<common>/googlesheet_inputs.jsonnet";
 local facebook = import "/<common>/in-ecommerce-facebook/v0/src/inputs.jsonnet";
 local googleads = import "/<common>/in-ecommerce-googleads/v0/src/inputs.jsonnet";
 local sklik = import "/<common>/in-ecommerce-sklik/v0/src/inputs.jsonnet";
+local datastudio = import "/<common>/datastudio_inputs.jsonnet";
 {
   stepsGroups: [
     {
@@ -91,6 +91,14 @@ local sklik = import "/<common>/in-ecommerce-sklik/v0/src/inputs.jsonnet";
           dialogName: "Google Sheet Destination", 
           dialogDescription: "Data load to Google Sheet.",
           inputs: googlesheet,  
+        },
+        {
+          icon: "component:keboola.wr-google-sheet",
+          name: "Data Studio Dashboard",
+          description: "Load to data into google sheet in form for DataStudio Dashboard",
+          dialogName: "Google Sheet for Ecommerce Dashboard in Data Studio", 
+          dialogDescription: "Data load to Google Sheet in a specific form for Google Data Studio Dashboard. https://datastudio.google.com/reporting/382d43b1-f83f-425a-a1d6-a81259aa6ebb/page/nM3kC",
+          inputs: datastudio,  
         },
       ]
     }
