@@ -123,7 +123,7 @@
           id: ConfigRowId("online-marketing-transactions"),
           path: "rows/online-marketing-transactions",
         },
-        if InputIsAvailable("ex-bingads-dev-key")|| Input("linkedin-checkbox") == true||InputIsAvailable("ex-facebook-ads-api-version")||InputIsAvailable("ex-google-ads-customer-id") then
+        if Input("google-analytics-checkbox") == false then
         {
           id: ConfigRowId("online-marketing"),
           path: "rows/online-marketing",
@@ -158,7 +158,7 @@
           id: ConfigRowId("online-marketing-transactions-001"),
           path: "rows/online-marketing-transactions-001",
         },
-        if InputIsAvailable("ex-bingads-dev-key")||Input("linkedin-checkbox") == true||InputIsAvailable("ex-facebook-ads-api-version")|| InputIsAvailable("ex-google-ads-customer-id") then
+        if Input("google-analytics-checkbox") == false then         
         {
           id: ConfigRowId("online-marketing"),
           path: "rows/online-marketing",

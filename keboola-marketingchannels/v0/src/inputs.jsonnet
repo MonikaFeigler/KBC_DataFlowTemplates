@@ -2,7 +2,7 @@
   stepsGroups: [
     {
       description: "Configure your credentials for marketing channels.",
-      required: "optional",
+      required: "atLeastOne",
       steps: [
         {
           icon: "component:esnerda.ex-bingads",
@@ -110,7 +110,7 @@
     },
     {
       description: "Google Analytics",
-      required: "optional",
+      required: "zeroOrOne",
       steps: [
         {
           icon: "component:keboola.ex-google-analytics-v4",
