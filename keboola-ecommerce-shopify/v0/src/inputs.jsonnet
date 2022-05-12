@@ -96,7 +96,7 @@ local datastudio = import "/<common>/datastudio_inputs.jsonnet";
           icon: "component:keboola.wr-google-sheet",
           name: "Data Studio Dashboard",
           description: "Load to google sheet for DataStudio Dashboard",
-          dialogName: "Ecommerce Dashboard in Data Studio", 
+          dialogName: "Dashboard in Data Studio", 
           dialogDescription: "Data load to Google Sheet in a specific form for Google Data Studio Dashboard. https://datastudio.google.com/reporting/382d43b1-f83f-425a-a1d6-a81259aa6ebb/page/nM3kC",
           inputs: datastudio,  
         },
