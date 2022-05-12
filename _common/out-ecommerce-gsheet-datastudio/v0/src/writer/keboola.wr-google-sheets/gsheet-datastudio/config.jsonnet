@@ -112,8 +112,8 @@
           columns: []
         },
         {
-          source: "out.c-ShopifyEcommerce.outShopify",
-          destination: "out.c-ShopifyEcommerce.outShopify.csv",
+          source: "out.c-ecommerce-wr-" + InstanceIdShort() + ".out_shop",
+          destination: "out.c-ecommerce-wr-" + InstanceIdShort() + ".out_shop",
           where_column: "",
           where_values: [],
           where_operator: "eq",
