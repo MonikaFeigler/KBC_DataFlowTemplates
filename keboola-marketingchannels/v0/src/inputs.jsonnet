@@ -84,7 +84,7 @@
               description: "Start time range of the analytics",
               type: "string",
               kind: "input",
-              rules: 'min=1', 'max=31', 'required',
+              rules: "min=1, max=31, required",
               default: "1",
             },
             {
@@ -93,7 +93,7 @@
               description: "Start time range of the analytics",
               type: "string",
               kind: "input",
-              rules: 'min=1', 'max=12',
+              rules: "min=1, max=12",
               default: "1",
             },
             {
@@ -102,7 +102,7 @@
               description: "Start time range of the analytics",
               type: "string",
               kind: "input",
-              rules: 'len=4', 'min=2000', 'max=2100',
+              rules: "len=4, min=2000, max=2100",
               default: "2022",
             },
             {
@@ -111,7 +111,7 @@
               description: "End time range of the analytics",
               type: "string",
               kind: "input",
-              rules: 'min=', 'max=31',
+              rules: "min=, max=31",
               default: "1",
             },
             {
@@ -120,7 +120,7 @@
               description: "End time range of the analytics",
               type: "string",
               kind: "input",
-              rules: 'min=1', 'max=12',
+              rules: "min=1, max=12",
               default: "1",
             },
             {
@@ -129,7 +129,7 @@
               description: "End time range of the analytics",
               type: "string",
               kind: "input",
-              rules: 'len=4', 'min=2000', 'max=2100',
+              rules: "len=4, min=2000, max=2100",
               default: "2022",
             },
           ]
