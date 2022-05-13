@@ -111,7 +111,7 @@
               description: "End time range of the analytics",
               type: "string",
               kind: "input",
-              rules: "min=, max=31",
+              rules: "min=1, max=31",
               default: "1",
             },
             {
