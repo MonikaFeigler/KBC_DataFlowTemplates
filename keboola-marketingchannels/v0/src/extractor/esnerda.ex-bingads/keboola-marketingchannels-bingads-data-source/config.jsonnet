@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      id: "11808287",
-      version: 3,
-    },
+    oauth_api: {},
   },
   parameters: {
     bucket: Input("ex-bingads-bucket"),

@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      id: ConfigId("keboola-marketingchannels-googleads-data-source"),
-      version: 3,
-    },
+    oauth_api: {},
   },
   parameters: {
     customerId: Input("ex-google-ads-customer-id"),

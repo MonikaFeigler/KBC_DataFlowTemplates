@@ -76,7 +76,7 @@
           name: "LinkedIn Ads",
           description: "LinkedIn Ads - Data Source",
           dialogName: "LinkedIn Ads Data Source", 
-          dialogDescription: "This extractor is incremental. It is scheduled to run on weekly basis.",
+          dialogDescription: "This extractor is incremental. It is necessary to input start time range and end time range of the analytics.",
           inputs: [
             {
               id: "ex-linkedin-start-day",

@@ -1430,9 +1430,6 @@
     },
   },
   authorization: {
-    oauth_api: {
-      id: ConfigId("keboola-marketingchannels-linkedin-data-source"),
-      version: 3,
-    },
+    oauth_api: {},
   },
 }
