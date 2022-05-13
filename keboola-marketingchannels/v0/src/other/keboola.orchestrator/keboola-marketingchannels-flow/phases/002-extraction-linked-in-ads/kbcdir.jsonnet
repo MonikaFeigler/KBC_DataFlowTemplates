@@ -1,3 +1,3 @@
 {
-  isIgnored: Input("google-sheet-checkbox") == false,
+  isIgnored: Input("ex-linkedin-start-day") == false,
 }
