@@ -102,7 +102,7 @@
               description: "Start time range of the analytics",
               type: "int",
               kind: "input",
-              rules: "len=4,min=2000,max=2100",
+              rules: "min=2000,max=2100",
               default: 2022,
             },
             {
