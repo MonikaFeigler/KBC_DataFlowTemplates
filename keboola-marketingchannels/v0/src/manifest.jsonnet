@@ -123,7 +123,7 @@
           id: ConfigRowId("online-marketing-transactions"),
           path: "rows/online-marketing-transactions",
         },
-        if Input("google-analytics-checkbox") == false then
+        if InputIsAvailable("ga-from") == false then
         {
           id: ConfigRowId("online-marketing"),
           path: "rows/online-marketing",
@@ -158,7 +158,7 @@
           id: ConfigRowId("online-marketing-transactions-001"),
           path: "rows/online-marketing-transactions-001",
         },
-        if Input("google-analytics-checkbox") == false then         
+        if InputIsAvailable("ga-from") == false then         
         {
           id: ConfigRowId("online-marketing"),
           path: "rows/online-marketing",
