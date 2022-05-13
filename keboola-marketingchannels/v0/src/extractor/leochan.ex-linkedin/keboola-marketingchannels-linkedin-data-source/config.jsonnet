@@ -31,13 +31,13 @@
     },
     config: {
       timeGranularity: "DAILY",
-      end_year: ''+Input("ex-linkedin-end-year"),
+      end_year: Input("ex-linkedin-end-year")+'1',
       pivot: "CAMPAIGN",
-      start_month: ''+Input("ex-linkedin-start-month"),
-      end_day: ''+Input("ex-linkedin-end-day"),
-      start_year: ''+Input("ex-linkedin-start-year"),
-      end_month: ''+Input("ex-linkedin-end-month"),
-      start_day: ''+Input("ex-linkedin-start-day"),
+      start_month: Input("ex-linkedin-start-month")+'1',
+      end_day: Input("ex-linkedin-end-day")+'1',
+      start_year: Input("ex-linkedin-start-year")+'1',
+      end_month: Input("ex-linkedin-end-month")+'1',
+      start_day: Input("ex-linkedin-start-day")+'1',
       incrementalOutput: true,
       jobs: [
         {
