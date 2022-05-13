@@ -286,19 +286,18 @@
           ]
         },
         {
-          icon: "component:keboola.wr-google-sheets",
+          icon: "component:keboola.wr-google-sheet",
           name: "Google sheet Destination",
           description: "Load to data into google sheet",
           dialogName: "Google Sheet Destination", 
-          dialogDescription: "Data load to Google Sheet.",
+          dialogDescription: "Make a copy of this sheet https://docs.google.com/spreadsheets/d/1KkIjJqU7wrOdfy3zJA8RSEDCtFoE5Szg9aUInL7XCB0 into your Drive. Then copy text between 'spreadsheets/d/' and '/edit' and paste it below.",
           inputs: [
             {
-              id: "google-sheet-checkbox",
-              name: "Google sheet destination",
-              description: "Do you want to load data into google sheet?",
-              type: "bool",
-              kind: "confirm",
-              default: true,
+              id: "google-sheet-id",
+              name: "Marketing Sheet ID",
+              description: "Insert ID of the google sheet destination",
+              type: "string",
+              kind: "input",
             },
           ]
         },

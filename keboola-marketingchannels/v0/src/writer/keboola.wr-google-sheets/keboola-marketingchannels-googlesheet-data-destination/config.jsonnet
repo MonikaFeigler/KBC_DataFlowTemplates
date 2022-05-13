@@ -3,7 +3,8 @@
     oauth_api: {},
   },
   parameters: {
-    tables: [
+    tables: std.filter(function(v) v != null,[
+      if InputIsAvailable("ga-from") then
       {
         id: 38638,
         action: "update",
@@ -12,8 +13,9 @@
         tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup",
         title: "online_marketing",
         sheetId: 0,
-        fileId: "16dWAs5Xfo6X9y6d4z2HOu79LQwF6q-M_fuVAPkFYyRk",
+        fileId: Input("google-sheet-id"),
       },
+      if InputIsAvailable("ga-from") then
       {
         id: 1070,
         action: "update",
@@ -21,9 +23,10 @@
         enabled: true,
         tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_traffic",
         title: "online_marketing",
-        fileId: "16dWAs5Xfo6X9y6d4z2HOu79LQwF6q-M_fuVAPkFYyRk",
+        fileId: Input("google-sheet-id"),
         sheetId: 1468111673,
       },
+      if InputIsAvailable("ga-from") then
       {
         id: 64959,
         action: "update",
@@ -31,9 +34,10 @@
         enabled: true,
         tableId: "out.c-marketing-bdm-" + InstanceIdShort() + ".online_marketing_transactions",
         title: "online_marketing",
-        fileId: "16dWAs5Xfo6X9y6d4z2HOu79LQwF6q-M_fuVAPkFYyRk",
+        fileId: Input("google-sheet-id"),
         sheetId: 1616225391,
       },
+      if InputIsAvailable("ga-from") == false then
       {
         id: 64957,
         action: "update",
@@ -41,10 +45,10 @@
         enabled: true,
         tableId: "out.c-marketing-tr-" + InstanceIdShort() + ".online_marketing",
         title: "online_marketing",
-        fileId: "16dWAs5Xfo6X9y6d4z2HOu79LQwF6q-M_fuVAPkFYyRk",
-        sheetId: 1616225392,
+        fileId: Input("google-sheet-id"),
+        sheetId: 1942861239,
       },
-    ],
+    ]),
   },
   storage: {
     input: {
