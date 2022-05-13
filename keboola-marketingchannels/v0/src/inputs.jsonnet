@@ -85,7 +85,7 @@
               type: "int",
               kind: "input",
               rules: "min=1, max=31, required",
-              default: "1",
+              default: 1,
             },
             {
               id: "ex-linkedin-start-month",
@@ -94,7 +94,7 @@
               type: "int",
               kind: "input",
               rules: "min=1, max=12",
-              default: "1",
+              default: 1,
             },
             {
               id: "ex-linkedin-start-year",
@@ -103,7 +103,7 @@
               type: "int",
               kind: "input",
               rules: "len=4, min=2000, max=2100",
-              default: "2022",
+              default: 2022,
             },
             {
               id: "ex-linkedin-end-day",
@@ -112,7 +112,7 @@
               type: "int",
               kind: "input",
               rules: "min=1, max=31",
-              default: "1",
+              default: 1,
             },
             {
               id: "ex-linkedin-end-month",
@@ -121,7 +121,7 @@
               type: "int",
               kind: "input",
               rules: "min=1, max=12",
-              default: "1",
+              default: 1,
             },
             {
               id: "ex-linkedin-end-year",
@@ -130,7 +130,7 @@
               type: "int",
               kind: "input",
               rules: "len=4, min=2000, max=2100",
-              default: "2022",
+              default: 2022,
             },
           ]
         },
