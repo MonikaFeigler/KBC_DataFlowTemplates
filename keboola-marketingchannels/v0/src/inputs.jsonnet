@@ -28,28 +28,12 @@
               default: "180687194",
             },
             {
-              id: "ex-bingads-bucket",
-              name: "Storage bucket",
-              description: "Storage bucket - data will be uploaded (i.e. in.c-bing-ex)",
-              type: "string",
-              kind: "input",
-              default: "in.c-bing_ads",
-            },
-            {
               id: "ex-bingads-customer-id",
               name: "Customer ID",
               description: "Customer identifier of your BingAds account.",
               type: "string",
               kind: "input",
-              default: "251954382",
-            },
-            {
-              id: "ex-bingads-since-last",
-              name: "SinceLast",
-              description: "Continue download from last state was",
-              type: "bool",
-              kind: "confirm",
-              default: true,
+              default: "XXXXXXXX",
             },
           ]
         },
@@ -129,7 +113,7 @@
               description: "End time range of the analytics",
               type: "int",
               kind: "input",
-              rules: "len=4,min=2000,max=2100",
+              rules: "min=2000,max=2100",
               default: 2022,
             },
           ]

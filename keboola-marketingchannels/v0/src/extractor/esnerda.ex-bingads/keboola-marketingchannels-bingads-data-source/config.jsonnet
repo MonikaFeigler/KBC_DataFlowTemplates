@@ -3,10 +3,10 @@
     oauth_api: {},
   },
   parameters: {
-    bucket: Input("ex-bingads-bucket"),
+    bucket: "in.c-bing_ads-"+ConfigId("keboola-marketingchannels-bingads-data-source"),
     "#devKey": Input("ex-bingads-dev-key"),
     accountId: Input("ex-bingads-account-id"),
-    sinceLast: Input("ex-bingads-since-last"),
+    sinceLast: true,
     customerId: Input("ex-bingads-customer-id"),
     bulkRequests: {
       ads: false,
