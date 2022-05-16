@@ -3,8 +3,8 @@
 By using this end-to-end flow you can choose any marketing channel (Facebook Ads, LinkedIn Ads, Google Ads, BingAds) and get its data for transforming and loading anywhere you prefer. You can also enrich this data with Google Analytics, it is optional.
 
 ## Steps to take:
-1. Authorize your extractor account
-2. Optionaly select and authorize writers
+1. Authorize your data source account
+2. Optionaly select and authorize data destination
 3. Run the orchestration
 
 ## All possible Included components' configurations:
@@ -12,23 +12,23 @@ By using this end-to-end flow you can choose any marketing channel (Facebook Ads
 EX -> TR1 -> TR2 -> WR -> ORCH
 
 
-### EX: [KEBOOLA-MARKETINGCHANNELS-FACEBOOK] Extractor
+### EX: [KEBOOLA-MARKETINGCHANNELS-FACEBOOK] Data Source
 
 Facebook Ads data is extracted with this extractor. The extractor is getting data about Facebook campaigns, ads, adsets and ads insights for the last day.
 
-### EX: [KEBOOLA-MARKETINGCHANNELS-LINKEDIN] Extractor
+### EX: [KEBOOLA-MARKETINGCHANNELS-LINKEDIN] Data Source
 
 LinkedIn Ads data is extracted with this extractor. The extractor is getting data about Linkedin campaigns for the last day.
 
-### EX: [KEBOOLA-MARKETINGCHANNELS-GOOGLEADS] Extractor
+### EX: [KEBOOLA-MARKETINGCHANNELS-GOOGLEADS] Data Source
 
 Google Ads data is extracted with this extractor. The extractor is getting data about Google Ads campaigns for the last day.
 
-### EX: [KEBOOLA-MARKETINGCHANNELS-BINGADS] Extractor
+### EX: [KEBOOLA-MARKETINGCHANNELS-BINGADS] Data Source
 
 Bing Ads data is extracted with this extractor. The extractor is getting data about Bing Ads campaigns for the last day.
 
-### EX: [KEBOOLA-MARKETINGCHANNELS-GOOGLEANALYTICS] Extractor
+### EX: [KEBOOLA-MARKETINGCHANNELS-GOOGLEANALYTICS] Data Source
 
 Google Analytics data is extracted with this extractor. The extractor is getting data about basic sessions and transactions. It's an incremental upload. This data will enrich the marketing model with keywords adgroup and marketing transactions.
 
@@ -40,13 +40,13 @@ The extracted data is transformed into one output table, which contains basic in
 
 Google Analytics transformation enriches the output table with sessions (new and returns), pageviews and bounces. With this tranformation are also created two new tables: ga transactions and keyword ad group.
 
-### WR: [KEBOOLA-MARKETINGCHANNELS-BIGQUERY] OR [KEBOOLA-MARKETINGCHANNELS-GOOGLESHEET] OR [KEBOOLA-MARKETINGCHANNELS-SNOWFLAKE] Writer
+### WR: [KEBOOLA-MARKETINGCHANNELS-BIGQUERY] OR [KEBOOLA-MARKETINGCHANNELS-GOOGLESHEET] OR [KEBOOLA-MARKETINGCHANNELS-SNOWFLAKE] Data destination
 
 The writer loads data into a BigQuery databse or a Google sheet or a Snowflake database.
 
-### ORCH: [KEBOOLA-MARKETINGCHANNELS] Orchestration
+### ORCH: [KEBOOLA-MARKETINGCHANNELS] Flow
 
-The Orchestrator runs marketing channels extractor(s), snowflake transformation(s) and optionally selected writer(s).
+The orchestrator runs marketing channels extractor(s), snowflake transformation(s) and optionally selected writer(s).
 
 ## Business Data Model
 
