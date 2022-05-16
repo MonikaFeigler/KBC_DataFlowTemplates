@@ -147,7 +147,7 @@
           name: "Google Analytics",
           description: "Google Analytics - Data Source",
           dialogName: "Analytics Data Source", 
-          dialogDescription: "This extractor is getting data from Google Analytics from last week. It's an incremental update. This data will enrich the marketing model with keywords adgroup and marketing transactions. ",
+          dialogDescription: "This extractor is getting data from Google Analytics. It's an incremental update. This data will enrich the marketing model with keywords adgroup and marketing transactions. ",
           inputs: [
             {
               id: "ga-from",
