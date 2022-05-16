@@ -1,6 +1,5 @@
-Created from [GAA] Google Analytics - This Year version #63
+## Credentials:
+Please Setup Profiles (on the right) before running this component.
 
-This extractor contains 5 rows:
-GA traffic source, GA geo audience, GA page behaviour, GA site statistics and GA ads analytics.
-This extractor is incremental - getting data from last week.
-**!IMPORTANT**: Please Setup Profiles (on the right) before running this component.
+## Description:
+Google Analytics data is extracted with this extractor. The extractor is getting data about basic sessions and transactions. It's an incremental upload. This data will enrich the marketing model with keywords adgroup and marketing transactions.
