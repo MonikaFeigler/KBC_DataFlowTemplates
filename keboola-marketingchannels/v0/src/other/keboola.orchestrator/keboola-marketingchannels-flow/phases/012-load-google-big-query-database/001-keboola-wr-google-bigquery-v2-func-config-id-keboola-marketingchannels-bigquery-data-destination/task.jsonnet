@@ -2,7 +2,7 @@
   name: "keboola.wr-google-bigquery-v2-" + ConfigId("keboola-marketingchannels-bigquery-data-destination"),
   task: {
     mode: "run",
-    configPath: "<common>/out-googleanalytics-bigquery/v0/src/writer/keboola.wr-google-bigquery-v2/out-googleanalytics-bigquery-writer",
+    configPath: "<common>/out-marketingchannels-bigquery/writer/keboola.wr-google-bigquery-v2/keboola-marketingchannels-bigquery-data-destination",
   },
   continueOnFailure: false,
   enabled: true,

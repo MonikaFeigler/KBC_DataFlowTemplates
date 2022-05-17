@@ -91,7 +91,7 @@
     {
       componentId: "keboola.wr-google-bigquery-v2",
       id: ConfigId("keboola-marketingchannels-bigquery-data-destination"),
-      path: "<common>/out-googleanalytics-bigquery/v0/src/writer/keboola.wr-google-bigquery-v2/out-googleanalytics-bigquery-writer",
+      path: "<common>/out-marketingchannels-bigquery/writer/keboola.wr-google-bigquery-v2/keboola-marketingchannels-bigquery-data-destination",
       rows: std.filter(function(v) v != null,[
         if InputIsAvailable("ga-from") then
         {
