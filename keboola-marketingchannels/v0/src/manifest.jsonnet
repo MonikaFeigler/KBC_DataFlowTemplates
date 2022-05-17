@@ -20,7 +20,7 @@
     {
       componentId: "keboola.ex-google-ads",
       id: ConfigId("keboola-marketingchannels-googleads-data-source"),
-      path: "extractor/keboola.ex-google-ads/keboola-marketingchannels-googleads-data-source",
+      path: "<common>/in-marketingchannels-googleads/extractor/keboola.ex-google-ads/keboola-marketingchannels-googleads-data-source",
       rows: [
         {
           id: ConfigRowId("ad-groups"),
@@ -67,7 +67,7 @@
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("keboola-marketingchannels-googleads-transformation"),
-      path: "transformation/keboola.snowflake-transformation/keboola-marketingchannels-googleads-transformation",
+      path: "<common>/in-marketingchannels-googleads/transformation/keboola.snowflake-transformation/keboola-marketingchannels-googleads-transformation",
       rows: [],
       metadata: { "KBC.configuration.folderName": "[KEBOOLA-MARKETINGCHANNELS]"}
     },
