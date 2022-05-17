@@ -7,72 +7,62 @@
       {
         id: 55384,
         action: "update",
-        sheetTitle: "bdmOrderLinesEnrich",
+        sheetTitle: "OrderLines",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrderLinesEnrich",
         title: "Ecommerce-"+ InstanceIdShort(),
-        sheetId: 0,
-        fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s"
+        sheetId: 808566483,
+        fileId: Input("data-studio-gsheet-id")
       },
       {
         id: 92020,
         action: "update",
-        sheetTitle: "bdmProductsEnrich",
+        sheetTitle: "Products",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmProductsEnrich",
         title: "Ecommerce-"+ InstanceIdShort(),
-        fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
-        sheetId: 72132448
-      },
-      {
-        id: 22050,
-        action: "update",
-        sheetTitle: "bdmOrderLinesMargin",
-        enabled: true,
-        tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrderLinesMargin",
-        title: "Ecommerce-"+ InstanceIdShort(),
-        fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
-        sheetId: 1610120104
+        fileId: Input("data-studio-gsheet-id"),
+        sheetId: 1971809397
       },
       {
         id: 79643,
         action: "update",
-        sheetTitle: "bdmOrdersEnrich",
+        sheetTitle: "Orders",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrdersEnrich",
         title: "Ecommerce-"+ InstanceIdShort(),
-        fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
-        sheetId: 1319559754
+        fileId: Input("data-studio-gsheet-id"),
+        sheetId: 1897931633
       },
       {
         id: 4741,
         action: "update",
-        sheetTitle: "bdmShop",
+        sheetTitle: "Shop",
         enabled: true,
         tableId: "out.c-ecommerce-wr-" + InstanceIdShort() + ".out_shop",
         title: "Ecommerce-"+ InstanceIdShort(),
-        fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
-        sheetId: 81153094
+        fileId: Input("data-studio-gsheet-id"),
+        sheetId: 2004245856
       },
       {
         id: 59540,
         action: "update",
-        sheetTitle: "bdmRfm",
+        sheetTitle: "Rfm",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmRfmEnrich",
         title: "Ecommerce-"+ InstanceIdShort(),
-        fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
-        sheetId: 100102089
+        fileId: Input("data-studio-gsheet-id"),
+        sheetId: 58207103
       },
       {
         id: 91943,
         action: "update",
-        sheetTitle: "bdmCustomerEnrich",
+        sheetTitle: "Customers",
         enabled: true,
         tableId: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmCustomerEnrich",
         title: "Ecommerce-"+ InstanceIdShort(),
-        fileId: "1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s",
-        sheetId: 388560759
+        fileId: Input("data-studio-gsheet-id"),
+        sheetId: 1941383969
       }
     ]
   },
@@ -96,14 +86,6 @@
           columns: []
         },
         {
-          source: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrderLinesMargin",
-          destination: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrderLinesMargin.csv",
-          where_column: "",
-          where_values: [],
-          where_operator: "eq",
-          columns: []
-        },
-        {
           source: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrdersEnrich",
           destination: "out.c-ecommerce-wr-ds" + InstanceIdShort() + ".bdmOrdersEnrich.csv",
           where_column: "",
@@ -113,7 +95,7 @@
         },
         {
           source: "out.c-ecommerce-wr-" + InstanceIdShort() + ".out_shop",
-          destination: "out.c-ecommerce-wr-" + InstanceIdShort() + ".out_shop",
+          destination: "out.c-ecommerce-wr-" + InstanceIdShort() + ".out_shop.csv",
           where_column: "",
           where_values: [],
           where_operator: "eq",

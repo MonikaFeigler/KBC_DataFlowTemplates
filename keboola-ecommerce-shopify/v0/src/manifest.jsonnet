@@ -36,7 +36,7 @@
       rows: [],
       metadata: { "KBC.configuration.folderName": "[KEBOOLA-ECOMMERCE-SHOPIFY]"}
     },
-    if Input("google-sheet-checkbox") == true then
+    if InputIsAvailable("google-sheet-id") then
     {
       componentId: "keboola.wr-google-sheets",
       id: ConfigId("out-ecommerce-gsheet-writer"),
@@ -217,7 +217,7 @@
       rows: [],
       metadata: { "KBC.configuration.folderName": "[KEBOOLA-ECOMMERCE-SHOPIFY]"}
     },
-    if InputIsAvailable("data-studio-checkbox") then
+    if InputIsAvailable("data-studio-gsheet-id") then
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("gsheet-datastudio-transformation"),
@@ -225,7 +225,7 @@
       rows: [],
       metadata: { "KBC.configuration.folderName": "[KEBOOLA-ECOMMERCE-SHOPIFY]"}
     },
-    if InputIsAvailable("data-studio-checkbox") then
+    if InputIsAvailable("data-studio-gsheet-id") then
     {
       componentId: "keboola.wr-google-sheets",
       id: ConfigId("gsheet-datastudio"),

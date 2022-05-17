@@ -1,11 +1,13 @@
+local googlesheet = import "/<common>/out-ecommerce-gsheet/v0/src/inputs.jsonnet";
 local snowflake = import "/<common>/out-ecommerce-snowflake/v0/src/inputs.jsonnet";
 local shopify = import "/<common>/in-ecommerce-shopify/v0/src/inputs.jsonnet";
 local bigquery = import "/<common>/out-ecommerce-bigquery/v0/src/inputs.jsonnet";
-local googlesheet = import "/<common>/googlesheet_inputs.jsonnet";
+local googlesheet = import "/<common>/out-ecommerce-gsheet/v0/src/inputs.jsonnet";
 local facebook = import "/<common>/in-ecommerce-facebook/v0/src/inputs.jsonnet";
 local googleads = import "/<common>/in-ecommerce-googleads/v0/src/inputs.jsonnet";
 local sklik = import "/<common>/in-ecommerce-sklik/v0/src/inputs.jsonnet";
-local datastudio = import "/<common>/datastudio_inputs.jsonnet";
+local datastudio = import "/<common>/out-ecommerce-gsheet-datastudio/v0/src/inputs.jsonnet";
+
 {
   stepsGroups: [
     {
@@ -31,7 +33,7 @@ local datastudio = import "/<common>/datastudio_inputs.jsonnet";
           name: "Facebook Ads",
           description: "Facebook Ads - Data Source",
           dialogName: "Facebook Ads Data Source", 
-          dialogDescription: "This extractor is getting data about facebook ads monthly insights and insights for the last 90 days.",
+          dialogDescription: "This extractor is getting data about facebook ads monthly insights and insights for the last 90 days. This is a component with OAuth and has to be authorized later from flow.",
           inputs: facebook
         },
         {
@@ -39,7 +41,7 @@ local datastudio = import "/<common>/datastudio_inputs.jsonnet";
           name: "Google Ads",
           description: "Google Ads - Data Source",
           dialogName: "Google Ads Data Source", 
-          dialogDescription: "This extractor is getting data about Google ads insights.",
+          dialogDescription: "This extractor is getting data about Google ads insights. This is a component with OAuth and has to be authorized later from flow.",
           inputs: googleads
         },
         {
@@ -89,7 +91,7 @@ local datastudio = import "/<common>/datastudio_inputs.jsonnet";
           name: "Google sheet Destination",
           description: "Load to data into google sheet",
           dialogName: "Google Sheet Destination", 
-          dialogDescription: "Data load to Google Sheet.",
+          dialogDescription: "Make a copy of this sheet https://docs.google.com/spreadsheets/d/1y-p5GHgsQ20kjxqLcT7hYEsUDdbQHoPJi4dMoaGAFBM into your Drive. Then copy text between 'spreadsheets/d/' and '/edit' and paste it below.",
           inputs: googlesheet,  
         },
         {
@@ -97,7 +99,7 @@ local datastudio = import "/<common>/datastudio_inputs.jsonnet";
           name: "Data Studio Dashboard",
           description: "Load to google sheet for DataStudio Dashboard",
           dialogName: "Dashboard in Data Studio", 
-          dialogDescription: "Data load to Google Sheet in a specific form for Google Data Studio Dashboard. https://datastudio.google.com/reporting/382d43b1-f83f-425a-a1d6-a81259aa6ebb/page/nM3kC",
+          dialogDescription: "Make a copy of this sheet https://docs.google.com/spreadsheets/d/1bMRx54sRUTpI6ZtLMkQD2MJtoJywHGPyKgoB8htRj4s/ into your Drive. Then copy text between 'spreadsheets/d/' and '/edit' and paste it below.",
           inputs: datastudio,  
         },
       ]

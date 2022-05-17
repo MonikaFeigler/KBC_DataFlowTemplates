@@ -1,4 +1,4 @@
-# OUT-ECOMMERCE-GSHEET
+# OUT-ECOMMERCE-GSHEET-DATASTUDIO
 
 This template is useful for writing transformed e-commerce data into a Google sheet.
 
