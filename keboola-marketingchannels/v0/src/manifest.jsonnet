@@ -13,7 +13,7 @@
     {
       componentId: "keboola.ex-facebook-ads",
       id: ConfigId("keboola-marketingchannels-facebook-data-source"),
-      path: "<common>/in-marketingchannels-facebookads/extractor/keboola.ex-facebook-ads",
+      path: "<common>/in-marketingchannels-facebookads/extractor/keboola.ex-facebook-ads/keboola-marketingchannels-facebook-data-source",
       rows: [],
     },
     if InputIsAvailable("ex-google-ads-customer-id") then
