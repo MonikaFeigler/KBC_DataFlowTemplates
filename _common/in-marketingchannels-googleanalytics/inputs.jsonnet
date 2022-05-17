@@ -25,5 +25,23 @@
         label: '2 months ago',
       },
     ],
-  }
+  },
+  {
+    id: "ga-to",
+    name: "Period to date",
+    description: "To when do you want to get the data?",
+    type: "string",
+    kind: "select",
+    default: "-1 day",
+    options: [
+      {
+        value: '-1 day',
+        label: '1 day ago',
+      },
+      {
+        value: '-1 week',
+        label: '1 week ago',
+      },
+    ],
+  },
 ]
