@@ -21,17 +21,17 @@
       ]
     },
     {
-      "id": "keboola-analytics-googleanalytics",
-      "icon": "component:keboola.ex-google-analytics-v4",
-      "name": "Keboola Google Analytics",
-      "description": "Transform Google Analytics data into a form you can use for visualization. You can either choose predefined writer or create your own.",
-      "path": "keboola-analytics-googleanalytics",
+      "id": "my-template",
+      "icon": "common:download",
+      "name": "My Template (UI dev)",
+      "description": "Full workflow to ...",
+      "path": "my-template",
       "versions": [
         {
-          "version": "0.0.1",
+          "version": "1.2.3",
           "description": "",
-          "stable": false,
-          "path": "v0"
+          "stable": true,
+          "path": "v1"
         }
       ]
     },
@@ -96,6 +96,21 @@
       ]
     },
     {
+      "id": "keboola-analytics-googleanalytics",
+      "icon": "component:keboola.ex-google-analytics-v4",
+      "name": "Keboola Google Analytics",
+      "description": "Transform Google Analytics data into a form you can use for visualization. You can either choose predefined writer or create your own.",
+      "path": "keboola-analytics-googleanalytics",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "keboola-marketingchannels",
       "icon": "common:settings",
       "name": "KEBOOLA-MARKETINGCHANNELS",
@@ -107,21 +122,6 @@
           "description": "",
           "stable": false,
           "path": "v0"
-        }
-      ]
-    },
-    {
-      "id": "my-template",
-      "icon": "common:download",
-      "name": "My Template (UI dev)",
-      "description": "Full workflow to ...",
-      "path": "my-template",
-      "versions": [
-        {
-          "version": "1.2.3",
-          "description": "",
-          "stable": true,
-          "path": "v1"
         }
       ]
     },
