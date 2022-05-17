@@ -13,7 +13,7 @@
     {
       componentId: "keboola.ex-facebook-ads",
       id: ConfigId("keboola-marketingchannels-facebook-data-source"),
-      path: "extractor/keboola.ex-facebook-ads/keboola-marketingchannels-facebook-data-source",
+      path: "<common>/in-marketingchannels-facebookads/extractor/keboola.ex-facebook-ads",
       rows: [],
     },
     if InputIsAvailable("ex-google-ads-customer-id") then
@@ -59,7 +59,7 @@
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("keboola-marketingchannels-facebookads-transformation"),
-      path: "transformation/keboola.snowflake-transformation/keboola-marketingchannels-facebookads-transformation",
+      path: "<common>/in-marketingchannels-facebookads/transformation/keboola.snowflake-transformation/keboola-marketingchannels-facebookads-transformation",
       rows: [],
       metadata: { "KBC.configuration.folderName": "[KEBOOLA-MARKETINGCHANNELS]"}
     },
