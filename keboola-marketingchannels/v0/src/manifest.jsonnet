@@ -119,7 +119,7 @@
     {
       componentId: "keboola.wr-google-sheets",
       id: ConfigId("keboola-marketingchannels-googlesheet-data-destination"),
-      path: "writer/keboola.wr-google-sheets/keboola-marketingchannels-googlesheet-data-destination",
+      path: "<common>/out-marketingchannels-gsheet/writer/keboola.wr-google-sheets/keboola-marketingchannels-googlesheet-data-destination",
       rows: [],
     },
     if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
