@@ -1,3 +1,3 @@
 {
-  isIgnored: Input("ex-linkedin-start-day") == false,
+  isIgnored: InputIsAvailable("ex-linkedin-start-day") == false,
 }
