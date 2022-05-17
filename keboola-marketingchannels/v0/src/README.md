@@ -24,15 +24,11 @@ LinkedIn Ads data is extracted with this data source. The data source is getting
 
 Google Ads data is extracted with this data source. The data source is getting data about Google Ads campaigns for the last day.
 
-### DS: [KEBOOLA-MARKETINGCHANNELS-BINGADS] Data Source
-
-Bing Ads data is extracted with this data source. The data source is getting data about Bing Ads campaigns for the last day.
-
 ### DS: [KEBOOLA-MARKETINGCHANNELS-GOOGLEANALYTICS] Data Source
 
 Google Analytics data is extracted with this data source. The data source is getting data about basic sessions and transactions. It's an incremental upload. This data will enrich the marketing model with keywords adgroup and marketing transactions.
 
-### TR1: [KEBOOLA-MARKETINCHANNELS-BINGADS] OR [KEBOOLA-MARKETINCHANNELS-FACEBOOK] OR [KEBOOLA-MARKETINCHANNELS-LINKEDIN] OR [KEBOOLA-MARKETINCHANNELS-GOOGLEADS]  Transformation
+### TR1: [KEBOOLA-MARKETINCHANNELS-FACEBOOK] OR [KEBOOLA-MARKETINCHANNELS-LINKEDIN] OR [KEBOOLA-MARKETINCHANNELS-GOOGLEADS]  Transformation
 
 The extracted data is transformed into one output table, which contains basic information about campaigns and also data about impressions, clicks, costs and costs conversions.
 
