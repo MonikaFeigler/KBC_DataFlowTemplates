@@ -51,6 +51,21 @@
       ]
     },
     {
+      "id": "keboola-crm-pipedrive",
+      "icon": "common:settings",
+      "name": "KEBOOLA-CRM-PIPEDRIVE",
+      "description": "Full workflow to ...",
+      "path": "keboola-crm-pipedrive",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "keboola-crm-salesforce",
       "icon": "component:kds-team.ex-salesforce-v2",
       "name": "Keboola CRM Salesforce",
