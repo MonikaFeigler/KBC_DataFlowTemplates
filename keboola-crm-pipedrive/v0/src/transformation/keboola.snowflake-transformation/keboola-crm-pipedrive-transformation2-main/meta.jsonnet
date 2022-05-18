@@ -1,3 +1,3 @@
 {
-  name: "[KEBOOLA-CRM-PIPEDRIVE] Transformation2: Main",
+  name: "[KEBOOLA-CRM-PIPEDRIVE] Transformation2: Main /" + InstanceIdShort(),
 }

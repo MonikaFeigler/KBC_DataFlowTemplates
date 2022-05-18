@@ -1,3 +1,3 @@
 {
-  name: "[KEBOOLA-CRM-PIPEDRIVE] Data Source",
+  name: "[KEBOOLA-CRM-PIPEDRIVE] Data Source /" + InstanceIdShort(),
 }
