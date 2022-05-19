@@ -18,11 +18,11 @@ Pipedrive data is extracted with this extractor. In this incremental update the 
 
 ### TR1: [KEBOOLA-CRM-PIPEDRIVE] Transformation1: Input Tables Creation
 
-In this Transformation, NULL values are populated in the output tables in case there are missing columns required for the following Transformations. If these columns are not present, they are added to the output tables.
+In this transformation, NULL values are populated in the output tables in case there are missing columns required for the following transformations. If these columns are not present, they are added to the output tables.
 
 ### TR2: [KEBOOLA-CRM-PIPEDRIVE] Transformation2: Main
 
-From Pipedrive data, the second transformation creates an output CRM data model (set of output tables). There are two phases to the transformation. In the first phase of the process, 3 tables are created (out_company, out_contact, out_employee). Second phase creates an out_opportunity table by combining other tables (pipelines, stages, out_employee, deals_companies, out_company) and there is also created snapshot of the output table to track changes throughout time
+From Pipedrive data, the second transformation creates an output CRM data model (set of output tables). There are two phases to the transformation. In the first phase of the process, 3 tables are created (out_company, out_contact, out_employee). Second phase creates an out_opportunity table by combining other tables (pipelines, stages, out_employee, deals_companies, out_company) and there is also created snapshot of the output table to track changes throughout time.
 
 ### TR3: [KEBOOLA-CRM-PIPEDRIVE] Transformation3: Snapshots
 
