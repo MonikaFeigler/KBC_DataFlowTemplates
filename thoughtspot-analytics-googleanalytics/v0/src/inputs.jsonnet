@@ -1,7 +1,6 @@
 local snowflake = import "/<common>/out-thoughtspot-googleanalytics-snowflake/v0/src/inputs.jsonnet";
 local bigquery = import "/<common>/out-thoughtspot-googleanalytics-bigquery/v0/src/inputs.jsonnet";
 local googleanalytics = import "/<common>/in-thoughtspot-googleanalytics/v0/src/inputs.jsonnet";
-local searchconsole = import "/<common>/in-thoughtspot-googleanalytics-searchconsole/v0/src/inputs.jsonnet";
 {
   stepsGroups: [
     {
@@ -17,20 +16,6 @@ local searchconsole = import "/<common>/in-thoughtspot-googleanalytics-searchcon
           inputs: googleanalytics
         },
       ],
-    },
-    {
-      description: "Extractor",
-      required: "optional",
-      steps: [
-        {
-          icon: "component:kds-team.ex-google-search-console",
-          name: "Google Search Console",
-          description: "Google Search Console",
-          dialogName: "Google Search Console",
-          dialogDescription: "This extractor is getting data from Google Search Console.",
-          inputs: searchconsole
-        }
-      ]
     },
     {
       description: "Snowflake Transformation",
