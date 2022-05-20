@@ -1,6 +1,6 @@
 local snowflake = import "/<common>/out-crm-snowflake/v0/src/inputs.jsonnet";
 local salesforce = import "/<common>/in-crm-salesforce/v0/src/inputs.jsonnet";
-local googlesheet = import "/<common>/googlesheet_inputs.jsonnet";
+local googlesheet = import "/<common>/out-crm-gsheet/v0/src/inputs.jsonnet";
 {
   stepsGroups: [
     {
@@ -42,11 +42,11 @@ local googlesheet = import "/<common>/googlesheet_inputs.jsonnet";
           inputs: snowflake,
         },
         {
-          icon: "component:keboola.wr-google-sheet",
+          icon: "component:keboola.wr-google-sheets",
           name: "Google sheet Destination",
           description: "Load to data into google sheet",
           dialogName: "Google Sheet Destination", 
-          dialogDescription: "Data load to Google Sheet.",
+          dialogDescription: "Make a copy of this sheet https://docs.google.com/spreadsheets/d/1liGkoSKbWXSpWaSg5qHo_sLEmQWEzcCxdoXsd_wTH_U into your Drive. Then copy text between 'spreadsheets/d/' and '/edit' and paste it below.",
           inputs: googlesheet,  
         },
       ],
