@@ -9,12 +9,16 @@ By using this end-to-end flow you can extract data from Shopify and transform it
 
 ## Included components' configurations:
 
-Shopify SOURCE -> TR1 -> TR2 -> TR3 -> DESTINATION -> FLOW
+Shopify SOURCE -> (marketing SOURCE) -> TR1 -> TR2 -> TR3 -> DESTINATION -> FLOW
 
 
 ### SOURCE: [IN-ECOMMERCE-SHOPIFY] Data Source
 
 Shopify data source collects data from Shopify about the orders, products, inventory and customers.
+
+### SOURCE: [IN-ECOMMERCE-FACEBOOK] OR [IN-ECOMMERCE-GOOGLEADS] OR [IN-ECOMMERCE-SKLIK] Data Source
+
+Facebook ads, GoogleAds and Sklik are optionally data sources and can enrich Shopify data with marketing data.
 
 ### TR1: [IN-ECOMMERCE-SHOPIFY] Transformation1: Prepare Input Tables
 
