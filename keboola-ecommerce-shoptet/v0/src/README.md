@@ -9,12 +9,16 @@ By using this end-to-end flow you can extract data from Shoptet and transform it
 
 ## Included components' configurations:
 
-Shoptet SOURCE -> TR1 -> TR2 -> DESTINATION -> FLOW
+Shoptet SOURCE -> (marketing SOURCE) -> TR1 -> TR2 -> DESTINATION -> FLOW
 
 
 ### SOURCE: [IN-ECOMMERCE-SHOPTET] Data Source
 
 Shoptet data source collects data from Shoptet about the orders, products, inventory and customers.
+
+### SOURCE: [IN-ECOMMERCE-FACEBOOK] OR [IN-ECOMMERCE-GOOGLEADS] OR [IN-ECOMMERCE-SKLIK] Data Source
+
+Facebook ads, GoogleAds and Sklik are optionally data sources and can enrich Shoptet data with marketing data.
 
 ### TR1: [IN-ECOMMERCE-SHOPTET] Transformation1: Data Preparation
 
