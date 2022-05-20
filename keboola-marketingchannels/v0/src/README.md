@@ -9,7 +9,7 @@ By using this end-to-end flow you can choose any marketing channel (Facebook Ads
 
 ## All possible Included components' configurations:
 
-DS -> TR1 -> TR2 -> DD -> FLOW
+marketing SOURCE -> TR1 -> TR2 -> DESTINATION -> FLOW
 
 
 ### DS: [KEBOOLA-MARKETINGCHANNELS-FACEBOOK] Data Source
