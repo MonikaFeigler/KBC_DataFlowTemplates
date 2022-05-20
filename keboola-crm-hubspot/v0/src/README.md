@@ -20,15 +20,15 @@ HubSpot data is extracted with this data source. In this incremental update the 
 
 In this Transformation, NULL values are populated in the output tables in case there are missing columns required for the following Transformations. If these columns are not present, they are added to the output tables.
 
-### TR2: [IN-CRM-SALESFORCE] Transformation2: Main
+### TR2: [IN-CRM-HUBSPOT] Transformation2: Main
 
 From Hubspot data, the second transformation creates an output CRM data model (set of output tables). There are three phases to the transformation. In the first phase of the process, 3 tables are created (out_company, out_contact, out_employee). Second phase creates an opportunity table by combining other tables (pipelines, stages, out_employee, deals_companies, out_company). The third phase then creates the out_activity table using the first contact/opportunity/employee IDs from the activities by joining the table; this also outputs a pairing table for opportunities and contacts are created.
 
-### TR3: [IN-CRM-SALESFORCE] Transformation3: Snapshots
+### TR3: [IN-CRM-HUBSPOT] Transformation3: Snapshots
 
 The final snapshots are generated from the auxiliary tables.
 
-### FLOW: [IN-CRM-SALESFORCE] Flow: BDM Creation
+### FLOW: [IN-CRM-HUBSPOT] Flow: BDM Creation
 
 Flow runs HubSpot CRM data source and 3 snowflake transformations.
 
