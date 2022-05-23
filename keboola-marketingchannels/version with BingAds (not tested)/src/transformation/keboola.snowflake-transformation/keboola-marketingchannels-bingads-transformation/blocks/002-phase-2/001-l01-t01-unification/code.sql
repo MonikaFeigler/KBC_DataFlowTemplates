@@ -28,7 +28,7 @@ FROM (
     ,"costs_conversion"
 	FROM (
 		SELECT 
-    	"bing_id"
+    	"bing_id" as "id"
       ,"impressions"
       ,"clicks"
       ,"costs" AS "costs_cpc"
@@ -51,7 +51,7 @@ GROUP BY
 -- final facebook marketing table 
 CREATE  TABLE "out_marketing" AS 
 SELECT 
-  "id" AS "id"
+  "id" AS "online_marketing_traffic_id"
   ,split_part("id",'*',1) AS "account_name"
   ,split_part("id",'*',2) AS "date"
 	,split_part("id",'*',3) AS "source"
