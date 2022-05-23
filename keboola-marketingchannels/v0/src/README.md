@@ -11,6 +11,9 @@ By using this end-to-end flow you can choose any marketing channel (Facebook Ads
 
 marketing SOURCE -> TR1 -> TR2 -> DESTINATION -> FLOW
 
+### DS: [KEBOOLA-MARKETINGCHANNELS-BINGADS] Data Source
+
+This data source is getting data about Bing Ads campaigns for the last day. It is incremental update.
 
 ### DS: [KEBOOLA-MARKETINGCHANNELS-FACEBOOK] Data Source
 
@@ -28,7 +31,7 @@ Google Ads data is extracted with this data source. The data source is getting d
 
 Google Analytics data is extracted with this data source. The data source is getting data about basic sessions and transactions. It's an incremental upload. This data will enrich the marketing model with keywords adgroup and marketing transactions.
 
-### TR1: [KEBOOLA-MARKETINCHANNELS-FACEBOOK] OR [KEBOOLA-MARKETINCHANNELS-LINKEDIN] OR [KEBOOLA-MARKETINCHANNELS-GOOGLEADS]  Transformation
+### TR1: [KEBOOLA-MARKETINCHANNELS-BINGADS] OR [KEBOOLA-MARKETINCHANNELS-FACEBOOK] OR [KEBOOLA-MARKETINCHANNELS-LINKEDIN] OR [KEBOOLA-MARKETINCHANNELS-GOOGLEADS]  Transformation
 
 The extracted data is transformed into one output table, which contains basic information about campaigns and also data about impressions, clicks, costs and costs conversions.
 
