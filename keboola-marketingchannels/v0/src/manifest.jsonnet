@@ -20,7 +20,7 @@
     {
       componentId: "esnerda.ex-bingads",
       id: ConfigId("keboola-marketingchannels-bingads-data-source"),
-      path: "<common>/in-marketingchannels-bingads/extractor/esnerda.ex-bingads",
+      path: "<common>/in-marketingchannels-bingads/extractor/esnerda.ex-bingads/keboola-marketingchannels-bingads-data-source",
       rows: [],
     },
     if InputIsAvailable("ex-google-ads-customer-id") then
