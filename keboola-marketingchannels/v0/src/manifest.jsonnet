@@ -20,7 +20,7 @@
     {
       componentId: "esnerda.ex-bingads",
       id: ConfigId("keboola-marketingchannels-bingads-data-source"),
-      path: "extractor/esnerda.ex-bingads/keboola-marketingchannels-bingads-data-source",
+      path: "<common>/in-marketingchannels-bingads/extractor/esnerda.ex-bingads",
       rows: [],
     },
     if InputIsAvailable("ex-google-ads-customer-id") then
@@ -74,7 +74,7 @@
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("keboola-marketingchannels-bingads-transformation"),
-      path: "transformation/keboola.snowflake-transformation/keboola-marketingchannels-bingads-transformation",
+      path: "<common>/in-marketingchannels-bingads/transformation/keboola.snowflake-transformation/keboola-marketingchannels-bingads-transformation",
       rows: [],
       metadata: { "KBC.configuration.folderName": "[KEBOOLA-MARKETINGCHANNELS]"}
     },
