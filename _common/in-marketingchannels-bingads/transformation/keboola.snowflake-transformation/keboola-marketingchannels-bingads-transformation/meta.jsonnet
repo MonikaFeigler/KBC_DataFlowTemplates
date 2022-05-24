@@ -1,3 +1,3 @@
 {
-  name: "[KEBOOLA-MARKETINGCHANNELS-BINGADS] Transformation /" + InstanceIdShort(),
+  name: "Transformation [IN-MKT-BINGADS] /" + InstanceIdShort(),
 }
