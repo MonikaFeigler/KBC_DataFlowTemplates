@@ -30,7 +30,7 @@ Data from Google search console results are grouped by URL and date.
 
 The data destination loads data into a Google BigQuery or a Snowflake database or a google sheet.
 
-### FLOW: [KEBOOLA-ANALYTICS-GOOGLEANALYTICS] Flow
+### FLOW: [GA-GOOGLEANALYTICS] Flow
 The Flow runs the Data Source and one transformation and optionally writes data into a Google BigQuery or a Snowflake databases or a google sheet.
 
 ## Business Data Model

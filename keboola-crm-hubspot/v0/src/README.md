@@ -36,7 +36,7 @@ Flow runs HubSpot CRM data source and 3 snowflake transformations.
 
 The data destination loads data into a Google sheet or a Snowflake database.
 
-### FLOW: [KEBOOLA-CRM-HUBSPOT] Flow
+### FLOW: [CRM-HUBSPOT] Flow
 
 The Flow runs HubSpot CRM data source, three snowflake transformations and optionally selected data destinations.
 
