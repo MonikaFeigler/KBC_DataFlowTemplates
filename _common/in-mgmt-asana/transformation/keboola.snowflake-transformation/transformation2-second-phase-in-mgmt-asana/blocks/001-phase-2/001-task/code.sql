@@ -31,7 +31,7 @@ AS
                        ON "td"."assignee_id" = "u"."user_id";
 
 -- table with custom task fields
--- choose correct cvalue column based on type of the field
+-- choose correct value column based on type of the field
 CREATE TABLE "out_task_custom_field"
 AS
     SELECT
@@ -79,7 +79,7 @@ AS
              LEFT JOIN "user" "u"
                        ON "ts"."created_by_id" = "u"."user_id";
 
--- snapshot project table to be able to track progress in time
+-- snapshot task table to be able to track progress in time
 -- this table is an auxiliary table which will be used for creating final snapshot table later on
 -- set timezone to UTC (change accordingly)
 ALTER SESSION
