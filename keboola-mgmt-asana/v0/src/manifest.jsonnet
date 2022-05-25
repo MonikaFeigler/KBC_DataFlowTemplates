@@ -40,7 +40,7 @@
     {
       componentId: "keboola.wr-google-bigquery-v2",
       id: ConfigId("data-destination-out-mgmt-bigquery"),
-      path: "writer/keboola.wr-google-bigquery-v2/data-destination-out-mgmt-bigquery",
+      path: "<common>/out-mgmt-bigquery/writer/keboola.wr-google-bigquery-v2/data-destination-out-mgmt-bigquery",
       rows: [
         {
           id: ConfigRowId("project"),
@@ -88,14 +88,14 @@
     {
       componentId: "keboola.wr-google-sheets",
       id: ConfigId("data-destination-out-mgmt-gsheet"),
-      path: "writer/keboola.wr-google-sheets/data-destination-out-mgmt-gsheet",
+      path: "<common>/out-mgmt-gsheet/writer/keboola.wr-google-sheets/data-destination-out-mgmt-gsheet",
       rows: [],
     },
     if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("data-destination-out-mgmt-snowflake"),
-      path: "writer/keboola.wr-snowflake-blob-storage/data-destination-out-mgmt-snowflake",
+      path: "<common>/out-mgmt-snowflake/writer/keboola.wr-snowflake-blob-storage/data-destination-out-mgmt-snowflake",
       rows: [
         {
           id: ConfigRowId("project-001"),
