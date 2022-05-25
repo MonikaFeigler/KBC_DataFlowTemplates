@@ -13,7 +13,7 @@ local googlesheet = import "/<common>/out-mgmt-gsheet/inputs.jsonnet";
           name: "Asana",
           description: "Asana - Data Source",
           dialogName: "Asana Data Source", 
-          dialogDescription: "Extractor collects data from Asana about ...",
+          dialogDescription: "Extractor collects data from Asana about projects and tasks.",
           inputs: asana
         }
       ]
