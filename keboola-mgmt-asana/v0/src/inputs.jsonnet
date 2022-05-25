@@ -1,3 +1,7 @@
+local asana = import "/<common>/in-mgmt-asana/inputs.jsonnet";
+local snowflake = import "/<common>/out-mgmt-snowflake/inputs.jsonnet";
+local bigquery = import "/<common>/out-mgmt-bigquery/inputs.jsonnet";
+local googlesheet = import "/<common>/out-mgmt-gsheet/inputs.jsonnet";
 {
   stepsGroups: [
     {
@@ -10,16 +14,7 @@
           description: "Asana - Data Source",
           dialogName: "Asana Data Source", 
           dialogDescription: "Extractor collects data from Asana about ...",
-          inputs: [
-            {
-              id: "ex-asana-config-api-key",
-              name: "API Key",
-              description: "Insert your Asana API Key",
-              type: "string",
-              kind: "hidden",
-              rules: "required"
-            },
-          ]
+          inputs: asana
         }
       ]
     },
