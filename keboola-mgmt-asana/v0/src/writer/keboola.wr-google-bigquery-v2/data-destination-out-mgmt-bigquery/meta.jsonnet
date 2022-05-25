@@ -1,3 +1,3 @@
 {
-  name: "Data Destination [OUT-MGMT-BIGQUERY]",
+  name: "Data Destination [OUT-MGMT-BIGQUERY] /" + InstanceIdShort(),
 }

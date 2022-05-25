@@ -1,3 +1,3 @@
 {
-  name: "Data Destination [OUT-MGMT-SNOWFLAKE]",
+  name: "Data Destination [OUT-MGMT-SNOWFLAKE] /" + InstanceIdShort(),
 }

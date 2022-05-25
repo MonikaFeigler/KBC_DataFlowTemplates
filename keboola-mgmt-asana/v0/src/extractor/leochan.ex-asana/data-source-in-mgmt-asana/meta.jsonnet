@@ -1,3 +1,3 @@
 {
-  name: "Data Source [IN-MGMT-ASANA]",
+  name: "Data Source [IN-MGMT-ASANA] /" + InstanceIdShort(),
 }

@@ -1,3 +1,3 @@
 {
-  name: "Flow [MGMT-ASANA] ",
+  name: "Flow [MGMT-ASANA] /" + InstanceIdShort(),
 }
