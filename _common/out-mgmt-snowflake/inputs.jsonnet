@@ -1,69 +1,64 @@
-{
-  stepsGroups: [
-    {
-      description: "Configure your credentials for Asana data source.",
-      required: "all",
-      steps: [
-        {
-          icon: "component:leochan.ex-asana",
-          name: "Asana",
-          description: "Asana - Data Source",
-          dialogName: "Asana Data Source", 
-          dialogDescription: "Extractor collects data from Asana about ...",
-          inputs: [
-            {
-              id: "ex-asana-config-api-key",
-              name: "API Key",
-              description: "Insert your Asana API Key",
-              type: "string",
-              kind: "hidden",
-              rules: "required"
-            },
-          ]
-        }
-      ]
-    },
-    {   
-      description: "Snowflake Transformations",
-      required: "all",
-      steps: [
-        {
-          icon: "component:keboola.snowflake-transformation",
-          name: "Snowflake SQL",
-          description: "Transformations",
-          inputs: [],
-        },
-      ]
-    },
-    {
-      description: "Configure your credentials for data destination.",
-      required: "optional",
-      steps: [
-        {
-          icon: "component:keboola.wr-snowflake-blob-storage",
-          name: "Snowflake Destination",
-          description: "Load to data into snowflake",
-          dialogName: "Snowflake Destination", 
-          dialogDescription: "Data load to Snowflake DB.",
-          inputs: snowflake
-        },
-        {
-          icon: "component:keboola.wr-google-bigquery-v2",
-          name: "Google Big Query",
-          description: "Big Query - Destination",
-          dialogName: "Big Query Destination", 
-          dialogDescription: "Data load to Google Big Query",
-          inputs: bigquery
-        },
-        {
-          icon: "component:keboola.wr-google-sheets",
-          name: "Google sheet Destination",
-          description: "Load to data into google sheet",
-          dialogName: "Google Sheet Destination", 
-          dialogDescription: "Make a copy of this sheet https://docs.google.com/spreadsheets/d/1y-p5GHgsQ20kjxqLcT7hYEsUDdbQHoPJi4dMoaGAFBM into your Drive. Then copy text between 'spreadsheets/d/' and '/edit' and paste it below.",
-          inputs: googlesheet,  
-        },
-      ],
-    },
-  ],
-}
+[
+  {
+    id: "wr-snowflake-blob-storage-db-host",
+    name: "Hostname",
+    description: "Insert database hostname",
+    type: "string",
+    kind: "input",
+    rules: "required",
+    default: "keboola.west-europe.azure.snowflakecomputing.com"
+  },
+  {
+    id: "wr-snowflake-blob-storage-db-port",
+    name: "Port",
+    description: "Insert database port number.",
+    type: "string",
+    kind: "input",
+    default: "443",
+    showif: "[wr-snowflake-blob-storage-db-host] != ''",
+  },
+  {
+    id: "wr-snowflake-blob-storage-db-user",
+    name: "Username",
+    description: "Insert database username.",
+    type: "string",
+    kind: "input",
+    default: "KEBOOLA_WORKSPACE_12781571",
+    showif: "[wr-snowflake-blob-storage-db-host] != ''",
+  },
+  {
+    id: "wr-snowflake-blob-storage-db-password",
+    name: "Database Password",
+    description: "Insert your password to the database.",
+    showif: "[wr-snowflake-blob-storage-db-host] != ''",
+    type: "string",
+    kind: "hidden",
+  },
+  {
+    id: "wr-snowflake-blob-storage-db-database",
+    name: "Database Name",
+    description: "Insert name of your database.",
+    type: "string",
+    kind: "input",
+    default: "KEBOOLA_6518",
+    showif: "[wr-snowflake-blob-storage-db-host] != ''",
+  },
+  {
+    id: "wr-snowflake-blob-storage-db-schema",
+    name: "Schema",
+    description: "Insert database schema.",
+    type: "string",
+    kind: "input",
+    default: "WORKSPACE_12781571",
+    showif: "[wr-snowflake-blob-storage-db-host] != ''",
+  },
+  {
+    id: "wr-snowflake-blob-storage-db-warehouse",
+    name: "Warehouse",
+    description: "Insert database warehouse.",
+    type: "string",
+    kind: "input",
+    default: "KEBOOLA_PROD",
+    showif: "[wr-snowflake-blob-storage-db-host] != ''",
+  }
+]
