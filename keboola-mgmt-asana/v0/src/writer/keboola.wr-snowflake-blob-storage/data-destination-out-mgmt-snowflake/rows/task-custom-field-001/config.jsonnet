@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-projectmgmt-bdm.task_custom_field",
+    tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_custom_field",
     dbName: "TASK_CUSTOM_FIELD",
     incremental: true,
     primaryKey: [
@@ -45,8 +45,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-bdm.task_custom_field",
-          destination: "out.c-projectmgmt-bdm.task_custom_field.csv",
+          source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_custom_field",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_custom_field.csv",
           columns: [
             "task_custom_field_id",
             "task_id",

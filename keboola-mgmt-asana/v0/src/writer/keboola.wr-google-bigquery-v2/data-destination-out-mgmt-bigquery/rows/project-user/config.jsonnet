@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-bdm.project_user",
-          destination: "out.c-projectmgmt-bdm.project_user.csv",
+          source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_user",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_user.csv",
           changed_since: "adaptive",
           columns: [
             "user_id",
@@ -18,7 +18,7 @@
     tables: [
       {
         dbName: "PROJECT_USER",
-        tableId: "out.c-projectmgmt-bdm.project_user",
+        tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_user",
         incremental: true,
         items: [
           {

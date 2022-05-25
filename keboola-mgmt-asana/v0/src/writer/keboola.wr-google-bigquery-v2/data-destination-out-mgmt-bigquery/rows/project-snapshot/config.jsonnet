@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-bdm.project_snapshot",
-          destination: "out.c-projectmgmt-bdm.project_snapshot.csv",
+          source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_snapshot",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_snapshot.csv",
           changed_since: "adaptive",
           columns: [
             "project_id",
@@ -34,7 +34,7 @@
     tables: [
       {
         dbName: "PROJECT_SNAPSHOT",
-        tableId: "out.c-projectmgmt-bdm.project_snapshot",
+        tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_snapshot",
         incremental: true,
         items: [
           {

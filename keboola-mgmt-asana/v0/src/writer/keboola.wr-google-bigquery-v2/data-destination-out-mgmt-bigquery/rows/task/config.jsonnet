@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-bdm.task",
-          destination: "out.c-projectmgmt-bdm.task.csv",
+          source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task.csv",
           changed_since: "adaptive",
           columns: [
             "task_id",
@@ -30,7 +30,7 @@
     tables: [
       {
         dbName: "TASK",
-        tableId: "out.c-projectmgmt-bdm.task",
+        tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task",
         incremental: true,
         items: [
           {

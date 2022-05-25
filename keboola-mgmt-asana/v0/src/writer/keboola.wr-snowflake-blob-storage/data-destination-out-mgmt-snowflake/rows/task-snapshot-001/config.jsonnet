@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-projectmgmt-bdm.task_snapshot",
+    tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_snapshot",
     dbName: "TASK_SNAPSHOT",
     incremental: true,
     primaryKey: [
@@ -134,8 +134,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-bdm.task_snapshot",
-          destination: "out.c-projectmgmt-bdm.task_snapshot.csv",
+          source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_snapshot",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_snapshot.csv",
           columns: [
             "task_id",
             "snapshot_date",

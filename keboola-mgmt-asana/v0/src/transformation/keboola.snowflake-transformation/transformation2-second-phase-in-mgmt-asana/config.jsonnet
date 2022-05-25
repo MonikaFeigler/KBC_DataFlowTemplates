@@ -4,7 +4,7 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-tr.project",
+          source: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".project",
           destination: "project",
           column_types: [],
           where_column: "",
@@ -13,7 +13,7 @@
           columns: [],
         },
         {
-          source: "out.c-projectmgmt-tr.user",
+          source: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".user",
           destination: "user",
           column_types: [],
           where_column: "",
@@ -90,7 +90,7 @@
     output: {
       tables: [
         {
-          destination: "out.c-projectmgmt-bdm.task",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task",
           source: "out_task",
           incremental: true,
           delete_where_column: "",
@@ -101,7 +101,7 @@
           ],
         },
         {
-          destination: "out.c-projectmgmt-bdm.task_tag",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_tag",
           source: "out_task_tag",
           primary_key: [
             "task_id",
@@ -109,7 +109,7 @@
           ],
         },
         {
-          destination: "out.c-projectmgmt-bdm.task_user",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_user",
           source: "out_task_user",
           primary_key: [
             "user_id",
@@ -117,7 +117,7 @@
           ],
         },
         {
-          destination: "out.c-projectmgmt-tr.task_snapshot",
+          destination: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".task_snapshot",
           primary_key: [
             "task_id",
             "snapshot_date",
@@ -129,14 +129,14 @@
           source: "out_task_snapshot",
         },
         {
-          destination: "out.c-projectmgmt-bdm.task_event",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_event",
           source: "out_task_event",
           primary_key: [
             "task_event_id",
           ],
         },
         {
-          destination: "out.c-projectmgmt-bdm.task_custom_field",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_custom_field",
           source: "out_task_custom_field",
           primary_key: [
             "task_custom_field_id",

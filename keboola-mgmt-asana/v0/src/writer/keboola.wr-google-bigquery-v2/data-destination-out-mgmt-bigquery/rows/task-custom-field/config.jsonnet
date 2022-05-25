@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-bdm.task_custom_field",
-          destination: "out.c-projectmgmt-bdm.task_custom_field.csv",
+          source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_custom_field",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_custom_field.csv",
           changed_since: "adaptive",
           columns: [
             "task_custom_field_id",
@@ -20,7 +20,7 @@
     tables: [
       {
         dbName: "TASK_CUSTOM_FIELD",
-        tableId: "out.c-projectmgmt-bdm.task_custom_field",
+        tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_custom_field",
         incremental: true,
         items: [
           {

@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-projectmgmt-bdm.task_tag",
+    tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_tag",
     dbName: "TASK_TAG",
     incremental: true,
     primaryKey: [
@@ -30,8 +30,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-bdm.task_tag",
-          destination: "out.c-projectmgmt-bdm.task_tag.csv",
+          source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_tag",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_tag.csv",
           columns: [
             "task_id",
             "tag",

@@ -48,7 +48,7 @@
     output: {
       tables: [
         {
-          destination: "out.c-projectmgmt-tr.project",
+          destination: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".project",
           source: "out_project",
           primary_key: [
             "project_id",
@@ -59,14 +59,14 @@
           delete_where_values: [],
         },
         {
-          destination: "out.c-projectmgmt-tr.user",
+          destination: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".user",
           source: "out_user",
           primary_key: [
             "user_id",
           ],
         },
         {
-          destination: "out.c-projectmgmt-bdm.project_user",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_user",
           source: "out_project_user",
           primary_key: [
             "user_id",
@@ -74,7 +74,7 @@
           ],
         },
         {
-          destination: "out.c-projectmgmt-tr.project_snapshot",
+          destination: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".project_snapshot",
           source: "out_project_snapshot",
           incremental: true,
           delete_where_column: "",

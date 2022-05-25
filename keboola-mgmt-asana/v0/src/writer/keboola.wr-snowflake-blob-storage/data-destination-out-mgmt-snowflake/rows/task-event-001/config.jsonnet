@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-projectmgmt-bdm.task_event",
+    tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_event",
     dbName: "TASK_EVENT",
     incremental: true,
     primaryKey: [
@@ -85,8 +85,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-bdm.task_event",
-          destination: "out.c-projectmgmt-bdm.task_event.csv",
+          source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_event",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_event.csv",
           columns: [
             "task_event_id",
             "task_id",

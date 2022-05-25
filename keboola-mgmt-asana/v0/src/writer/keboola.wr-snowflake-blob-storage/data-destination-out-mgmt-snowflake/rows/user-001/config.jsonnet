@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-projectmgmt-tr.user",
+    tableId: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".user",
     dbName: "USER",
     incremental: true,
     primaryKey: [
@@ -53,8 +53,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-tr.user",
-          destination: "out.c-projectmgmt-tr.user.csv",
+          source: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".user",
+          destination: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".user.csv",
           columns: [
             "user_id",
             "user",

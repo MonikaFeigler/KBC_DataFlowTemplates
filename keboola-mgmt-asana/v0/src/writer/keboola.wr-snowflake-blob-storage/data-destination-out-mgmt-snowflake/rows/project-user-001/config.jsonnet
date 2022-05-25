@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-projectmgmt-bdm.project_user",
+    tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_user",
     dbName: "PROJECT_USER",
     incremental: true,
     primaryKey: [
@@ -30,8 +30,8 @@
     input: {
       tables: [
         {
-          source: "out.c-projectmgmt-bdm.project_user",
-          destination: "out.c-projectmgmt-bdm.project_user.csv",
+          source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_user",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_user.csv",
           columns: [
             "user_id",
             "project_id",
