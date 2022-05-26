@@ -169,7 +169,7 @@
           columns: [],
         },
         {
-          source: "out.c-projectmgmt-tr-" + InstanceIdShort() + "user",
+          source: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".user",
           destination: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".user.csv",
           where_column: "",
           where_values: [],
