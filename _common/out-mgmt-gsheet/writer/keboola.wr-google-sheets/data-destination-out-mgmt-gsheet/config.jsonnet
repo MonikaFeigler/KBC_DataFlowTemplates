@@ -15,7 +15,7 @@
         tableId: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".project",
         title: "PROJECT_MANAGEMENT",
         sheetId: 0,
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
       },
       {
         id: 99608,
@@ -24,7 +24,7 @@
         enabled: true,
         tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_snapshot",
         title: "PROJECT_MANAGEMENT",
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
         sheetId: 765004455,
       },
       {
@@ -34,7 +34,7 @@
         enabled: true,
         tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".project_user",
         title: "PROJECT_MANAGEMENT",
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
         sheetId: 1198024744,
       },
       {
@@ -44,7 +44,7 @@
         enabled: true,
         tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task",
         title: "PROJECT_MANAGEMENT",
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
         sheetId: 946660273,
       },
       {
@@ -54,7 +54,7 @@
         enabled: true,
         tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_tag",
         title: "PROJECT_MANAGEMENT",
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
         sheetId: 1463124052,
       },
       {
@@ -64,7 +64,7 @@
         enabled: true,
         tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_user",
         title: "PROJECT_MANAGEMENT",
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
         sheetId: 1768271132,
       },
       {
@@ -74,7 +74,7 @@
         enabled: true,
         tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_snapshot",
         title: "PROJECT_MANAGEMENT",
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
         sheetId: 1987268340,
       },
       {
@@ -84,7 +84,7 @@
         enabled: true,
         tableId: "out.c-projectmgmt-tr-" + InstanceIdShort() + ".user",
         title: "PROJECT_MANAGEMENT",
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
         sheetId: 1669051898,
       },
       {
@@ -94,7 +94,7 @@
         enabled: true,
         tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_event",
         title: "PROJECT_MANAGEMENT",
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
         sheetId: 703952813,
       },
       {
@@ -104,7 +104,7 @@
         enabled: true,
         tableId: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task_custom_field",
         title: "PROJECT_MANAGEMENT",
-        fileId: "1Y9oypWBLWpxkGieRN8LUuj6OXMfNUEqDP5BSa0XDlK4",
+        fileId: Input("google-sheet-id"),
         sheetId: 1131095859,
       },
     ],
