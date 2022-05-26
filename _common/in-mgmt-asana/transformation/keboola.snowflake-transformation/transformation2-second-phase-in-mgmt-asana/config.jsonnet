@@ -39,7 +39,7 @@
         },
         {
           source: "in.c-leochan-ex-asana-" + ConfigId("data-source-in-mgmt-asana") + ".task_details-custom_fields",
-          destination: "task_details_custom_fields",
+          destination: "task_details-custom_fields",
           where_column: "",
           where_values: [],
           where_operator: "eq",
