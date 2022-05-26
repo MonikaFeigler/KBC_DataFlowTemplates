@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      id: ConfigId("data-destination-out-mgmt-gsheet"),
-      version: 3,
-    },
+    oauth_api: {},
   },
   parameters: {
     tables: [
@@ -138,7 +135,7 @@
         },
         {
           source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task",
-          destination: "out.c-projectmgmt-bdm.task.csv",
+          destination: "out.c-projectmgmt-bdm" + InstanceIdShort() + ".task.csv",
           where_column: "",
           where_values: [],
           where_operator: "eq",
