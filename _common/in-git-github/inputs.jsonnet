@@ -1,4 +1,5 @@
-{
+[
+  {
   id: "ex-github-start-date",
   name: "Start date",
   description: "Select day from which you want to get the data.",
@@ -28,3 +29,4 @@
     },
   ],
 }
+]
