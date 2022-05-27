@@ -58,18 +58,18 @@
       {
         name: "created_on",
         dbName: "CREATED_ON",
-        type: "datetime",
+        type: "string",
         nullable: true,
         default: "",
-        size: "",
+        size: "255",
       },
       {
         name: "updated_on",
         dbName: "UPDATED_ON",
-        type: "datetime",
+        type: "string",
         nullable: true,
         default: "",
-        size: "",
+        size: "255",
       },
       {
         name: "url",

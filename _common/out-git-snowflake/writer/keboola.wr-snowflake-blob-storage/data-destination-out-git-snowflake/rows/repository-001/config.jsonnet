@@ -74,10 +74,10 @@
       {
         name: "created_on",
         dbName: "CREATED_ON",
-        type: "datetime",
+        type: "string",
         nullable: true,
         default: "",
-        size: "",
+        size: "255",
       },
       {
         name: "url",

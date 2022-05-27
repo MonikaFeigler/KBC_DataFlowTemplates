@@ -29,7 +29,7 @@
         type: "string",
         nullable: true,
         default: "",
-        size: "",
+        size: "255",
       },
       {
         name: "type",

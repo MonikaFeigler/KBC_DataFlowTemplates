@@ -42,10 +42,10 @@
       {
         name: "date",
         dbName: "DATE",
-        type: "datetime",
+        type: "string",
         nullable: true,
         default: "",
-        size: "",
+        size: "255",
       },
       {
         name: "state",
