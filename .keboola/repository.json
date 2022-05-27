@@ -21,6 +21,21 @@
       ]
     },
     {
+      "id": "my-template",
+      "icon": "common:download",
+      "name": "My Template (UI dev)",
+      "description": "Full workflow to ...",
+      "path": "my-template",
+      "versions": [
+        {
+          "version": "1.2.3",
+          "description": "",
+          "stable": true,
+          "path": "v1"
+        }
+      ]
+    },
+    {
       "id": "keboola-analytics-googleanalytics",
       "icon": "component:keboola.ex-google-analytics-v4",
       "name": "Google Analytics",
@@ -137,21 +152,6 @@
           "description": "",
           "stable": false,
           "path": "v0"
-        }
-      ]
-    },
-    {
-      "id": "my-template",
-      "icon": "common:download",
-      "name": "My Template (UI dev)",
-      "description": "Full workflow to ...",
-      "path": "my-template",
-      "versions": [
-        {
-          "version": "1.2.3",
-          "description": "",
-          "stable": true,
-          "path": "v1"
         }
       ]
     },
