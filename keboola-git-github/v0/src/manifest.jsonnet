@@ -20,12 +20,14 @@
       id: ConfigId("transformation1-organization-user-in-git-github"),
       path: "<common>/in-git-github/transformation/keboola.snowflake-transformation/transformation1-organization-user-in-git-github",
       rows: [],
+      metadata: { "KBC.configuration.folderName": "[GIT-GITHUB]"}
     },
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation2-output-tables-creation-in-git-github"),
       path: "<common>/in-git-github/transformation/keboola.snowflake-transformation/transformation2-output-tables-creation-in-git-github",
       rows: [],
+      metadata: { "KBC.configuration.folderName": "[GIT-GITHUB]"}
     },
     if InputIsAvailable("wr-google-bigquery-v2-service-account-private-key") then
     {
