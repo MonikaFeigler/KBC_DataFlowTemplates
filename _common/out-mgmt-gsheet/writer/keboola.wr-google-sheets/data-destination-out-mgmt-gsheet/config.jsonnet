@@ -135,7 +135,7 @@
         },
         {
           source: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task",
-          destination: "out.c-projectmgmt-bdm" + InstanceIdShort() + ".task.csv",
+          destination: "out.c-projectmgmt-bdm-" + InstanceIdShort() + ".task.csv",
           where_column: "",
           where_values: [],
           where_operator: "eq",
