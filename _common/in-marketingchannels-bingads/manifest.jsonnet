@@ -13,7 +13,7 @@
       id: ConfigId("keboola-marketingchannels-bingads-transformation"),
       path: "transformation/keboola.snowflake-transformation/keboola-marketingchannels-bingads-transformation",
       rows: [],
-      metadata: { "KBC.configuration.folderName": "[KEBOOLA-MARKETINGCHANNELS]"}
+      metadata: { "KBC.configuration.folderName": "[MARKETINGCHANNELS]"}
     },
   ]),
 }
