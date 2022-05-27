@@ -51,6 +51,21 @@
       ]
     },
     {
+      "id": "keboola-crm-salesforce",
+      "icon": "component:kds-team.ex-salesforce-v2",
+      "name": "CRM Salesforce",
+      "description": "Transform Salesforce data into a form you can use for visualization. You can either choose predefined writer or create your own.",
+      "path": "keboola-crm-salesforce",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "keboola-crm-pipedrive",
       "icon": "component:keboola.ex-pipedrive",
       "name": "CRM PipeDrive",
@@ -71,21 +86,6 @@
       "name": "Google Analytics",
       "description": "Transform Google Analytics data into a form you can use for visualization. You can either choose predefined writer or create your own.",
       "path": "keboola-analytics-googleanalytics",
-      "versions": [
-        {
-          "version": "0.0.1",
-          "description": "",
-          "stable": false,
-          "path": "v0"
-        }
-      ]
-    },
-    {
-      "id": "keboola-crm-salesforce",
-      "icon": "component:kds-team.ex-salesforce-v2",
-      "name": "CRM Salesforce",
-      "description": "Transform Salesforce data into a form you can use for visualization. You can either choose predefined writer or create your own.",
-      "path": "keboola-crm-salesforce",
       "versions": [
         {
           "version": "0.0.1",

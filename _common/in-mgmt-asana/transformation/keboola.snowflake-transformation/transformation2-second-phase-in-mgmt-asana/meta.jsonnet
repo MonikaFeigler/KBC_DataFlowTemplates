@@ -1,3 +1,3 @@
 {
-  name: "Transformation2: Second phase [IN-MGMT-ASANA] /" + InstanceIdShort(),
+  name: "Transformation2: Tasks [IN-MGMT-ASANA] /" + InstanceIdShort(),
 }

@@ -1,3 +1,3 @@
 {
-  name: "Transformation1: First phase [IN-MGMT-ASANA] /" + InstanceIdShort(),
+  name: "Transformation1: User, project [IN-MGMT-ASANA] /" + InstanceIdShort(),
 }
