@@ -4,7 +4,7 @@
     input: {
       tables: [
         {
-          source: "out.c-git-tr.user",
+          source: "out.c-git-tr-" + InstanceIdShort() + ".user",
           destination: "user",
           column_types: [],
           where_column: "",
@@ -89,49 +89,49 @@
     output: {
       tables: [
         {
-          destination: "out.c-git-bdm.repository",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".repository",
           source: "out_repository",
           primary_key: [
             "repository_id",
           ],
         },
         {
-          destination: "out.c-git-bdm.pull_request",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".pull_request",
           source: "out_pull_request",
           primary_key: [
             "pull_request_id",
           ],
         },
         {
-          destination: "out.c-git-bdm.pull_request_activity",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".pull_request_activity",
           source: "out_pull_request_activity",
           primary_key: [
             "pull_request_activity_id",
           ],
         },
         {
-          destination: "out.c-git-bdm.repository_commit",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".repository_commit",
           source: "out_repository_commit",
           primary_key: [
             "repository_commit_id",
           ],
         },
         {
-          destination: "out.c-git-bdm.issue",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".issue",
           source: "out_issue",
           primary_key: [
             "issue_id",
           ],
         },
         {
-          destination: "out.c-git-bdm.issue_comment",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".issue_comment",
           source: "out_issue_comment",
           primary_key: [
             "issue_comment_id",
           ],
         },
         {
-          destination: "out.c-git-bdm.event",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".event",
           source: "out_event",
           primary_key: [
             "event_id",

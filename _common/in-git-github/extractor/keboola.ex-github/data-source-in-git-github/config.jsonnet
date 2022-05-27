@@ -41,7 +41,7 @@
       },
     },
     config: {
-      startDate: "-10 days",
+      startDate: Input("ex-github-start-date"),
       incrementalOutput: true,
       jobs: [
         {

@@ -1,3 +1,3 @@
 {
-  name: "Data Source [IN-GIT-GITHUB]",
+  name: "Data Source [IN-GIT-GITHUB] /" + InstanceIdShort(),
 }

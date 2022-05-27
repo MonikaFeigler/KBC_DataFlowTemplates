@@ -32,14 +32,14 @@
     output: {
       tables: [
         {
-          destination: "out.c-git-tr.organization",
+          destination: "out.c-git-tr-" + InstanceIdShort() + ".organization",
           primary_key: [
             "organization_id",
           ],
           source: "out_organization",
         },
         {
-          destination: "out.c-git-bdm.organization_user",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".organization_user",
           source: "out_organization_user",
           primary_key: [
             "organization_id",
@@ -47,7 +47,7 @@
           ],
         },
         {
-          destination: "out.c-git-tr.user",
+          destination: "out.c-git-tr-" + InstanceIdShort() + ".user",
           source: "out_user",
           primary_key: [
             "user_id",
