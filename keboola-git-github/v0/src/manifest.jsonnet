@@ -1,15 +1,18 @@
-{
-  configurations: [
+{ mainConfig: {
+    componentId: "keboola.orchestrator",
+    id: ConfigId("flow-git-github"),
+  },
+  configurations: std.filter(function(v) v != null,[
+     {
+      componentId: "keboola.orchestrator",
+      id: ConfigId("flow-git-github"),
+      path: "other/keboola.orchestrator/flow-git-github",
+      rows: [],
+    },
     {
       componentId: "keboola.ex-github",
       id: ConfigId("data-source-in-git-github"),
       path: "extractor/keboola.ex-github/data-source-in-git-github",
-      rows: [],
-    },
-    {
-      componentId: "keboola.orchestrator",
-      id: ConfigId("flow-git-github"),
-      path: "other/keboola.orchestrator/flow-git-github",
       rows: [],
     },
     {
@@ -24,6 +27,7 @@
       path: "transformation/keboola.snowflake-transformation/transformation2-output-tables-creation-in-git-github",
       rows: [],
     },
+    if InputIsAvailable("wr-google-bigquery-v2-service-account-private-key") then
     {
       componentId: "keboola.wr-google-bigquery-v2",
       id: ConfigId("data-destination-out-git-bigquery"),
@@ -71,12 +75,14 @@
         },
       ],
     },
+    if InputIsAvailable("google-sheet-id") then
     {
       componentId: "keboola.wr-google-sheets",
       id: ConfigId("data-destination-out-git-gsheet"),
       path: "writer/keboola.wr-google-sheets/data-destination-out-git-gsheet",
       rows: [],
     },
+    if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("data-destination-out-git-snowflake"),
@@ -124,5 +130,5 @@
         },
       ],
     },
-  ],
+  ],)
 }
