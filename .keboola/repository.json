@@ -187,9 +187,9 @@
     },
     {
       "id": "keboola-mgmt-asana",
-      "icon": "common:settings",
+      "icon": "component:leochan.ex-asana",
       "name": "KEBOOLA-MGMT-ASANA",
-      "description": "Full workflow to ...",
+      "description": "Transform you project management data from Asana so it can be visualized in SpotApp.",
       "path": "keboola-mgmt-asana",
       "versions": [
         {
