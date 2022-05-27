@@ -38,14 +38,14 @@
     {
       "id": "keboola-crm-hubspot",
       "icon": "component:kds-team.ex-hubspot-crm",
-      "name": "CRM Hubspot", 
+      "name": "CRM Hubspot",
       "description": "Transform your Hubspot data into a form you can use for visualization. You can either choose predefined writer or create your own.",
       "path": "keboola-crm-hubspot",
       "versions": [
         {
           "version": "0.0.1",
           "description": "",
-          "stable": false, 
+          "stable": false,
           "path": "v0"
         }
       ]
@@ -176,6 +176,21 @@
       "name": "CRM PipeDrive",
       "description": "Transform your PipeDrive data into a form you can use for visualization. You can either choose predefined writer or create your own.",
       "path": "keboola-crm-pipedrive",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "keboola-mgmt-asana",
+      "icon": "component:leochan.ex-asana",
+      "name": "KEBOOLA-MGMT-ASANA",
+      "description": "Transform you project management data from Asana into a form you can use for visualization. You can either choose predefined writer or create your own.",
+      "path": "keboola-mgmt-asana",
       "versions": [
         {
           "version": "0.0.1",
