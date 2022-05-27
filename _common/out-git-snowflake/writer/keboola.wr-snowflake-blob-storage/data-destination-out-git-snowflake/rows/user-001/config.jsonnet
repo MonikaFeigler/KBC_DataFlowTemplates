@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-git-tr.user",
+    tableId: "out.c-git-tr-" + InstanceIdShort() + ".user",
     dbName: "USER",
     incremental: true,
     primaryKey: [
@@ -53,8 +53,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-tr.user",
-          destination: "out.c-git-tr.user.csv",
+          source: "out.c-git-tr-" + InstanceIdShort() + ".user",
+          destination: "out.c-git-tr-" + InstanceIdShort() + ".user.csv",
           columns: [
             "user_id",
             "user",

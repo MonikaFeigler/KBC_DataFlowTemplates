@@ -1,3 +1,3 @@
 {
-  name: "Data Destination [OUT-GIT-SNOWFLAKE]",
+  name: "Data Destination [OUT-GIT-SNOWFLAKE] /" + InstanceIdShort(),
 }

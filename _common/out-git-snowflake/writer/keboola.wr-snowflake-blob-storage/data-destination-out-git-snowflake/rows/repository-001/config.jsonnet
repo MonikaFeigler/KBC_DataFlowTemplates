@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-git-bdm.repository",
+    tableId: "out.c-git-bdm-" + InstanceIdShort() + ".repository",
     dbName: "REPOSITORY",
     incremental: true,
     primaryKey: [
@@ -93,8 +93,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-bdm.repository",
-          destination: "out.c-git-bdm.repository.csv",
+          source: "out.c-git-bdm-" + InstanceIdShort() + ".repository",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".repository.csv",
           columns: [
             "repository_id",
             "repository",

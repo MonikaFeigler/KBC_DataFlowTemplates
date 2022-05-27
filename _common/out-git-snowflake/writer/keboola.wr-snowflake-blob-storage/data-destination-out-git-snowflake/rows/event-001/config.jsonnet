@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-git-bdm.event",
+    tableId: "out.c-git-bdm-" + InstanceIdShort() + ".event",
     dbName: "EVENT",
     incremental: true,
     primaryKey: [
@@ -61,8 +61,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-bdm.event",
-          destination: "out.c-git-bdm.event.csv",
+          source: "out.c-git-bdm-" + InstanceIdShort() + ".event",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".event.csv",
           columns: [
             "event_id",
             "repository_id",

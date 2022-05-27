@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-git-bdm.issue_comment",
+    tableId: "out.c-git-bdm-" + InstanceIdShort() + ".issue_comment",
     dbName: "ISSUE_COMMENT",
     incremental: true,
     primaryKey: [
@@ -77,8 +77,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-bdm.issue_comment",
-          destination: "out.c-git-bdm.issue_comment.csv",
+          source: "out.c-git-bdm-" + InstanceIdShort() + ".issue_comment",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".issue_comment.csv",
           columns: [
             "issue_comment_id",
             "issue_id",

@@ -1,88 +1,5 @@
-{ mainConfig: {
-    componentId: "keboola.orchestrator",
-    id: ConfigId("flow-git-github"),
-  },
-  configurations: std.filter(function(v) v != null,[
-     {
-      componentId: "keboola.orchestrator",
-      id: ConfigId("flow-git-github"),
-      path: "other/keboola.orchestrator/flow-git-github",
-      rows: [],
-    },
-    {
-      componentId: "keboola.ex-github",
-      id: ConfigId("data-source-in-git-github"),
-      path: "extractor/keboola.ex-github/data-source-in-git-github",
-      rows: [],
-    },
-    {
-      componentId: "keboola.snowflake-transformation",
-      id: ConfigId("transformation1-organization-user-in-git-github"),
-      path: "transformation/keboola.snowflake-transformation/transformation1-organization-user-in-git-github",
-      rows: [],
-    },
-    {
-      componentId: "keboola.snowflake-transformation",
-      id: ConfigId("transformation2-output-tables-creation-in-git-github"),
-      path: "transformation/keboola.snowflake-transformation/transformation2-output-tables-creation-in-git-github",
-      rows: [],
-    },
-    if InputIsAvailable("wr-google-bigquery-v2-service-account-private-key") then
-    {
-      componentId: "keboola.wr-google-bigquery-v2",
-      id: ConfigId("data-destination-out-git-bigquery"),
-      path: "writer/keboola.wr-google-bigquery-v2/data-destination-out-git-bigquery",
-      rows: [
-        {
-          id: ConfigRowId("event"),
-          path: "rows/event",
-        },
-        {
-          id: ConfigRowId("issue"),
-          path: "rows/issue",
-        },
-        {
-          id: ConfigRowId("issue-comment"),
-          path: "rows/issue-comment",
-        },
-        {
-          id: ConfigRowId("organization"),
-          path: "rows/organization",
-        },
-        {
-          id: ConfigRowId("organization-user"),
-          path: "rows/organization-user",
-        },
-        {
-          id: ConfigRowId("pull-request"),
-          path: "rows/pull-request",
-        },
-        {
-          id: ConfigRowId("pull-request-activity"),
-          path: "rows/pull-request-activity",
-        },
-        {
-          id: ConfigRowId("repository"),
-          path: "rows/repository",
-        },
-        {
-          id: ConfigRowId("repository-commit"),
-          path: "rows/repository-commit",
-        },
-        {
-          id: ConfigRowId("user"),
-          path: "rows/user",
-        },
-      ],
-    },
-    if InputIsAvailable("google-sheet-id") then
-    {
-      componentId: "keboola.wr-google-sheets",
-      id: ConfigId("data-destination-out-git-gsheet"),
-      path: "writer/keboola.wr-google-sheets/data-destination-out-git-gsheet",
-      rows: [],
-    },
-    if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
+{ 
+  configurations: [
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("data-destination-out-git-snowflake"),
@@ -130,5 +47,5 @@
         },
       ],
     },
-  ],)
+  ],
 }

@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-git-bdm.repository_commit",
+    tableId: "out.c-git-bdm-" + InstanceIdShort() + ".repository_commit",
     dbName: "REPOSITORY_COMMIT",
     incremental: true,
     primaryKey: [
@@ -61,8 +61,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-bdm.repository_commit",
-          destination: "out.c-git-bdm.repository_commit.csv",
+          source: "out.c-git-bdm-" + InstanceIdShort() + ".repository_commit",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".repository_commit.csv",
           columns: [
             "repository_commit_id",
             "repository_id",

@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-git-tr.organization",
+    tableId: "out.c-git-tr-" + InstanceIdShort() + ".organization",
     dbName: "ORGANIZATION",
     incremental: true,
     primaryKey: [
@@ -29,8 +29,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-tr.organization",
-          destination: "out.c-git-tr.organization.csv",
+          source: "out.c-git-tr-" + InstanceIdShort() + ".organization",
+          destination: "out.c-git-tr-" + InstanceIdShort() + ".organization.csv",
           columns: [
             "organization_id",
             "organization",

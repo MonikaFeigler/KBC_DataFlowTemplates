@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-git-bdm.pull_request",
+    tableId: "out.c-git-bdm-" + InstanceIdShort() + ".pull_request",
     dbName: "PULL_REQUEST",
     incremental: true,
     primaryKey: [
@@ -85,8 +85,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-bdm.pull_request",
-          destination: "out.c-git-bdm.pull_request.csv",
+          source: "out.c-git-bdm-" + InstanceIdShort() + ".pull_request",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".pull_request.csv",
           columns: [
             "pull_request_id",
             "repository_id",
