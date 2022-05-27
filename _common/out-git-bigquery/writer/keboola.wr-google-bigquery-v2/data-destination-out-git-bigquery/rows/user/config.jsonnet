@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-tr.user",
-          destination: "out.c-git-tr.user.csv",
+          source: "out.c-git-tr-" + InstanceIdShort() + ".user",
+          destination: "out.c-git-tr-" + InstanceIdShort() + ".user.csv",
           changed_since: "adaptive",
           columns: [
             "user_id",
@@ -21,7 +21,7 @@
     tables: [
       {
         dbName: "USER",
-        tableId: "out.c-git-tr.user",
+        tableId: "out.c-git-tr-" + InstanceIdShort() + ".user",
         incremental: true,
         items: [
           {

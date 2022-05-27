@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-bdm.issue",
-          destination: "out.c-git-bdm.issue.csv",
+          source: "out.c-git-bdm-" + InstanceIdShort() + ".issue",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".issue.csv",
           changed_since: "adaptive",
           columns: [
             "issue_id",
@@ -29,7 +29,7 @@
     tables: [
       {
         dbName: "ISSUE",
-        tableId: "out.c-git-bdm.issue",
+        tableId: "out.c-git-bdm-" + InstanceIdShort() + ".issue",
         incremental: true,
         items: [
           {

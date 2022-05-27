@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-bdm.pull_request",
-          destination: "out.c-git-bdm.pull_request.csv",
+          source: "out.c-git-bdm-" + InstanceIdShort() + ".pull_request",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".pull_request.csv",
           changed_since: "adaptive",
           columns: [
             "pull_request_id",
@@ -25,7 +25,7 @@
     tables: [
       {
         dbName: "PULL_REQUEST",
-        tableId: "out.c-git-bdm.pull_request",
+        tableId: "out.c-git-bdm-" + InstanceIdShort() + ".pull_request",
         incremental: true,
         items: [
           {

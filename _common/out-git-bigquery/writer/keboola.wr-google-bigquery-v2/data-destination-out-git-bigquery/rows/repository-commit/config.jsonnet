@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-git-bdm.repository_commit",
-          destination: "out.c-git-bdm.repository_commit.csv",
+          source: "out.c-git-bdm-" + InstanceIdShort() + ".repository_commit",
+          destination: "out.c-git-bdm-" + InstanceIdShort() + ".repository_commit.csv",
           changed_since: "adaptive",
           columns: [
             "repository_commit_id",
@@ -22,7 +22,7 @@
     tables: [
       {
         dbName: "REPOSITORY_COMMIT",
-        tableId: "out.c-git-bdm.repository_commit",
+        tableId: "out.c-git-bdm-" + InstanceIdShort() + ".repository_commit",
         incremental: true,
         items: [
           {
