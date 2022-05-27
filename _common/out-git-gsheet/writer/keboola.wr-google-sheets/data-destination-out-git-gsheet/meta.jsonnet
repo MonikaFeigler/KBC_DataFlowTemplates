@@ -1,3 +1,3 @@
 {
-  name: "Data Destination [OUT-GIT-GSHEET]",
+  name: "Data Destination [OUT-GIT-GSHEET] /" + InstanceIdShort(),
 }
