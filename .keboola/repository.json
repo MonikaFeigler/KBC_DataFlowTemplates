@@ -189,7 +189,7 @@
       "id": "keboola-mgmt-asana",
       "icon": "component:leochan.ex-asana",
       "name": "KEBOOLA-MGMT-ASANA",
-      "description": "Transform you project management data from Asana so it can be visualized in SpotApp.",
+      "description": "Transform you project management data from Asana into a form you can use for visualization. You can either choose predefined writer or create your own.",
       "path": "keboola-mgmt-asana",
       "versions": [
         {
