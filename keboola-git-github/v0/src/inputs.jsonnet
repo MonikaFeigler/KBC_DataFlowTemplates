@@ -1,7 +1,7 @@
-local asana = import "/<common>/in-mgmt-asana/inputs.jsonnet";
-local snowflake = import "/<common>/out-mgmt-snowflake/inputs.jsonnet";
-local bigquery = import "/<common>/out-mgmt-bigquery/inputs.jsonnet";
-local googlesheet = import "/<common>/out-mgmt-gsheet/inputs.jsonnet";
+local github = import "/<common>/in-git-github/inputs.jsonnet";
+local snowflake = import "/<common>/out-git-snowflake/inputs.jsonnet";
+local bigquery = import "/<common>/out-git-bigquery/inputs.jsonnet";
+local googlesheet = import "/<common>/out-git-gsheet/inputs.jsonnet";
 {
   stepsGroups: [
     {

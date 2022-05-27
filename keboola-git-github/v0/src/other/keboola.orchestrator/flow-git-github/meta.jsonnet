@@ -1,3 +1,3 @@
 {
-  name: "Flow [GIT-GITHUB]",
+  name: "Flow [GIT-GITHUB] /" + InstanceIdShort(),
 }
