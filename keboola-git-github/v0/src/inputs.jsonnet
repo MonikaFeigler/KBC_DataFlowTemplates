@@ -13,7 +13,7 @@ local googlesheet = import "/<common>/out-git-gsheet/inputs.jsonnet";
           name: "GitHub",
           description: "GitHub - Data Source",
           dialogName: "GitHub Data Source", 
-          dialogDescription: "Extractor collects data from GitHub....",
+          dialogDescription: "Extractor collects data from GitHub about organizations, teams, members, repositories, commits, issues and pull requests.",
           inputs: github
         }
       ]
