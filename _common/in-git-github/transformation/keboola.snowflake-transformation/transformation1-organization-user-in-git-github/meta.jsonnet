@@ -1,3 +1,3 @@
 {
-  name: "Transformation1: Organization, user [IN-GIT-GITHUB] /" + InstanceIdShort(),
+  name: "Transformation1: Organization, User [IN-GIT-GITHUB] /" + InstanceIdShort(),
 }
