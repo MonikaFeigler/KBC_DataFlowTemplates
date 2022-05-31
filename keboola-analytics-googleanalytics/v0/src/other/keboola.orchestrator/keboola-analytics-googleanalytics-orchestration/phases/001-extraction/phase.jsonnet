@@ -1,4 +1,4 @@
 {
-  name: "Extraction: Google Analytics",
+  name: "Extraction",
   dependsOn: ["<previous>"],
 }
