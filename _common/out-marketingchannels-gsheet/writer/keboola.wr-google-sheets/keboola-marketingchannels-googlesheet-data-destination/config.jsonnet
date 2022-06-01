@@ -55,7 +55,7 @@
       tables: std.filter(function(v) v != null,[
         if InputIsAvailable("ga-from") then
         {
-          source: "out.c-marketing-bdm" + InstanceIdShort() + ".keywords_adgroup",
+          source: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup",
           destination: "out.c-marketing-bdm-" + InstanceIdShort() + ".keywords_adgroup.csv",
           where_column: "",
           where_values: [],
