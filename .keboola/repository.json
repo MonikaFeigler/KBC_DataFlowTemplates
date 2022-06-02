@@ -17,6 +17,12 @@
           "description": "",
           "stable": false,
           "path": "v0"
+        },
+        {
+          "version": "1.0.0",
+          "description": "",
+          "stable": false,
+          "path": "v1"
         }
       ]
     },
@@ -188,7 +194,7 @@
     {
       "id": "keboola-mgmt-asana",
       "icon": "component:leochan.ex-asana",
-      "name": "KEBOOLA-MGMT-ASANA",
+      "name": "Project Management Asana",
       "description": "Transform your project management data from Asana into a form you can use for visualization. You can either choose predefined writer or create your own.",
       "path": "keboola-mgmt-asana",
       "versions": [
@@ -203,7 +209,7 @@
     {
       "id": "keboola-git-github",
       "icon": "component:keboola.ex-github",
-      "name": "KEBOOLA-GIT-GITHUB",
+      "name": "Git GutHub",
       "description": "Transform your GitHub data into a form you can use for visualization. You can either choose predefined writer or create your own.",
       "path": "keboola-git-github",
       "versions": [
