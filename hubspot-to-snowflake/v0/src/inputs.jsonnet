@@ -30,7 +30,7 @@ local hubspot = import "/<common>/in-crm-hubspot/v0/src/inputs.jsonnet";
     },
     {
       description: "Writer",
-      required: "optional",
+      required: "all",
       steps: [
           {
           icon: "component:keboola.wr-snowflake-blob-storage",
