@@ -278,6 +278,22 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "salesforce-to-snowflake",
+      "icon": "component:kds-team.ex-salesforce-v2",
+      "name": "Salesforce to Snowflake",
+      "description": "Load and synchronize your Salesforce data to data warehouses then connect to your BI tools to derive meaningful business insights.",
+      "path": "salesforce-to-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["kds-team.ex-salesforce-v2", "keboola.wr-snowflake-blob-storage"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
