@@ -262,6 +262,22 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "pipedrive-to-googlesheet",
+      "icon": "component:keboola.ex-pipedrive",
+      "name": "PipeDrive to GoogleSheet",
+      "description": "Load and synchronize Pipedrive data from different sources and data structures to your preferred data warehouse.",
+      "path": "pipedrive-to-googlesheet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["keboola.ex-pipedrive", "keboola.wr-google-sheets"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
