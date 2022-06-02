@@ -230,6 +230,22 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "hubspot-to-googlesheet",
+      "name": "Hubspot to GoogleSheet",
+      "icon": "component:kds-team.ex-hubspot-crm",
+      "description": "Manage and streamline your Hubspot data seamlessly and align it to all your marketing and business insights.",
+      "path": "hubspot-to-googlesheet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["kds-team.ex-hubspot-crm", "keboola.wr-google-sheets"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }

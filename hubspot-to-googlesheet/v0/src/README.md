@@ -1,6 +1,6 @@
-# HUBSPOT-TO-SNOWFLAKE
+# HUBSPOT-TO-GOOGLESHEET
 
-By using this end-to-end flow you can extract data from Hubspot, transform it and load it into snowflake database.
+By using this end-to-end flow you can extract data from Hubspot, transform it and load it into Google sheet.
 
 ## Steps to take:
 1. Authorize data source with Hubspot API TOKEN and select date range
@@ -28,13 +28,13 @@ From Hubspot data, the second transformation creates an output CRM data model (s
 
 The final snapshots are generated from the auxiliary tables.
 
-### DD: Data Destination [OUT-CRM-SNOWFLAKE]
+### DD: Data Destination [OUT-CRM-GSHEET]
 
-The data destination loads data into a Snowflake database.
+The data destination loads data into a Google sheet.
 
-### FLOW: Flow [HUBSPOT-TO-SNOWFLAKE]
+### FLOW: Flow [HUBSPOT-TO-GOOGLESHEET]
 
-The Flow runs HubSpot CRM data source, three snowflake transformations and snowflake data destination.
+The Flow runs HubSpot CRM data source, three snowflake transformations and Google Sheet data destination.
 
 
 ## Business Data Model
