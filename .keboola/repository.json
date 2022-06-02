@@ -294,6 +294,22 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "salesforce-to-googlesheet",
+      "icon": "component:kds-team.ex-salesforce-v2",
+      "name": "Salesforce to GoogleSheet",
+      "description": "Load and synchronize your Salesforce data to data warehouses then connect to your BI tools to derive meaningful business insights.",
+      "path": "salesforce-to-googlesheet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["kds-team.ex-salesforce-v2", "keboola.wr-google-sheets"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
