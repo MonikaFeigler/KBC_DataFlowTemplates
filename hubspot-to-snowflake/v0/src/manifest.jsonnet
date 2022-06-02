@@ -2,7 +2,7 @@
     componentId: "keboola.orchestrator",
     id: ConfigId("keboola-crm-hubspot-orchestration"),
   },
-  configurations: std.filter(function(v) v != null,[
+  configurations: [
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("keboola-crm-hubspot-orchestration"),
@@ -42,7 +42,6 @@
       },
       rows: [],
     },
-    if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("out-crm-snowflake-writer"),
@@ -78,5 +77,5 @@
         },
       ],
     },
-  ]),
+  ],
 }
