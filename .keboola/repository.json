@@ -246,6 +246,22 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "pipedrive-to-snowflake",
+      "icon": "component:keboola.ex-pipedrive",
+      "name": "PipeDrive to Snowflake",
+      "description": "Load and synchronize Pipedrive data from different sources and data structures to your preferred data warehouse.",
+      "path": "pipedrive-to-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["keboola.ex-pipedrive", "keboola.wr-snowflake-blob-storage"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
