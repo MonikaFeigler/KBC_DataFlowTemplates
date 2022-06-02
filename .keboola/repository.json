@@ -310,6 +310,22 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "shopify-to-bigquery",
+      "icon": "component:kds-team.ex-shopify",
+      "name": "Shopify to BigQuery",
+      "description": "Sync your updated Shopify data into Keebola and build your analytics for better business decisions.",
+      "path": "shopify-to-bigquery",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["kds-team.ex-shopify", "keboola.ex-facebook-ads", "keboola.ex-google-ads", "keboola.ex-sklik", "keboola.wr-google-bigquery-v2"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
