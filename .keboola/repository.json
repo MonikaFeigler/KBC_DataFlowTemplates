@@ -218,6 +218,7 @@
     {
       "id": "hubspot-to-snowflake",
       "name": "Hubspot to Snowflake",
+      "icon": "component:kds-team.ex-hubspot-crm",
       "description": "Manage and streamline your Hubspot data seamlessly and align it to all your marketing and business insights.",
       "path": "hubspot-to-snowflake",
       "versions": [
