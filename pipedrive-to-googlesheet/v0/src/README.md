@@ -1,6 +1,7 @@
-# PIPEDRIVE-TO-SNOWFLAKE
+# PIPEDRIVE-TO-GOOGLESHEET
 
-By using this end-to-end flow you can extract data from Hubspot, transform it and load it into a Snowflake database.
+By using this end-to-end flow you can extract data from Hubspot, transform it and load it into a Google Sheet.
+
 
 ## Steps to take:
 1. Authorize data source with Pipedrive API TOKEN and fill company domain
@@ -29,13 +30,13 @@ From Pipedrive data, the second transformation creates an output CRM data model 
 The third transformation then creates the out_activity table using the first contact/opportunity/employee IDs from the activities by joining the table; this also outputs a pairing table for opportunities and contacts are created.
 The final snapshots are generated from the auxiliary tables.
 
-### DD: Data Destination [OUT-CRM-SNOWFLAKE]
+### DD: Data Destination [OUT-CRM-GSHEET]
 
-The writer loads data into a Snowflake database.
+The writer loads data into a Google sheet.
 
-### FLOW: Flow [PIPEDRIVE-TO-SNOWFLAKE]
+### FLOW: Flow [PIPEDRIVE-TO-GOOGLESHEET]
 
-The flow runs Pipedrive CRM data source, three snowflake transformations and Snowflake data destination.
+The flow runs Pipedrive CRM data source, three snowflake transformations and Google Sheet data destination.
 
 
 ## Business Data Model

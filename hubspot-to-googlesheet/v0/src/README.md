@@ -4,7 +4,7 @@ By using this end-to-end flow you can extract data from Hubspot, transform it an
 
 ## Steps to take:
 1. Authorize data source with Hubspot API TOKEN and select date range
-2. Optionaly select and authorize data destinations
+2. Authorize data destination
 3. Run the flow
 
 ## All possible included components' configurations:
