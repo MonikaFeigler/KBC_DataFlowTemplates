@@ -554,7 +554,7 @@
     },    
     {
       "id": "ts-googleanalytics-to-snowflake",
-      "name": "Google Analytics to Snowflake and SpotApp",
+      "name": "Google Analytics to Snowflake & SpotApp",
       "description": "Load or automate updates of your Google Analytics data into Snowflake DB and use it for reporting in SpotApp.",
       "path": "ts-googleanalytics-to-snowflake",
       "versions": [
