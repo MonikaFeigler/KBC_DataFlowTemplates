@@ -476,6 +476,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "github-to-snowflake",
+      "name": "GitHub to Snowflake",
+      "description": "Transform your GitHub data into a form you can use for visualization and load them to Snowflake database.",
+      "path": "github-to-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["keboola.ex-github","keboola.wr-snowflake-blob-storage"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
