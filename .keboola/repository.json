@@ -416,6 +416,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "shoptet-to-snowflake",
+      "name": "Shoptet to Snowflake",
+      "description": "Sync your Shoptet order's data with Keboola and build your analytics for better business decisions.",
+      "path": "shoptet-to-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["kds-team.ex-shoptet", "keboola.ex-facebook-ads", "keboola.ex-google-ads", "keboola.ex-sklik","keboola.wr-snowflake-blob-storage"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
