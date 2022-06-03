@@ -461,6 +461,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "shoptet-to-datastudio",
+      "name": "Shoptet to Datastudio",
+      "description": "Sync your Shoptet order's data with Keboola, use Google Sheet as destination and load outputs into a copy of Google Data Studio Dashboard template, which we have prepared for you.",
+      "path": "shoptet-to-datastudio",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["kds-team.ex-shoptet", "keboola.ex-facebook-ads", "keboola.ex-google-ads", "keboola.ex-sklik","keboola.wr-google-sheets"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
