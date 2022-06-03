@@ -386,6 +386,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "adsplatform-to-bigquery",
+      "name": "Ads Platform to BigQuery",
+      "description": "Sync data from different Ads platforms to BigQuery database.",
+      "path": "adsplatform-to-bigquery",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["esnerda.ex-bingads","leochan.ex-linkedin","keboola.ex-facebook-ads", "keboola.ex-google-ads","keboola.ex-google-analytics-v4","keboola.wr-google-bigquery-v2"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
