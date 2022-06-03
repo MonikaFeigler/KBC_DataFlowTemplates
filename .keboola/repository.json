@@ -506,6 +506,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "github-to-googlesheet",
+      "name": "GitHub to GoogleSheet",
+      "description": "Transform your GitHub data into a form you can use for visualization and load them to Google sheet.",
+      "path": "github-to-googlesheet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["keboola.ex-github","keboola.wr-google-sheets"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
