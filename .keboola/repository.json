@@ -536,6 +536,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "googleanalytics-to-bigquery",
+      "name": "Google Analytics to BigQuery",
+      "description": "Transform Google Analytics data into a form you can use for visualization and load them to BigQuery database.",
+      "path": "googleanalytics-to-bigquery",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["keboola.ex-google-analytics-v4","keboola.wr-google-bigquery-v2"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
