@@ -20,11 +20,11 @@ Within this transformation, data is transformed. In this transformation, data is
 
 ### DD: Data Destination [OUT-TS-HUBSPOT-SNOWFLAKE]
 
-The data destination loads data into a Google BigQuery or a Snowflake database.
+The data destination loads data into a Snowflake database.
 
 ### FLOW: Flow [TS-HUBSPOT-TO-SNOWFLAKE] 
 
-The Flow runs the Data Source and one transformation and optionally selected data destinations.
+The Flow runs the Data Source and one transformation and load to a snowflake database.
 
 
 

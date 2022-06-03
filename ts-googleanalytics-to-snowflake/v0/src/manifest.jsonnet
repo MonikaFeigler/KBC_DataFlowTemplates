@@ -20,7 +20,7 @@
       id: ConfigId("in-googleanalytics-transformation"),
       path: "<common>/in-googleanalytics/v0/src/transformation/keboola.snowflake-transformation/in-googleanalytics-transformation",
       rows: [],
-      metadata: { "KBC.configuration.folderName": "[THOUGHTSPOT-ANALYTICS-GOOGLEANALYTICS]"}
+      metadata: { "KBC.configuration.folderName": "[THOUGHTSPOT-GOOGLEANALYTICS-SNOWFLAKE]"}
     },
     {
       componentId: "keboola.wr-snowflake-blob-storage",

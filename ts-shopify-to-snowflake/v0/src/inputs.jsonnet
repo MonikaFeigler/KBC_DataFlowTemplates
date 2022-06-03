@@ -1,4 +1,3 @@
-local googlesheet = import "/<common>/out-ecommerce-gsheet/v0/src/inputs.jsonnet";
 local snowflake = import "/<common>/out-ecommerce-snowflake/v0/src/inputs.jsonnet";
 local shopify = import "/<common>/in-ecommerce-shopify/v0/src/inputs.jsonnet";
 local bigquery = import "/<common>/out-ecommerce-bigquery/v0/src/inputs.jsonnet";
@@ -65,7 +64,7 @@ local sklik = import "/<common>/in-ecommerce-sklik/v0/src/inputs.jsonnet";
     },
     {
       description: "Configure your credentials for writer.",
-      required: "optional",
+      required: "all",
       steps: [
           {
           icon: "component:keboola.wr-snowflake-blob-storage",
@@ -74,14 +73,6 @@ local sklik = import "/<common>/in-ecommerce-sklik/v0/src/inputs.jsonnet";
           dialogName: "Snowflake Destination", 
           dialogDescription: "Data load to Snowflake DB.",
           inputs: snowflake
-        },
-        {
-          icon: "component:keboola.wr-google-bigquery-v2",
-          name: "Google Big Query",
-          description: "Big Query - Destination",
-          dialogName: "Big Query Destination", 
-          dialogDescription: "Data load to Google Big Query",
-          inputs: bigquery
         },
       ]
     }

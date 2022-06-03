@@ -1,3 +1,3 @@
 {
-  name: "Flow [TS-ECOMM-SHOPIFY] /" + InstanceIdShort(),
+  name: "Flow [TS-SHOPIFY-TO-SNOWFLAKE] /" + InstanceIdShort(),
 }

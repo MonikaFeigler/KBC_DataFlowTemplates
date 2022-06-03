@@ -21,11 +21,11 @@ Within this transformation, data is transformed. In this transformation, data is
 
 ### DD: Data Destination [OUT-GA-SNOWFLAKE]
 
-The data destination loads data into a Google BigQuery or a Snowflake database or a google sheet.
+The data destination loads data into a Snowflake database.
 
 ### FLOW: Flow [TS-GA-GOOGLEANALYTICS]
 
-The Flow runs the Data Source and one transformation and optionally writes data into a Google BigQuery or a Snowflake databases or a google sheet.
+The Flow runs the Data Source and one transformation and optionally writes data into a snowflake database.
 
 
 

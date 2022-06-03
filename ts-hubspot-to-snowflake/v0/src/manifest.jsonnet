@@ -20,7 +20,7 @@
       id: ConfigId("in-thoughtspot-hubspot-transformation-data-preparation"),
       path: "<common>/in-thoughtspot-hubspot/v0/src/transformation/keboola.snowflake-transformation/in-thoughtspot-hubspot-transformation-data-preparation",
       rows: [],
-      metadata: { "KBC.configuration.folderName": "[THOUGHTSPOT-CRM-HUBSPOT]"}
+      metadata: { "KBC.configuration.folderName": "[THOUGHTSPOT-HUBSPOT-SNOWFLAKE]"}
     },
     {
       componentId: "keboola.wr-snowflake-blob-storage",
