@@ -315,7 +315,7 @@
     {
       "id": "shopify-to-bigquery",
       "name": "Shopify to BigQuery",
-      "description": "Sync your updated Shopify data into Keebola and build your analytics for better business decisions.",
+      "description": "Sync your updated Shopify data into Keboola and build your analytics for better business decisions.",
       "path": "shopify-to-bigquery",
       "versions": [
         {
@@ -330,7 +330,7 @@
     {
       "id": "shopify-to-snowflake",
       "name": "Shopify to Snowflake",
-      "description": "Sync your updated Shopify data into Keebola and build your analytics for better business decisions.",
+      "description": "Sync your updated Shopify data into Keboola and build your analytics for better business decisions.",
       "path": "shopify-to-snowflake",
       "versions": [
         {
@@ -345,8 +345,23 @@
     {
       "id": "shopify-to-googlesheet",
       "name": "Shopify to GoogleSheet",
-      "description": "Sync your updated Shopify data into Keebola and build your analytics for better business decisions.",
+      "description": "Sync your updated Shopify data into Keboola and build your analytics for better business decisions.",
       "path": "shopify-to-googlesheet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["kds-team.ex-shopify", "keboola.ex-facebook-ads", "keboola.ex-google-ads", "keboola.ex-sklik", "keboola.wr-google-sheets"],
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "shopify-to-datastudio",
+      "name": "Shopify to Datastudio",
+      "description": "Sync your updated Shopify data into Keboola and build your analytics for better business decisions.",
+      "path": "shopify-to-datastudio",
       "versions": [
         {
           "version": "0.0.1",
