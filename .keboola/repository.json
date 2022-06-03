@@ -401,6 +401,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "adsplatform-to-googlesheet",
+      "name": "Ads Platform to GoogleSheet",
+      "description": "Sync data from different Ads platforms to Google Sheet",
+      "path": "adsplatform-to-googlesheet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["esnerda.ex-bingads","leochan.ex-linkedin","keboola.ex-facebook-ads", "keboola.ex-google-ads","keboola.ex-google-analytics-v4","keboola.wr-google-sheets"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
