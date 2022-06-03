@@ -326,6 +326,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "shopify-to-snowflake",
+      "name": "Shopify to Snowflake",
+      "description": "Sync your updated Shopify data into Keebola and build your analytics for better business decisions.",
+      "path": "shopify-to-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["kds-team.ex-shopify", "keboola.ex-facebook-ads", "keboola.ex-google-ads", "keboola.ex-sklik", "keboola.wr-snowflake-blob-storage"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
