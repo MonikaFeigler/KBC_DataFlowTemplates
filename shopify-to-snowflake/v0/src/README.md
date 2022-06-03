@@ -1,10 +1,10 @@
-# KEBOOLA-ECOMMERCE-SHOPIFY
+# SHOPIFY-TO-SNOWFLAKE
 
 By using this end-to-end flow you can extract data from Shopify and transform it into visualizations in your BI tool or anywhere else you prefer.
 
 ## Steps to take:
 1. Fill out your credentials in the Shopify data source
-2. Optionaly select and authorize data destinations
+2. Authorize data destinations
 3. Run the flow
 
 ## Included components' configurations:
@@ -32,13 +32,13 @@ Within this transformation, data is transformed. In this transformation, data is
 
 A basic RFM analysis is performed during this transformation.
 
-### DD: Data Destination [OUT-ECOMM-GSHEET]  OR [OUT-ECOMM-SNOWFLAKE] OR [OUT-ECOMM-BIGQUERY]
+### DD: Data Destination [OUT-ECOMM-SNOWFLAKE]
 
-The data destination loads data into a Google sheet or a Snowflake database or a BigQuery database.
+The data destination loads data into a Snowflake database.
 
-### FLOW: Flow [ECOMM-SHOPIFY] 
+### FLOW: Flow [SHOPIFY-TO-SNOWFLAKE] 
 
-The Flow gets the data from Shopify Data Source, transforms the data, runs the RFM analysis and optionally writes the data into selected data destinations.
+The Flow gets the data from Shopify Data Source, transforms the data, runs the RFM analysis and optionally writes the data into Snowflake data destination.
 
 ## Business Data Model
 
