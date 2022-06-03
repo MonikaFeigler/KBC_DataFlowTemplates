@@ -521,6 +521,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "googleanalytics-to-snowflake",
+      "name": "Google Analytics to Snowflake",
+      "description": "Transform Google Analytics data into a form you can use for visualization and load them to Snowflake database.",
+      "path": "googleanalytics-to-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["keboola.ex-google-analytics-v4","keboola.wr-snowflake-blob-storage"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
