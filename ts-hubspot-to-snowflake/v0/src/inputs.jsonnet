@@ -1,5 +1,4 @@
 local snowflake = import "/<common>/out-thoughtspot-hubspot-snowflake/v0/src/inputs.jsonnet";
-local bigquery = import "/<common>/out-thoughtspot-hubspot-bigquery/v0/src/inputs.jsonnet";
 local hubspot = import "/<common>/in-thoughtspot-hubspot/v0/src/inputs.jsonnet";
 {
   stepsGroups: [
@@ -31,7 +30,7 @@ local hubspot = import "/<common>/in-thoughtspot-hubspot/v0/src/inputs.jsonnet";
     },
     {
       description: "Configure your credentials for writer.",
-      required: "optional",
+      required: "all",
       steps: [
         {
           icon: "component:keboola.wr-snowflake-blob-storage",
@@ -40,14 +39,6 @@ local hubspot = import "/<common>/in-thoughtspot-hubspot/v0/src/inputs.jsonnet";
           dialogName: "Snowflake Destination", 
           dialogDescription: "Data load to Snowflake database.",
           inputs: snowflake,
-        },
-        {
-          icon: "component:keboola.wr-google-bigquery-v2",
-          name: "Google Big Query",
-          description: "Big Query - Destination",
-          dialogName: "Big Query Destination", 
-          dialogDescription: "Data load to Google Big Query",
-          inputs: bigquery,  
         },
       ],
     },

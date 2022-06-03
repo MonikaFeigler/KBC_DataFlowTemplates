@@ -1,3 +1,3 @@
 {
-  name: "Flow [TS-CRM-HUBSPOT] /" + InstanceIdShort(),
+  name: "Flow [TS-HUBSPOT-TO-SNOWFLAKE] /" + InstanceIdShort(),
 }
