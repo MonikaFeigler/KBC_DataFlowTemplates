@@ -596,6 +596,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "asana-to-snowflake",
+      "name": "Asana to Snowflake",
+      "description": "Transform your project management data from Asana into a form you can use for visualization and load them to a Snowflake database.",
+      "path": "asana-to-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["leochan.ex-asana","keboola.wr-snowflake-blob-storage"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
