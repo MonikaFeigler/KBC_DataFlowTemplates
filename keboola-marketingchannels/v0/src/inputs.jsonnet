@@ -17,7 +17,7 @@ local gsheet = import "/<common>/out-marketingchannels-gsheet/inputs.jsonnet";
           name: "Facebook Ads Data Source",
           description: "Facebook Ads - Data Source",
           dialogName: "Facebook Ads Data Source", 
-          dialogDescription: "This extractor is getting data about facebook campaigns, ads, adsets and ads insights for the last day.",
+          dialogDescription: "Export your Facebook Ads manager data such as campaigns, adsets, ads insights and more.",
           inputs: facebookads
         },
         {
