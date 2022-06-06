@@ -626,6 +626,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "asana-to-googlesheet",
+      "name": "Asana to Google Sheet",
+      "description": "Transform your project management data from Asana into a form you can use for visualization and load them to a Google Sheet.",
+      "path": "asana-to-googlesheet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["leochan.ex-asana","keboola.wr-google-sheets"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
