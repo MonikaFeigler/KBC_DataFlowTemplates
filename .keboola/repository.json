@@ -611,6 +611,21 @@
           "path": "v0"
         }
       ]
+    },
+    {
+      "id": "asana-to-bigquery",
+      "name": "Asana to BigQuery",
+      "description": "Transform your project management data from Asana into a form you can use for visualization and load them to a BigQuery database.",
+      "path": "asana-to-bigquery",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": ["leochan.ex-asana","keboola.wr-google-bigquery-v2"],
+          "path": "v0"
+        }
+      ]
     }
   ]
 }
