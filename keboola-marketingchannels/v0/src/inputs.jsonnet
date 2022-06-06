@@ -41,7 +41,7 @@ local gsheet = import "/<common>/out-marketingchannels-gsheet/inputs.jsonnet";
           name: "Google Ads",
           description: "Google Ads - Data Source",
           dialogName: "Google Ads Data Source", 
-          dialogDescription: "This extractor is getting data from Google Ads about campaigns for the last day.",
+          dialogDescription: "Export data from Google Ads such as advertising spend, ad and campaign performance. To link your Google Ads data, fill in your Google Ads Customer ID below.",
           inputs: googleads
         }
       ]
