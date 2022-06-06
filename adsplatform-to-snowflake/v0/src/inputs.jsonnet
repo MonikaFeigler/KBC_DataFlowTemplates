@@ -53,7 +53,7 @@ local snowflake = import "/<common>/out-marketingchannels-snowflake/inputs.jsonn
           name: "Google Analytics",
           description: "Google Analytics - Data Source",
           dialogName: "Analytics Data Source", 
-          dialogDescription: "This extractor is getting data from Google Analytics. It's an incremental update. This data will enrich the marketing model with keywords adgroup and marketing transactions. ",
+          dialogDescription: "Export data from multiple Ads platform into Google Analytics to provide you a bigger picture of your customer journeys.",
           inputs: googleanalytics
         }
       ]
