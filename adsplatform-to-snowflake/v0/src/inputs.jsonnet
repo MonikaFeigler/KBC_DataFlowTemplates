@@ -31,7 +31,7 @@ local snowflake = import "/<common>/out-marketingchannels-snowflake/inputs.jsonn
           name: "LinkedIn Ads",
           description: "LinkedIn Ads - Data Source",
           dialogName: "LinkedIn Ads Data Source", 
-          dialogDescription: "This extractor is incremental. It is necessary to input start time range and end time range of the analytics.",
+          dialogDescription: "Export data from Linked In such as advertising spend, ad and campaign performance. Generate effective performance insights by entering the start and end time and date below.",
           inputs: linkedin
         },
         {
