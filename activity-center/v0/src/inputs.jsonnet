@@ -1,6 +1,6 @@
-local metadata = import "<common>/in-activity-center/inputs_metadata.jsonnet";
-local telemetry = import "<common>/in-activity-center/inputs_telemetry.jsonnet";
-local snowflake = import "<common>/out-activity-center/inputs.jsonnet";
+local metadata = import "/<common>/in-activity-center/inputs_metadata.jsonnet";
+local telemetry = import "/<common>/in-activity-center/inputs_telemetry.jsonnet";
+local snowflake = import "/<common>/out-activity-center/inputs.jsonnet";
 {
   stepsGroups: [
     {
