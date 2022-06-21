@@ -1,17 +1,8 @@
-{
+{ mainConfig: {
+    componentId: "keboola.orchestrator",
+    id: ConfigId("flow-activity-center"),
+  },
   configurations: [
-    {
-      componentId: "kds-team.ex-kbc-project-metadata-v2",
-      id: ConfigId("metadata-activity-center"),
-      path: "extractor/kds-team.ex-kbc-project-metadata-v2/metadata-activity-center",
-      rows: [],
-    },
-    {
-      componentId: "keboola.ex-telemetry-data",
-      id: ConfigId("telemetry-activity-center"),
-      path: "extractor/keboola.ex-telemetry-data/telemetry-activity-center",
-      rows: [],
-    },
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("flow-activity-center"),
@@ -19,15 +10,27 @@
       rows: [],
     },
     {
+      componentId: "kds-team.ex-kbc-project-metadata-v2",
+      id: ConfigId("metadata-activity-center"),
+      path: "<common>/in-activity-center/extractor/kds-team.ex-kbc-project-metadata-v2/metadata-activity-center",
+      rows: [],
+    },
+    {
+      componentId: "keboola.ex-telemetry-data",
+      id: ConfigId("telemetry-activity-center"),
+      path: "<common>/in-activity-center/extractor/keboola.ex-telemetry-data/telemetry-activity-center",
+      rows: [],
+    },
+    {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-activity-center"),
-      path: "transformation/keboola.snowflake-transformation/transformation-activity-center",
+      path: "<common>/in-activity-center/transformation/keboola.snowflake-transformation/transformation-activity-center",
       rows: [],
     },
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("snowflake-activity-center"),
-      path: "writer/keboola.wr-snowflake-blob-storage/snowflake-activity-center",
+      path: "<common>/out-activity-center/writer/keboola.wr-snowflake-blob-storage/snowflake-activity-center",
       rows: [
         {
           id: ConfigRowId("buckets"),
