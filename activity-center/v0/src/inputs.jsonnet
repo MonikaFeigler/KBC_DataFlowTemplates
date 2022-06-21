@@ -1,118 +1,55 @@
+local metadata = import "<common>/in-activity-center/inputs_metadata.jsonnet";
+local telemetry = import "<common>/in-activity-center/inputs_telemetry.jsonnet";
+local snowflake = import "<common>/out-activity-center/inputs.jsonnet";
 {
   stepsGroups: [
     {
-      description: "Default Group",
+      description: "Extractor",
       required: "all",
       steps: [
         {
-          icon: "common:settings",
-          name: "Default Step",
-          description: "Default Step",
-          inputs: [
-            {
-              id: "ex-kbc-project-metadata-v2-master-token-0-token",
-              name: "Master token Token",
-              description: "",
-              type: "string",
-              kind: "hidden",
-            },
-            {
-              id: "ex-kbc-project-metadata-v2-master-token-0-org-id",
-              name: "Master token Org id",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "552",
-            },
-            {
-              id: "ex-kbc-project-metadata-v2-master-token-0-region",
-              name: "Master token Region",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "current",
-            },
-            {
-              id: "ex-kbc-project-metadata-v2-tokens-0-key",
-              name: "Tokens Key",
-              description: "",
-              type: "string",
-              kind: "hidden",
-            },
-            {
-              id: "ex-kbc-project-metadata-v2-tokens-0-region",
-              name: "Tokens Region",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "eu-central-1",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-password",
-              name: "Db Password",
-              description: "",
-              type: "string",
-              kind: "hidden",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-database",
-              name: "Db Database",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "KEBOOLA_5539",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-driver",
-              name: "Db Driver",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "snowflake",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-host",
-              name: "Db Host",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "keboola.west-europe.azure.snowflakecomputing.com",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-port",
-              name: "Db Port",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "443",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-schema",
-              name: "Db Schema",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "WORKSPACE_15606217",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-user",
-              name: "Db User",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "KEBOOLA_WORKSPACE_15606217",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-warehouse",
-              name: "Db Warehouse",
-              description: "",
-              type: "string",
-              kind: "input",
-              default: "KEBOOLA_PROD_SMALL",
-            },
-          ],
+          icon: "kds-team.ex-kbc-project-metadata-v2",
+          name: "KBC Project Metadata",
+          description: "KBC Project Metadata - Data Source",
+          dialogName: "KBC Project Metadata Data Source",
+          dialogDescription: "",
+          inputs: metadata
+        },
+        {
+          icon: "keboola.ex-telemetry-data",
+          name: "Telemetry data",
+          description: "Telemetry data - Data Source",
+          dialogName: "Telemetry data - Data Source",
+          dialogDescription: "",
+          inputs: telemetry
         },
       ],
     },
+    {   
+      description: "Snowflake Transformation",
+      required: "all",
+      steps: [
+        {
+          icon: "component:keboola.snowflake-transformation",
+          name: "Snowflake SQL",
+          description: "Transformation",
+          inputs: [],
+        },
+      ]
+    },
+    {
+      description: "Writer",
+      required: "all",
+      steps: [
+          {
+          icon: "component:keboola.wr-snowflake-blob-storage",
+          name: "Snowflake Destination",
+          description: "Load to data into snowflake",
+          dialogName: "Snowflake Destination", 
+          dialogDescription: "Data load to Snowflake DB.",
+          inputs: snowflake,
+        },
+      ]
+    }
   ],
 }
