@@ -22,7 +22,7 @@
       {
         "#token": Input("ex-kbc-project-metadata-v2-master-token-0-token"),
         org_id: Input("ex-kbc-project-metadata-v2-master-token-0-org-id"),
-        region: Input("ex-kbc-project-metadata-v2-master-token-0-region"),
+        region: "current",
       },
     ],
     incremental_load: 0,

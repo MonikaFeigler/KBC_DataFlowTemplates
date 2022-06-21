@@ -1,6 +1,6 @@
 {
   parameters: {
-    mode: Input ("ex-telemetry-data-mode"),
+    mode: "organization",
     incremental: true,
     incrementalFetching: true,
   },
