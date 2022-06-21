@@ -1,11 +1,6 @@
 {
   parameters: {
-    tokens: [
-      {
-        "#key": Input("ex-kbc-project-metadata-v2-tokens-0-key"),
-        region: Input("ex-kbc-project-metadata-v2-tokens-0-region"),
-      },
-    ],
+    tokens: [],
     datasets: {
       get_tables_load_events: true,
       get_transformations: false,
