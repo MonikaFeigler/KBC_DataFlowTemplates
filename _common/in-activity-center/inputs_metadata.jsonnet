@@ -15,26 +15,4 @@
     kind: "input",
     default: "XXX",
   },
-  {
-    id: "ex-kbc-project-metadata-v2-master-token-0-region",
-    name: "Organization Region",
-    description: "Choose region, where the organization is located.",
-    type: "string",
-    kind: "select",
-    default: "current",
-    options: [
-        {
-          value: 'current',
-          label: 'current_stack',
-        },
-        {
-          value: 'US',
-          label: 'US',
-        },
-        {
-          value: 'EU',
-          label: 'EU',
-        },
-    ]
-  },
 ]
