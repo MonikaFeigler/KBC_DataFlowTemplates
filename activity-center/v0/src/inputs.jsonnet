@@ -1,5 +1,4 @@
 local metadata = import "/<common>/in-activity-center/inputs_metadata.jsonnet";
-local telemetry = import "/<common>/in-activity-center/inputs_telemetry.jsonnet";
 local snowflake = import "/<common>/out-activity-center/inputs.jsonnet";
 {
   stepsGroups: [
@@ -21,7 +20,7 @@ local snowflake = import "/<common>/out-activity-center/inputs.jsonnet";
           description: "Telemetry data - Data Source",
           dialogName: "Telemetry - Data Source",
           dialogDescription: "",
-          inputs: telemetry
+          inputs: [],
         },
       ],
     },
