@@ -8,18 +8,18 @@ local snowflake = import "/<common>/out-activity-center/inputs.jsonnet";
       required: "all",
       steps: [
         {
-          icon: "kds-team.ex-kbc-project-metadata-v2",
+          icon: "component:kds-team.ex-kbc-project-metadata-v2",
           name: "KBC Project Metadata",
           description: "KBC Project Metadata - Data Source",
-          dialogName: "KBC Project Metadata Data Source",
+          dialogName: "KBC Project Metadata",
           dialogDescription: "",
           inputs: metadata
         },
         {
-          icon: "keboola.ex-telemetry-data",
+          icon: "component:keboola.ex-telemetry-data",
           name: "Telemetry data",
           description: "Telemetry data - Data Source",
-          dialogName: "Telemetry data - Data Source",
+          dialogName: "Telemetry - Data Source",
           dialogDescription: "",
           inputs: telemetry
         },
