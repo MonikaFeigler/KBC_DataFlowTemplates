@@ -1,1 +1,2 @@
-Created from Data Source [IN-ACTIVITY-CENTER-TELEMETRY] version #4
+## Description:
+The data is extracted from this Keboola project only.
