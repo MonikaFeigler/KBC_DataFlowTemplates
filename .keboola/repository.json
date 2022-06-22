@@ -27,6 +27,27 @@
       ]
     },
     {
+      "id": "activity-center-project",
+      "name": "ACTIVITY-CENTER-PROJECT",
+      "description": "Full workflow to ...",
+      "path": "activity-center-project",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": [
+            "kds-team.ex-kbc-project-metadata-v2",
+            "keboola.ex-telemetry-data",
+            "keboola.orchestrator",
+            "keboola.snowflake-transformation",
+            "keboola.wr-snowflake-blob-storage"
+          ],
+          "path": "v0"
+        }
+      ]
+    },
+    {
       "id": "adsplatform-to-bigquery",
       "name": "Ads Platform to BigQuery",
       "description": "Sync data from different Ads platforms to BigQuery database.",
