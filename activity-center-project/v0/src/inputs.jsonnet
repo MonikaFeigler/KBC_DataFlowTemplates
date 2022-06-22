@@ -1,31 +1,54 @@
+local metadata = import "/<common>/in-actitivy-center-project/inputs.jsonnet";
+local snowflake = import "/<common>/out-activity-center-project/inputs.jsonnet";
 {
   stepsGroups: [
     {
-      description: "Default Group",
+      description: "Extractor",
       required: "all",
       steps: [
         {
-          icon: "common:settings",
-          name: "Default Step",
-          description: "Default Step",
-          inputs: [
-            {
-              id: "ex-kbc-project-metadata-v2-tokens-0-key",
-              name: "Tokens Key",
-              description: "",
-              type: "string",
-              kind: "hidden",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-password",
-              name: "Db Password",
-              description: "",
-              type: "string",
-              kind: "hidden",
-            },
-          ],
+          icon: "component:kds-team.ex-kbc-project-metadata-v2",
+          name: "KBC Project Metadata",
+          description: "KBC Project Metadata - Data Source",
+          dialogName: "KBC Project Metadata",
+          dialogDescription: "",
+          inputs: metadata
+        },
+        {
+          icon: "component:keboola.ex-telemetry-data",
+          name: "Telemetry data",
+          description: "Telemetry data - Data Source",
+          dialogName: "Telemetry - Data Source",
+          dialogDescription: "",
+          inputs: [],
         },
       ],
     },
+    {   
+      description: "Snowflake Transformation",
+      required: "all",
+      steps: [
+        {
+          icon: "component:keboola.snowflake-transformation",
+          name: "Snowflake SQL",
+          description: "Transformation",
+          inputs: [],
+        },
+      ]
+    },
+    {
+      description: "Writer",
+      required: "all",
+      steps: [
+          {
+          icon: "component:keboola.wr-snowflake-blob-storage",
+          name: "Snowflake Destination",
+          description: "Load to data into Snowflake",
+          dialogName: "Snowflake Destination", 
+          dialogDescription: "Data load to Snowflake DB.",
+          inputs: snowflake,
+        },
+      ]
+    }
   ],
 }

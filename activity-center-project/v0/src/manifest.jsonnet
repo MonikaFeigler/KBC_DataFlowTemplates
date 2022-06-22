@@ -1,17 +1,8 @@
-{
+{ mainConfig: {
+    componentId: "keboola.orchestrator",
+    id: ConfigId("flow-activity-center-project"),
+  },
   configurations: [
-    {
-      componentId: "kds-team.ex-kbc-project-metadata-v2",
-      id: ConfigId("metadata-activity-center-project"),
-      path: "extractor/kds-team.ex-kbc-project-metadata-v2/metadata-activity-center-project",
-      rows: [],
-    },
-    {
-      componentId: "keboola.ex-telemetry-data",
-      id: ConfigId("telemetry-activity-center-project"),
-      path: "extractor/keboola.ex-telemetry-data/telemetry-activity-center-project",
-      rows: [],
-    },
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("flow-activity-center-project"),
@@ -19,15 +10,27 @@
       rows: [],
     },
     {
+      componentId: "kds-team.ex-kbc-project-metadata-v2",
+      id: ConfigId("metadata-activity-center-project"),
+      path: "<common>/in-actitivy-center-project/extractor/kds-team.ex-kbc-project-metadata-v2/metadata-activity-center-project",
+      rows: [],
+    },
+    {
+      componentId: "keboola.ex-telemetry-data",
+      id: ConfigId("telemetry-activity-center-project"),
+      path: "<common>/in-actitivy-center-project/extractor/keboola.ex-telemetry-data/telemetry-activity-center-project",
+      rows: [],
+    },
+    {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-activity-center-project"),
-      path: "transformation/keboola.snowflake-transformation/transformation-activity-center-project",
+      path: "<common>/in-actitivy-center-project/transformation/keboola.snowflake-transformation/transformation-activity-center-project",
       rows: [],
     },
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("snowflake-activity-center-project"),
-      path: "writer/keboola.wr-snowflake-blob-storage/snowflake-activity-center-project",
+      path: "<common>/out-activity-center-project/writer/keboola.wr-snowflake-blob-storage/snowflake-activity-center-project",
       rows: [
         {
           id: ConfigRowId("buckets"),
