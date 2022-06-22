@@ -11,7 +11,7 @@ local snowflake = import "/<common>/out-activity-center/inputs.jsonnet";
           name: "KBC Project Metadata",
           description: "KBC Project Metadata - Data Source",
           dialogName: "KBC Project Metadata",
-          dialogDescription: "",
+          dialogDescription: "This data source is getting data about all Keboola projects within a single organization.",
           inputs: metadata
         },
         {
@@ -19,7 +19,7 @@ local snowflake = import "/<common>/out-activity-center/inputs.jsonnet";
           name: "Telemetry data",
           description: "Telemetry data - Data Source",
           dialogName: "Telemetry - Data Source",
-          dialogDescription: "",
+          dialogDescription: "This data source is getting data about all Keboola projects within a single organization.",
           inputs: [],
         },
       ],
