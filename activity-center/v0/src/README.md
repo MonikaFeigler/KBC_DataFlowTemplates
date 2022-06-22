@@ -1,6 +1,6 @@
 # ACTIVITY-CENTER
 
-By using this end-to-end flow you can extract data from Metadata and Telemtry data about all Keboola projects within a single organization. This data is transformed for visualization in your BI tool and loaded into a Snowflake database.
+By using this end-to-end flow you can extract data from Metadata and Telemetry data about all Keboola projects within a single organization. This data is transformed for visualization in your BI tool and loaded into a Snowflake database.
 
 ## Steps to take:
 1. Authorize data source with Management Token and Organization ID
