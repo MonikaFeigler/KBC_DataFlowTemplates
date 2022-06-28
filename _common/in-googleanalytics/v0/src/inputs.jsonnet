@@ -43,4 +43,12 @@
         },
       ],
     },
+    {
+      id:          "g3s2-oauth",
+      name:        "Google oAuth",
+      description: "Authorization for Google Analytics",
+      type:        "object",
+      kind:        "oauth",
+      componentId: "keboola.ex-google-analytics-v4",
+    }
 ]
