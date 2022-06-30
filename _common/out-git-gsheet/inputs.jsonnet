@@ -14,7 +14,7 @@
       description: "Authorization for Google Sheets",
       type:        "object",
       kind:        "oauth",
+      default:      {},
       componentId: "keboola.wr-google-sheets",
-      default: {}
     }
 ]
