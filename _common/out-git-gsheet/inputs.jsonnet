@@ -15,5 +15,6 @@
       type:        "object",
       kind:        "oauth",
       componentId: "keboola.wr-google-sheets",
+      default: "000000"
     }
 ]
