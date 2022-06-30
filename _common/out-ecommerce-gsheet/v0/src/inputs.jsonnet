@@ -9,7 +9,7 @@
         default: "XXXXXXX"
     },
     {
-      id:          "g3s2-oauth",
+      id:          "g3s2-oauth-googlesheet",
       name:        "Google oAuth",
       description: "Authorization for Google Sheets",
       type:        "object",
