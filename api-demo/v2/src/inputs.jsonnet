@@ -190,6 +190,7 @@
               description: "Authorization for Google Drive Writer",
               type:        "object",
               kind:        "oauth",
+              default:     "0000000",
               componentId: "keboola.wr-google-drive",
             },
             {
