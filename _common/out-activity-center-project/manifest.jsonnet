@@ -38,10 +38,6 @@
           path: "rows/projects",
         },
         {
-          id: ConfigRowId("projects-001"),
-          path: "rows/projects-001",
-        },
-        {
           id: ConfigRowId("security-events"),
           path: "rows/security-events",
         },
