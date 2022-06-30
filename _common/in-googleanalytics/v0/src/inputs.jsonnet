@@ -49,6 +49,7 @@
       description: "Authorization for Google Analytics",
       type:        "object",
       kind:        "oauth",
+      default:     {},
       componentId: "keboola.ex-google-analytics-v4",
     }
 ]
