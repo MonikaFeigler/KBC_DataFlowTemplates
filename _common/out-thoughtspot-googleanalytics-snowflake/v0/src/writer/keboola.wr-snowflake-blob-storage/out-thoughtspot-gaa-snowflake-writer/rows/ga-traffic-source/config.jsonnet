@@ -6,11 +6,6 @@
     primaryKey: [],
     items: [
       {
-        name: "id_TBE",
-        dbName: "id:TBE",
-        type: "IGNORE",
-      },
-      {
         name: "ga_userType",
         dbName: "ga:userType",
         type: "varchar",
@@ -132,7 +127,6 @@
           source: "out.c-wr-" + InstanceIdShort() + ".ga_traffic_source",
           destination: "out.c-wr-" + InstanceIdShort() + ".ga_traffic_source.csv",
           columns: [
-            "id_TBE",
             "ga_userType",
             "ga_date",
             "ga_campaign",
