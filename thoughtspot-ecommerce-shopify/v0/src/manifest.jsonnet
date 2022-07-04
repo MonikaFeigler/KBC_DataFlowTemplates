@@ -36,6 +36,14 @@
       rows: [],
       metadata: { "KBC.configuration.folderName": "[THOUGHTSPOT-ECOMMERCE-SHOPIFY]"}
     },
+    if InputIsAvailable("data-studio-gsheet-id") then
+    {
+      componentId: "keboola.snowflake-transformation",
+      id: ConfigId("gsheet-datastudio-transformation"),
+      path: "<common>/out-ecommerce-gsheet-datastudio/v0/src/transformation/keboola.snowflake-transformation/gsheet-datastudio-transformation",
+      rows: [],
+      metadata: { "KBC.configuration.folderName": "[THOUGHTSPOT-ECOMMERCE-SHOPIFY]"}
+    },
     if InputIsAvailable("wr-google-bigquery-v2-service-account-private-key") then
     {
       componentId: "keboola.wr-google-bigquery-v2",
