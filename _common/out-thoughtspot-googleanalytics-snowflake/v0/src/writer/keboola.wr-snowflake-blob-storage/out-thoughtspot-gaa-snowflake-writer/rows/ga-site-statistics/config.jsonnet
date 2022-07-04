@@ -7,6 +7,7 @@
     items: [
       {
         name: "id_TBE",
+        dbName: "id:TBE",
         type: "IGNORE",
       },
       {
