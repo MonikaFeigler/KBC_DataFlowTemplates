@@ -1,4 +1,4 @@
 {
-  name: "Step 4",
+  name: "Transformation",
   dependsOn: ["<previous>"],
 }

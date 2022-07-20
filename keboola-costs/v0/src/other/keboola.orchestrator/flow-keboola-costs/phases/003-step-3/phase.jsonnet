@@ -1,6 +1,4 @@
 {
-  name: "Step 3",
-  dependsOn: [
-    "002-step-2",
-  ],
+  name: "Load-Snowflake database",
+  dependsOn: ["<previous>"],
 }
