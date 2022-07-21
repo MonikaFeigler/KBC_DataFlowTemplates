@@ -1,4 +1,4 @@
 {
-  name: "Flow Keboola Costs",
+  name: "Flow [KEBOOLA-COSTS]",
   isDisabled: false,
 }
