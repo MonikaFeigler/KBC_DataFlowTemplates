@@ -1,4 +1,3 @@
-local snowflake = import "/<common>/out-activity-center-project/inputs.jsonnet";
 local googlesheet = import "/<common>/out-keboola-costs-gsheet/inputs.jsonnet";
 {
   stepsGroups: [
@@ -30,16 +29,8 @@ local googlesheet = import "/<common>/out-keboola-costs-gsheet/inputs.jsonnet";
     },
     {
       description: "Writer",
-      required: "optional",
+      required: "all",
       steps: [
-        {
-          icon: "component:keboola.wr-snowflake-blob-storage",
-          name: "Snowflake Destination",
-          description: "Load to data into Snowflake",
-          dialogName: "Snowflake Destination", 
-          dialogDescription: "Data load to Snowflake DB.",
-          inputs: snowflake,
-        },
         {
           icon: "component:keboola.wr-google-sheets",
           name: "Google Sheet Destination",

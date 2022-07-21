@@ -2,7 +2,7 @@
     componentId: "keboola.orchestrator",
     id: ConfigId("flow-keboola-costs"),
   },
-  configurations: std.filter(function(v) v != null,[
+  configurations: [
     {
       componentId: "keboola.orchestrator",
       id: ConfigId("flow-keboola-costs"),
@@ -21,14 +21,6 @@
       path: "<common>/in-keboola-costs/transformation/keboola.snowflake-transformation/transformation-keboola-costs",
       rows: [],
     },
-    if InputIsAvailable("google-sheet-id") then
-    {
-      componentId: "keboola.wr-google-sheets",
-      id: ConfigId("google-sheets-keboola-costs"),
-      path: "<common>/out-keboola-costs-gsheet/writer/keboola.wr-google-sheets/google-sheets-keboola-costs",
-      rows: [],
-    },
-    if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("snowflake-keboola-costs"),
@@ -88,5 +80,5 @@
         },
       ],
     },
-  ],)
+  ],
 }
