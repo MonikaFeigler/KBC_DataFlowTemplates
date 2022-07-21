@@ -1,21 +1,3 @@
-CREATE TABLE IF NOT EXISTS "cm_organizations" AS
-SELECT DISTINCT "kbc_organization_id",
-                'Default'             AS "organization_mapping"
-FROM "kbc_organization";
-
--- DROP TABLE IF EXISTS "out-organizations";
-CREATE TABLE "out_organizations" AS
-SELECT o."kbc_organization_id"                                                                AS "organization_id",
-       o."kbc_organization"                                                                   AS "organization_name",
-       CONVERT_TELEMETRY_TIMESTAMP(o."kbc_organization_created_at")                           AS "organization_created",
-       APPEND_REGION(SPLIT_PART(o."kbc_organization_id", '-', 1), o."kbc_organization_id", 2) AS "organization_key",
-       cm.*
-FROM "kbc_organization" o
-     LEFT JOIN "cm_organizations" cm ON cm."kbc_organization_id" = o."kbc_organization_id";
-
-ALTER TABLE "out_organizations"
-	DROP COLUMN "kbc_organization_id";
-
 CREATE TABLE IF NOT EXISTS "cm_projects" AS
 SELECT DISTINCT "kbc_project_id",
                 'Default'        AS "project_department",
