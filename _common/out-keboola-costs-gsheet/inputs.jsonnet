@@ -1,7 +1,7 @@
 [
   {
     id: "google-sheet-id",
-    name: "Keboola-costs gSheet file ID",
+    name: "Keboola-costs file ID",
     description: "Insert file ID of the google sheet destination",
     type: "string",
     kind: "input",
