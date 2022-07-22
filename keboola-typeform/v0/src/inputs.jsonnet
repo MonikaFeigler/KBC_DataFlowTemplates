@@ -5,7 +5,7 @@ local bigquery = import "/<common>/out-typeform-bigquery/inputs.jsonnet";
 {
   stepsGroups: [
     {
-      description: "Extractor",
+      description: "Configure your credentials for Typeform data source.",
       required: "all",
       steps: [
         {
@@ -31,7 +31,7 @@ local bigquery = import "/<common>/out-typeform-bigquery/inputs.jsonnet";
       ]
     },
     {
-      description: "Writer",
+      description: "Configure your credentials for data destination.",
       required: "optional",
       steps: [
           {
