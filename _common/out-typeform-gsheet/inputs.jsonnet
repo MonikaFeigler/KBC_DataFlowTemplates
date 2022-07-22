@@ -1,38 +1,20 @@
-{
-  stepsGroups: [
-    {
-      description: "Default Group",
-      required: "all",
-      steps: [
-        {
-          icon: "common:settings",
-          name: "Default Step",
-          description: "Default Step",
-          inputs: [
-            {
-              id: "ex-typeform-config-token",
-              name: "API Token",
-              description: "",
-              type: "string",
-              kind: "hidden",
-            },
-            {
-              id: "wr-google-bigquery-v2-service-account-private-key",
-              name: "Private key",
-              description: "",
-              type: "string",
-              kind: "hidden",
-            },
-            {
-              id: "wr-snowflake-blob-storage-db-password",
-              name: "Db Password",
-              description: "",
-              type: "string",
-              kind: "hidden",
-            },
-          ],
-        },
-      ],
-    },
-  ],
-}
+[
+  {
+    id: "google-sheet-id",
+    name: "Marketing gSheet file ID",
+    description: "Insert file ID of the google sheet destination",
+    type: "string",
+    kind: "input",
+    rules: "required",
+    default: "XXXXXXX"
+  },
+  {
+    id:          "g3s2-oauth-googlesheet",
+    name:        "Google oAuth",
+    description: "Authorization for Google Sheets",
+    type:        "object",
+    kind:        "oauth",
+    default:      {},
+    componentId: "keboola.wr-google-sheets",
+  }
+]
