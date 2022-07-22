@@ -1,0 +1,90 @@
+{
+  authorization: {
+    oauth_api: {
+      id: "21397365",
+      version: 3,
+    },
+  },
+  parameters: {
+    tables: [
+      {
+        id: 59582,
+        action: "update",
+        sheetTitle: "survey",
+        enabled: true,
+        tableId: "out.c-typeform.survey",
+        title: "OUT-TYPEFORM",
+        sheetId: 0,
+        fileId: "1_DiKA9UxZ26iKL9Sg3JDTDXzFQvj_WjWU-1AzOY673w",
+      },
+      {
+        id: 68393,
+        action: "update",
+        sheetTitle: "question",
+        enabled: true,
+        tableId: "out.c-typeform.question",
+        title: "OUT-TYPEFORM",
+        fileId: "1_DiKA9UxZ26iKL9Sg3JDTDXzFQvj_WjWU-1AzOY673w",
+        sheetId: 181885379,
+      },
+      {
+        id: 3515,
+        action: "update",
+        sheetTitle: "answer_option",
+        enabled: true,
+        tableId: "out.c-typeform.answer_option",
+        title: "OUT-TYPEFORM",
+        fileId: "1_DiKA9UxZ26iKL9Sg3JDTDXzFQvj_WjWU-1AzOY673w",
+        sheetId: 978805991,
+      },
+      {
+        id: 58287,
+        action: "update",
+        sheetTitle: "responses",
+        enabled: true,
+        tableId: "out.c-typeform.responses",
+        title: "OUT-TYPEFORM",
+        fileId: "1_DiKA9UxZ26iKL9Sg3JDTDXzFQvj_WjWU-1AzOY673w",
+        sheetId: 111584779,
+      },
+    ],
+  },
+  storage: {
+    input: {
+      tables: [
+        {
+          source: "out.c-typeform.survey",
+          destination: "out.c-typeform.survey.csv",
+          where_column: "",
+          where_values: [],
+          where_operator: "eq",
+          columns: [],
+        },
+        {
+          source: "out.c-typeform.question",
+          destination: "out.c-typeform.question.csv",
+          where_column: "",
+          where_values: [],
+          where_operator: "eq",
+          columns: [],
+        },
+        {
+          source: "out.c-typeform.answer_option",
+          destination: "out.c-typeform.answer_option.csv",
+          where_column: "",
+          where_values: [],
+          where_operator: "eq",
+          columns: [],
+        },
+        {
+          source: "out.c-typeform.responses",
+          destination: "out.c-typeform.responses.csv",
+          where_column: "",
+          where_values: [],
+          where_operator: "eq",
+          columns: [],
+        },
+      ],
+    },
+  },
+}
