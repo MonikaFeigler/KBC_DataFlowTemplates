@@ -1,9 +1,6 @@
 {
   authorization: {
-    oauth_api: {
-      id: "21291340",
-      version: 3,
-    },
+    oauth_api: Input("g3s2-oauth"),
   },
   parameters: {
     tables: [

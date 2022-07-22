@@ -3,7 +3,7 @@ local googlesheet = import "/<common>/out-keboola-costs-gsheet/inputs.jsonnet";
 {
   stepsGroups: [
     {
-      description: "Extractor",
+      description: "Configure your credentials for Telemetry data source.",
       required: "all",
       steps: [
         {
@@ -29,7 +29,7 @@ local googlesheet = import "/<common>/out-keboola-costs-gsheet/inputs.jsonnet";
       ]
     },
     {
-      description: "Writer",
+      description: "Configure your credentials for data destination.",
       required: "optional",
       steps: [
         {
