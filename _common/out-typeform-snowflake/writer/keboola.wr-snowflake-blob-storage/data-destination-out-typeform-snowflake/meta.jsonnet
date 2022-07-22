@@ -1,4 +1,4 @@
 {
-  name: "Data Destination [OUT-TYPEFORM-SNOWFLAKE]",
+  name: "Data Destination [OUT-TYPEFORM-SNOWFLAKE] /" + InstanceIdShort(),
   isDisabled: false,
 }

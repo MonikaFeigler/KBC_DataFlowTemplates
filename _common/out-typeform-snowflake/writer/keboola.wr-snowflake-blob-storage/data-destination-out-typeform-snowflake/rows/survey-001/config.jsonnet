@@ -1,6 +1,6 @@
 {
   parameters: {
-    tableId: "out.c-typeform.survey",
+    tableId: "out.c-typeform-" + InstanceIdShort() + ".survey",
     dbName: "survey",
     incremental: true,
     primaryKey: [
@@ -37,8 +37,8 @@
     input: {
       tables: [
         {
-          source: "out.c-typeform.survey",
-          destination: "out.c-typeform.survey.csv",
+          source: "out.c-typeform-" + InstanceIdShort() + ".survey",
+          destination: "out.c-typeform-" + InstanceIdShort() + ".survey.csv",
           columns: [
             "survey_id",
             "survey_title",

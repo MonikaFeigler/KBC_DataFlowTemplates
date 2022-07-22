@@ -1,58 +1,5 @@
-{ mainConfig: {
-    componentId: "keboola.orchestrator",
-    id: ConfigId("flow-typeform"),
-  },
-  configurations: std.filter(function(v) v != null,[
-    {
-      componentId: "keboola.orchestrator",
-      id: ConfigId("flow-typeform"),
-      path: "other/keboola.orchestrator/flow-typeform",
-      rows: [],
-    },
-    {
-      componentId: "fisa.ex-typeform",
-      id: ConfigId("data-source-in-typeform"),
-      path: "extractor/fisa.ex-typeform/data-source-in-typeform",
-      rows: [],
-    },
-    {
-      componentId: "keboola.snowflake-transformation",
-      id: ConfigId("transformation-in-typeform"),
-      path: "transformation/keboola.snowflake-transformation/transformation-in-typeform",
-      rows: [],
-    },
-    if InputIsAvailable("wr-google-bigquery-v2-service-account-private-key") then
-    {
-      componentId: "keboola.wr-google-bigquery-v2",
-      id: ConfigId("data-destination-out-typeform-bigquery"),
-      path: "writer/keboola.wr-google-bigquery-v2/data-destination-out-typeform-bigquery",
-      rows: [
-        {
-          id: ConfigRowId("answer-option"),
-          path: "rows/answer-option",
-        },
-        {
-          id: ConfigRowId("question"),
-          path: "rows/question",
-        },
-        {
-          id: ConfigRowId("responses"),
-          path: "rows/responses",
-        },
-        {
-          id: ConfigRowId("survey"),
-          path: "rows/survey",
-        },
-      ],
-    },
-    if InputIsAvailable("google-sheet-id") then
-    {
-      componentId: "keboola.wr-google-sheets",
-      id: ConfigId("data-destination-out-typeform-gsheet"),
-      path: "writer/keboola.wr-google-sheets/data-destination-out-typeform-gsheet",
-      rows: [],
-    },
-    if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
+{ 
+  configurations: [
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("data-destination-out-typeform-snowflake"),
@@ -76,5 +23,5 @@
         },
       ],
     },
-  ],)
+  ],
 }
