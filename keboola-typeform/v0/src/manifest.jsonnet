@@ -12,20 +12,20 @@
     {
       componentId: "fisa.ex-typeform",
       id: ConfigId("data-source-in-typeform"),
-      path: "extractor/fisa.ex-typeform/data-source-in-typeform",
+      path: "/<common>/in-typeform/extractor/fisa.ex-typeform/data-source-in-typeform",
       rows: [],
     },
     {
       componentId: "keboola.snowflake-transformation",
       id: ConfigId("transformation-in-typeform"),
-      path: "transformation/keboola.snowflake-transformation/transformation-in-typeform",
+      path: "/<common>/in-typeform/transformation/keboola.snowflake-transformation/transformation-in-typeform",
       rows: [],
     },
     if InputIsAvailable("wr-google-bigquery-v2-service-account-private-key") then
     {
       componentId: "keboola.wr-google-bigquery-v2",
       id: ConfigId("data-destination-out-typeform-bigquery"),
-      path: "writer/keboola.wr-google-bigquery-v2/data-destination-out-typeform-bigquery",
+      path: "/<common>/out-typeform-bigquery/writer/keboola.wr-google-bigquery-v2/data-destination-out-typeform-bigquery",
       rows: [
         {
           id: ConfigRowId("answer-option"),
@@ -49,14 +49,14 @@
     {
       componentId: "keboola.wr-google-sheets",
       id: ConfigId("data-destination-out-typeform-gsheet"),
-      path: "writer/keboola.wr-google-sheets/data-destination-out-typeform-gsheet",
+      path: "/<common>/out-typeform-gsheet/writer/keboola.wr-google-sheets/data-destination-out-typeform-gsheet",
       rows: [],
     },
     if InputIsAvailable("wr-snowflake-blob-storage-db-host") then
     {
       componentId: "keboola.wr-snowflake-blob-storage",
       id: ConfigId("data-destination-out-typeform-snowflake"),
-      path: "writer/keboola.wr-snowflake-blob-storage/data-destination-out-typeform-snowflake",
+      path: "/<common>/out-typeform-snowflake/writer/keboola.wr-snowflake-blob-storage/data-destination-out-typeform-snowflake",
       rows: [
         {
           id: ConfigRowId("answer-option-001"),

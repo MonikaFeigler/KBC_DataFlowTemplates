@@ -1,4 +1,4 @@
 {
-  name: "Flow [TYPEFORM]",
+  name: "Flow [TYPEFORM] /" + InstanceIdShort(),
   isDisabled: false,
 }
