@@ -360,9 +360,46 @@
           "stable": false,
           "components": [
             "keboola.ex-telemetry-data",
-            "keboola.orchestrator",
             "keboola.snowflake-transformation",
             "keboola.wr-google-sheets",
+            "keboola.wr-snowflake-blob-storage"
+          ],
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "keboola-costs-to-googlesheet",
+      "name": "KEBOOLA-COSTS-TO-GOOGLESHEET",
+      "description": "Full workflow to ...",
+      "path": "keboola-costs-to-googlesheet",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": [
+            "keboola.ex-telemetry-data",
+            "keboola.snowflake-transformation",
+            "keboola.wr-google-sheets",
+          ],
+          "path": "v0"
+        }
+      ]
+    },
+    {
+      "id": "keboola-costs-to-snowflake",
+      "name": "KEBOOLA-COSTS-TO-SNOWFLAKE",
+      "description": "Full workflow to ...",
+      "path": "keboola-costs-to-snowflake",
+      "versions": [
+        {
+          "version": "0.0.1",
+          "description": "",
+          "stable": false,
+          "components": [
+            "keboola.ex-telemetry-data",
+            "keboola.snowflake-transformation",
             "keboola.wr-snowflake-blob-storage"
           ],
           "path": "v0"
