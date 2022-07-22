@@ -57,7 +57,7 @@
     output: {
       tables: [
         {
-          destination: "out.c-typeform.survey",
+          destination: "out.c-typeform-" + InstanceIdShort() + ".survey",
           source: "out_survey",
           incremental: true,
           delete_where_column: "",
@@ -68,21 +68,21 @@
           ],
         },
         {
-          destination: "out.c-typeform.question",
+          destination: "out.c-typeform-" + InstanceIdShort() + ".question",
           source: "out_question",
           primary_key: [
             "question_id",
           ],
         },
         {
-          destination: "out.c-typeform.responses",
+          destination: "out.c-typeform-" + InstanceIdShort() + ".responses",
           source: "out_responses",
           primary_key: [
             "response_id",
           ],
         },
         {
-          destination: "out.c-typeform.answer_option",
+          destination: "out.c-typeform-" + InstanceIdShort() + ".answer_option",
           source: "out_answer_option",
           primary_key: [
             "answer_option_id",

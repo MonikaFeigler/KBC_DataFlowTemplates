@@ -1,4 +1,4 @@
 {
-  name: "Data Source [IN-TYPEFORM]",
+  name: "Data Source [IN-TYPEFORM] /" + InstanceIdShort(),
   isDisabled: false,
 }

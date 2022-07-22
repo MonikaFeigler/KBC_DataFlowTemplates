@@ -1,4 +1,4 @@
 {
-  name: "Transformation [IN-TYPEFORM]",
+  name: "Transformation [IN-TYPEFORM] /" + InstanceIdShort(),
   isDisabled: false,
 }
