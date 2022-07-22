@@ -1,4 +1,4 @@
 {
-  name: "Data Destination [OUT-TYPEFORM-BIGQUERY]",
+  name: "Data Destination [OUT-TYPEFORM-BIGQUERY] /" + InstanceIdShort(),
   isDisabled: false,
 }

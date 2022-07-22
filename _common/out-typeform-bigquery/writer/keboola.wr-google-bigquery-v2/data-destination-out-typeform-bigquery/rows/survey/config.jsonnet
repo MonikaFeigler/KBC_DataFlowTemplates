@@ -3,8 +3,8 @@
     input: {
       tables: [
         {
-          source: "out.c-typeform.survey",
-          destination: "out.c-typeform.survey.csv",
+          source: "out.c-typeform-" + InstanceIdShort() + ".survey",
+          destination: "out.c-typeform-" + InstanceIdShort() + ".survey.csv",
           changed_since: "adaptive",
           columns: [
             "survey_id",
@@ -19,7 +19,7 @@
     tables: [
       {
         dbName: "survey",
-        tableId: "out.c-typeform.survey",
+        tableId: "out.c-typeform-" + InstanceIdShort() + ".survey",
         incremental: true,
         items: [
           {
